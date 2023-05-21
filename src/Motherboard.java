@@ -5,12 +5,13 @@ public class Motherboard extends PCComponent{
     //AMD vs. Intel chipset and which gen chipset
     String chipSet;
     //Number of memory slots
+    String formFactor;
     int memorySlots;
     int PCIeSlots;
     int PCISlots;
     int SATAConnectors;
     int M_2Slots;
-    int _24PinPowerConnectors;
+    boolean is24PinPowerConnectors;
     boolean is4Pin;
     int fanHeaders;
     //USB 3.1 Gen 1 Headers
@@ -24,5 +25,16 @@ public class Motherboard extends PCComponent{
     //Audio Headers for Mic and Headphones
     int frontAudioHeaders;
     int RGBHeaders;
-
+    public Motherboard() {
+        socketType = "LGA ";
+        chipSet = "No Chipset";
+        formFactor = "No Form Factor";
+        memorySlots = 0;
+        PCIeSlots = 0;
+        PCISlots = 0;
+        SATAConnectors = 0;
+        M_2Slots = 0;
+        is24PinPowerConnectors = true;
+        is4Pin = true;
+    }
 }
