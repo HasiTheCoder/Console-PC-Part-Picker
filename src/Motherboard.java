@@ -7,12 +7,18 @@ public class Motherboard extends PCComponent{
     //Number of memory slots
     String formFactor;
     int memorySlots;
-    int PCIeSlots;
+    //PCIe Gen 4.0 x16 slots
+    int PCIex16_4Slots;
+    //PCIe Gen 3.0 x16 slots
+    int PCIex16_3Slots;
+    //PCIe Gen 4.0 x4 slots
+    int PCIex4_4Slots;
     int PCISlots;
     int SATAConnectors;
     int M_2Slots;
     boolean is24PinPowerConnectors;
     boolean is4Pin;
+    String rearIO;
     int fanHeaders;
     //USB 3.1 Gen 1 Headers
     int USB3Headers;
@@ -26,11 +32,11 @@ public class Motherboard extends PCComponent{
     int frontAudioHeaders;
     int RGBHeaders;
     public Motherboard() {
-        socketType = "LGA ";
-        chipSet = "No Chipset";
-        formFactor = "No Form Factor";
-        memorySlots = 0;
-        PCIeSlots = 0;
+        socketType = "LGA 1700";
+        chipSet = "B760";
+        formFactor = "ATX";
+        memorySlots = 4;
+        
         PCISlots = 0;
         SATAConnectors = 0;
         M_2Slots = 0;
