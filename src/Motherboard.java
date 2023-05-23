@@ -224,4 +224,18 @@ public class Motherboard extends PCComponent{
         USB2 = USB2N;
         thunderbolt = thunderboltN;
     }
+    public String determineM2_Slots() {
+        if ((M2_5_Slots > 0) && (M2_4_Slots > 0) && (M2_3_Slots > 0)) {
+            return "M.2 Gen 5 Slots: " + M2_5_Slots + "\nM.2 Gen 4 Slots: " + M2_4_Slots + "\nM.2 Gen 3 Slots: " + M2_3_Slots;
+        }
+        else if ((M2_5_Slots > 0) && (M2_4_Slots > 0) && (M2_3_Slots == 0)) {
+            return "M.2 Gen 5 Slots: " + M2_5_Slots
+        }
+    }
+    public String toString() {
+        String M2_Slots = determineM2_Slots();
+        String specs = "Socket Type: " + socketType + "\nChipset: " + chipSet + "\nForm Factor: " + formFactor + "\nMemory Slots: " + memorySlots
+                + "\nMax Memory: " + totalMemoryAmount + "\nMemory Overclock ability: " + isMemoryOC + "\nSATA Connectors: " + SATAConnectors
+                + "\n";
+    }
 }
