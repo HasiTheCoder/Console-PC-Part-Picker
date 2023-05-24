@@ -224,7 +224,20 @@ public class Motherboard extends PCComponent{
         USB2 = USB2N;
         thunderbolt = thunderboltN;
     }
-    public String determineM2_Slots() {
+    private String determineM2_Slots_2DArray() {
+        String M2Slots = "";
+        String[][] M2SlotsArray = {
+                {"M.2 Gen 5 Slots: ", "M.2 Gen 4 Slots: ", "M.2 Gen 3 Slots"},
+                {"" + M2_5_Slots, "" + M2_4_Slots, "" + M2_3_Slots}
+        };
+        for (int i = 0; i < M2SlotsArray.length; i++) {
+            if (Integer.parseInt(M2SlotsArray[i][i]) > 0) {
+                M2Slots = M2Slots + "\n" + M2SlotsArray[i][0] + M2SlotsArray[i][i];
+            }
+        }
+        return M2Slots;
+    }
+    private String determineM2_Slots() {
         if ((M2_5_Slots > 0) && (M2_4_Slots > 0) && (M2_3_Slots > 0)) {
             return "M.2 Gen 5 Slots: " + M2_5_Slots + "\nM.2 Gen 4 Slots: " + M2_4_Slots + "\nM.2 Gen 3 Slots: " + M2_3_Slots;
         }
@@ -246,12 +259,29 @@ public class Motherboard extends PCComponent{
         else if ((M2_5_Slots == 0) && (M2_4_Slots == 0) && (M2_3_Slots > 0)) {
             return "M.2 Gen 3 Slots: " + M2_3_Slots;
         }
+        return "No M.2 Slots";
+    }
+    private String determinePCIeSlots() {
+        String PCIeSlots = "";
+        String[][] PCIeSlotsArray = {
+                {"PCIe x16 Gen 5 Slots: ", "PCIe x8 Gen 5 Slots: ", "PCIe x4 Gen 5 Slots: ", "PCIe x1 Gen 5 Slots: ", "PCIe x16 Gen 4 Slots: ", "PCIe x8 Gen 4 Slots: ", "PCIe x4 Gen 4 Slots: ", "PCIe x1 Gen 4 Slots: "
+                , "PCIe x16 Gen 3 Slots: ", "PCIe x8 Gen 3 Slots: ", "PCIe x4 Gen 3 Slots: ", "PCIe x1 Gen 3 Slots: "},
+                {"" + PCIe_x16_5_Slots, "" + PCIe_x8_5_Slots, "" + PCIe_x4_5_Slots, "" + PCIe_x1_5_Slots, "" + PCIe_x16_4_Slots, "" + PCIe_x8_4_Slots, "" + PCIe_x4_4_Slots,
+                "" + PCIe_x1_4_Slots, "" + PCIe_x16_3_Slots, "" + PCIe_x8_3_Slots, "" + PCIe_x4_3_Slots, "" + PCIe_x1_3_Slots}
+        };
+        for (int i = 0; i < PCIeSlotsArray.length; i++) {
+            if (Integer.parseInt(PCIeSlotsArray[i][i]) > 0) {
+                PCIeSlots = PCIeSlots + "\n" + PCIeSlotsArray[i][0] + PCIeSlotsArray[i][i];
+            }
+        }
+        return PCIeSlots;
     }
     public String toString() {
-        String M2_Slots = determineM2_Slots();
+        String M2_Slots = determineM2_Slots_2DArray();
+        String PCIeSlots = determinePCIeSlots();
         String specs = "Socket Type: " + socketType + "\nChipset: " + chipSet + "\nForm Factor: " + formFactor + "\nMemory Slots: " + memorySlots
                 + "\nMax Memory: " + totalMemoryAmount + "\nMemory Overclock ability: " + isMemoryOC + "\nSATA Connectors: " + SATAConnectors
-                + "\n" + M2_Slots;
+                + "\n" + M2_Slots + "\n" + PCIeSlots + "\n";
         return specs;
     }
 }
