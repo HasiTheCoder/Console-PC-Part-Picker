@@ -224,6 +224,11 @@ public class Motherboard extends PCComponent{
         USB2 = USB2N;
         thunderbolt = thunderboltN;
     }
+
+    /**
+     * Determines all the M.2 Slots that exist on the motherboard
+     * @return
+     */
     private String determineM2_Slots_2DArray() {
         String M2Slots = "";
         String[][] M2SlotsArray = {
@@ -261,6 +266,11 @@ public class Motherboard extends PCComponent{
         }
         return "No M.2 Slots";
     }
+
+    /**
+     * Determines all the PCIe Slots that exist on the motherboard
+     * @return String with all the PCIe slots that exist on the motherboard
+     */
     private String determinePCIeSlots() {
         String PCIeSlots = "";
         String[][] PCIeSlotsArray = {
@@ -276,6 +286,11 @@ public class Motherboard extends PCComponent{
         }
         return PCIeSlots;
     }
+
+    /**
+     * 
+     * @return
+     */
     public String toString() {
         String M2_Slots = determineM2_Slots_2DArray();
         String PCIeSlots = determinePCIeSlots();
