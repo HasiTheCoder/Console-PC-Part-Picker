@@ -6,6 +6,7 @@ public class LinkedList {
     private class Node {
         private String data;
         private Node next;
+        private Node previous;
         private Node(String dataN) {
             data = dataN;
         }
@@ -14,6 +15,9 @@ public class LinkedList {
         }
         private Node getNext() {
             return next;
+        }
+        private Node getPrevious() {
+            return previous;
         }
         private void setNext(Node n) {
             next = n;
@@ -24,12 +28,12 @@ public class LinkedList {
             head = new Node(data);
         }
         else {
-            Node newNode = new Node(data);
             Node temp = head;
+            Node newNode = new Node(data);
             while (temp.getNext()!=null) {
                 temp = temp.getNext();
             }
-            temp.next = newNode;
+            temp.setNext(newNode);
         }
     }
     public void addToFront(String data) {
