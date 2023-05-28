@@ -288,7 +288,7 @@ public class Motherboard extends PCComponent{
     }
 
     /**
-     * 
+     *
      * @return
      */
     public String toString() {
