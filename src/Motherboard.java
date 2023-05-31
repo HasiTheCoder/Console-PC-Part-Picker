@@ -4,299 +4,183 @@
  * @Author Hasnain Heryani
  */
 public class Motherboard extends PCComponent{
-    //All motherboards have power switch, power led, and drive led headers for the front panel
     //AMD vs. Intel Socket and which gen socket
     String socketType;
     //AMD vs. Intel chipset
     String chipSet;
     //Form factor of motherboard, ATX, mATX, ITX, etc.
     String formFactor;
-    //Does the motherboard have front audio connectors
-    boolean isAAFPConnector;
     //The number of memory slots the motherboard has
     int memorySlots;
+    //Type of memory
+    String memoryType;
     //Total amount of memory the motherboard supports in GB
-    int totalMemoryAmount;
+    int memoryMax;
     //Max memory speed the motherboard supports in MHz
-    int memorySpeed;
-    //Is the memory overclock-able within the motherboard bios (Does XMP setting exist for Intel and AMD. DOCP/EXPO for AM5)
-    boolean isMemoryOC;
-    //Number of PCIe x16 gen 5 slots
-    int PCIe_x16_5_Slots;
-    //Number of PCIe x8 gen 5 slots
-    int PCIe_x8_5_Slots;
-    //Number of PCIe x4 gen 5 slots
-    int PCIe_x4_5_Slots;
-    //Number of PCIe x1 gen 5 slots
-    int PCIe_x1_5_Slots;
-    //Number of PCIe x16 gen 4 slots
-    int PCIe_x16_4_Slots;
-    //Number of PCIe x8 gen 4 slots
-    int PCIe_x8_4_Slots;
-    //Number of PCIe x4 gen 4 slots
-    int PCIe_x4_4_Slots;
-    //Number of PCIe x1 gen 4 slots
-    int PCIe_x1_4_Slots;
-    //Number of PCIe x16 gen 3 slots
-    int PCIe_x16_3_Slots;
-    //Number of PCIe x8 gen 3 slots
-    int PCIe_x8_3_Slots;
-    //Number of PCIe x4 gen 3 slots
-    int PCIe_x4_3_Slots;
-    //Number of PCIe x1 gen 3 slots
-    int PCIe_x1_3_Slots;
+    int maxMemorySpeed;
+    int PCIe_x16_Slots;
+    //Number of PCIe x8 slots
+    int PCIe_x8_Slots;
+    //Number of PCIe x4 slots
+    int PCIe_x4_Slots;
+    //Number of PCIe x1 slots
+    int PCIe_x1_Slots;
+    //Number of PCI slots
+    int PCI_Slots;
+    //color of motherboard
+    String color;
+    //Whether the motherboard support SLI or CrossFire (True if supports one, false if it supports none)
+    boolean isSLIOrCrossFire;
     //Number of SATA connectors
     int SATAConnectors;
-    //Number of M.2 SSD Slots Gen 5
-    int M2_5_Slots;
-    //Number of M.2 SSD Slots Gen 4
-    int M2_4_Slots;
-    //Number of M.2 SSD Slots Gen 3
-    int M2_3_Slots;
-    //Does the motherboard have a 24 pin power connector. If false then 20 pin (Some mITX motherboards tend to have 20 pin)
-    boolean is24PinPowerConnectors;
-    //For CPU Power one 4 pin or an 8 pin (8 pin power connectors are for higher power CPUs. Some motherboards only have 4 pin)
-    boolean is4Pin;
-    //What the rear io of the motherboard has
-    String rearIO;
-    //The number of fan headers a motherboard has (power for fans)
-    int fanHeaders;
-    //The number of addressable RBG headers
-    int ARGBHeaders;
-    //The number of RGB Headers
-    int RGBHeaders;
-    //Does the motherboard have an AIO Pump connector to be compatible with AIOs.
-    boolean isAIOPumpConnector;
-    //Other miscellaneous details about the motherboard not needed for compatibility checks.
-    String other;
-    //Front IO Headers
-    //Amount of USB 3.2 Gen 2x2 (USB Type C, rarely USB Type A) headers
-    int USB32_2x2_;
-    //Amount of USB 3.1 Gen 2 headers
-    int USB31_2_;
-    //Amount of USB 3.1 Gen 1 (USB 3.0) headers
-    int USB31_1_;
-    //Amount of USB 2.0 headers
-    int USB2;
-    //Amount of thunderbolt headers
-    int thunderbolt;
+    //Number of M.2 SSD Slots
+    int M2_Slots;
+    //Number of mini PCIe Slots
+    int miniPCIeSlots;
+    //Number of half mini PCIe slots
+    int halfMiniPCIeSlots;
+    //Number of mSATA slots
+    int mSATASlots;
+    //What is the onboard ethernet of the motherboard
+    String onboardEthernet;
+    //Amount of USB 2.0 Headers
+    int USB_2_Headers;
+    //Amount of single port USB 2.0 Headers
+    int USB_2_Headers_Single_Port;
+    //Amount of USB 3.2 Gen 1 Headers
+    int USB_32_1_Headers;
+    //Amount of USB 3.2 Gen 2 Headers
+    int USB_32_2_Headers;
+    //Amount of USB 3.2 Gen 2x2 Headers
+    int USB_32_2x2_Headers;
+    //Does the motherboard support ECC
+    boolean isECC;
+    //What is the wireless networking on the motherboard
+    String wirelessNetworking;
+    //does it support RAID
+    boolean RAIDSupport;
 
     /**
      * Motherboard object base constructor
      * no parameters
      */
     public Motherboard() {
+        name = "No name";
+        price = 0;
+        partNumber = "No part number";
         socketType = "No Socket";
         chipSet = "No Chipset";
         formFactor = "No Form Factor";
         memorySlots = 0;
         SATAConnectors = 0;
-        is24PinPowerConnectors = false;
-        is4Pin = false;
-        isAAFPConnector = false;
-        totalMemoryAmount = 0;
-        memorySpeed = 0;
-        isMemoryOC = false;
-        PCIe_x16_5_Slots = 0;
-        PCIe_x16_3_Slots = 0;
-        PCIe_x1_3_Slots = 0;
-        PCIe_x8_5_Slots = 0;
-        PCIe_x4_5_Slots = 0;
-        PCIe_x1_5_Slots = 0;
-        PCIe_x16_4_Slots = 0;
-        PCIe_x8_4_Slots = 0;
-        PCIe_x4_4_Slots = 0;
-        PCIe_x1_4_Slots = 0;
-        PCIe_x8_3_Slots = 0;
-        PCIe_x4_3_Slots = 0;
-        M2_4_Slots = 0;
-        M2_5_Slots = 0;
-        M2_3_Slots = 0;
-        rearIO = "No Rear IO";
-        fanHeaders = 0;
-        ARGBHeaders = 0;
-        RGBHeaders = 0;
-        isAIOPumpConnector = false;
-        other = "No Other Specs";
-        USB32_2x2_ = 0;
-        USB31_1_ = 0;
-        USB31_2_ = 0;
-        USB2 = 0;
-        thunderbolt = 0;
+        manufacturer = "No Manufacturer";
+        memoryType = "No Memory Type";
+        memoryMax = 0;
+        maxMemorySpeed = 0;
+        PCIe_x16_Slots = 0;
+        PCIe_x8_Slots = 0;
+        PCIe_x4_Slots = 0;
+        PCIe_x1_Slots = 0;
+        PCI_Slots = 0;
+        color = "No color";
+        isSLIOrCrossFire = false;
+        M2_Slots = 0;
+        miniPCIeSlots = 0;
+        halfMiniPCIeSlots = 0;
+        mSATASlots = 0;
+        onboardEthernet = "No ethernet";
+        USB_2_Headers = 0;
+        USB_32_1_Headers = 0;
+        USB_2_Headers_Single_Port = 0;
+        USB_32_2_Headers = 0;
+        USB_32_2x2_Headers = 0;
+        isECC = false;
+        wirelessNetworking = "No wireless networking";
+        RAIDSupport = false;
     }
 
     /**
-     * Motherboard overloaded constructor
-     *
+     * Overloaded constructor of the Motherboard class
+     * @param nameN
+     * @param partNumberN
+     * @param priceN
      * @param socketTypeN
-     * motherbaord socket type
      * @param chipSetN
-     * motherboard chipset
      * @param formFactorN
-     * motherboard form factor
      * @param memorySlotsN
-     * motherboard memory slots count
      * @param SATAConnectorsN
-     * motherboard sata connectors
-     * @param is24PinPowerConnectorsN
-     * motherboard either 24 pin or 20 pin (true for 24 false for 20)
-     * @param is4PinN
-     * motherboard either 4 pin or 8 pin (true for 4 false for 8)
-     * @param isAAFPConnectorN
-     * motherboard front audio
-     * @param totalMemoryAmountN
-     * motherboard total memory support
-     * @param memorySpeedN
-     * motherboard max memory speed support
-     * @param isMemoryOCN
-     * motherboard allows memory Overclocking
-     * Amount of each type of slot:
-     * @param PCIe_x16_5_SlotsN
-     * @param PCIe_x8_5_SlotsN
-     * @param PCIe_x4_5_SlotsN
-     * @param PCIe_x1_5_SlotsN
-     * @param PCIe_x16_4_SlotsN
-     * @param PCIe_x8_4_SlotsN
-     * @param PCIe_x4_4_SlotsN
-     * @param PCIe_x1_4_SlotsN
-     * @param PCIe_x16_3_SlotsN
-     * @param PCIe_x8_3_SlotsN
-     * @param PCIe_x4_3_SlotsN
-     * @param PCIe_x1_3_SlotsN
-     * @param M2_5_SlotsN
-     * @param M2_4_SlotsN
-     * @param M2_3_SlotsN
-     * @param rearIO_N
-     * Motherboard Rear IO
-     * @param fanHeadersN
-     * Motherboard fan headers
-     * @param ARGBHeadersN
-     * motherboard ARGB headers (Addressable RGB)
-     * @param RGBHeadersN
-     * motherboard RGB headers
-     * @param isAIOPumpConnectorN
-     * motherboard support for AIO
-     * @param otherN
-     * miscellaneous info about motherboard
-     * amount of each type of usb (Thunderbolt included):
-     * @param USB32_2x2_N
-     * @param USB31_1_N
-     * @param USB31_2_N
-     * @param USB2N
-     * @param thunderboltN
+     * @param manufacturerN
+     * @param memoryTypeN
+     * @param PCI_SlotsN
+     * @param colorN
+     * @param memoryMaxN
+     * @param maxMemorySpeedN
+     * @param PCIe_x16_SlotsN
+     * @param PCIe_x8_SlotsN
+     * @param PCIe_x4_SlotsN
+     * @param PCIe_x1_SlotsN
+     * @param isSLIOrCrossFireN
+     * @param M2_SlotsN
+     * @param miniPCIeSlotsN
+     * @param halfMiniPCIeSlotsN
+     * @param mSATASlotsN
+     * @param onboardEthernetN
+     * @param USB_2_HeadersN
+     * @param USB_32_1_HeadersN
+     * @param USB_2_Headers_Single_PortN
+     * @param USB_32_2_HeadersN
+     * @param USB_32_2x2_HeadersN
+     * @param isECCN
+     * @param wirelessNetworkingN
+     * @param RAIDSupportN
      */
-    public Motherboard(String socketTypeN, String chipSetN, String formFactorN, int memorySlotsN, int SATAConnectorsN, boolean is24PinPowerConnectorsN, boolean is4PinN, boolean isAAFPConnectorN, int totalMemoryAmountN, int memorySpeedN, boolean isMemoryOCN, int PCIe_x16_5_SlotsN, int PCIe_x8_5_SlotsN, int PCIe_x4_5_SlotsN, int PCIe_x1_5_SlotsN, int PCIe_x16_4_SlotsN ,int PCIe_x8_4_SlotsN, int PCIe_x4_4_SlotsN, int PCIe_x1_4_SlotsN, int PCIe_x16_3_SlotsN, int PCIe_x8_3_SlotsN, int PCIe_x4_3_SlotsN, int PCIe_x1_3_SlotsN, int M2_5_SlotsN, int M2_4_SlotsN, int M2_3_SlotsN, String rearIO_N, int fanHeadersN, int ARGBHeadersN, int RGBHeadersN, boolean isAIOPumpConnectorN, String otherN, int USB32_2x2_N, int USB31_1_N, int USB31_2_N, int USB2N, int thunderboltN) {
+    public Motherboard(String nameN, String partNumberN, double priceN, String socketTypeN, String chipSetN, String formFactorN, int memorySlotsN, int SATAConnectorsN, String manufacturerN, String memoryTypeN, int PCI_SlotsN, String colorN, int memoryMaxN, int maxMemorySpeedN, int PCIe_x16_SlotsN, int PCIe_x8_SlotsN, int PCIe_x4_SlotsN, int PCIe_x1_SlotsN, boolean isSLIOrCrossFireN, int M2_SlotsN, int miniPCIeSlotsN, int halfMiniPCIeSlotsN, int mSATASlotsN, String onboardEthernetN, int USB_2_HeadersN, int USB_32_1_HeadersN, int USB_2_Headers_Single_PortN, int USB_32_2_HeadersN, int USB_32_2x2_HeadersN, boolean isECCN, String wirelessNetworkingN, boolean RAIDSupportN) {
+        name = nameN;
+        partNumber = partNumberN;
+        price = priceN;
         socketType = socketTypeN;
         chipSet = chipSetN;
         formFactor = formFactorN;
         memorySlots = memorySlotsN;
         SATAConnectors = SATAConnectorsN;
-        is24PinPowerConnectors = is24PinPowerConnectorsN;
-        is4Pin = is4PinN;
-        isAAFPConnector = isAAFPConnectorN;
-        totalMemoryAmount = totalMemoryAmountN;
-        memorySpeed = memorySpeedN;
-        isMemoryOC = isMemoryOCN;
-        PCIe_x16_5_Slots = PCIe_x16_5_SlotsN;
-        PCIe_x8_5_Slots = PCIe_x8_5_SlotsN;
-        PCIe_x4_5_Slots = PCIe_x4_5_SlotsN;
-        PCIe_x1_5_Slots = PCIe_x1_5_SlotsN;
-        PCIe_x16_4_Slots = PCIe_x16_4_SlotsN;
-        PCIe_x8_4_Slots = PCIe_x8_4_SlotsN;
-        PCIe_x4_4_Slots = PCIe_x4_4_SlotsN;
-        PCIe_x1_4_Slots = PCIe_x1_4_SlotsN;
-        PCIe_x16_3_Slots = PCIe_x16_3_SlotsN;
-        PCIe_x8_3_Slots = PCIe_x8_3_SlotsN;
-        PCIe_x4_3_Slots = PCIe_x4_3_SlotsN;
-        PCIe_x1_3_Slots = PCIe_x1_3_SlotsN;
-        M2_4_Slots = M2_4_SlotsN;
-        M2_5_Slots = M2_5_SlotsN;
-        M2_3_Slots = M2_3_SlotsN;
-        rearIO = rearIO_N;
-        fanHeaders = fanHeadersN;
-        ARGBHeaders = ARGBHeadersN;
-        RGBHeaders = RGBHeadersN;
-        isAIOPumpConnector = isAIOPumpConnectorN;
-        other = otherN;
-        USB32_2x2_ = USB32_2x2_N;
-        USB31_1_ = USB31_1_N;
-        USB31_2_ = USB31_2_N;
-        USB2 = USB2N;
-        thunderbolt = thunderboltN;
+        manufacturer = manufacturerN;
+        memoryType = memoryTypeN;
+        memoryMax = memoryMaxN;
+        maxMemorySpeed = maxMemorySpeedN;
+        PCIe_x16_Slots = PCIe_x16_SlotsN;
+        PCIe_x8_Slots = PCIe_x8_SlotsN;
+        PCIe_x4_Slots = PCIe_x4_SlotsN;
+        PCIe_x1_Slots = PCIe_x1_SlotsN;
+        PCI_Slots = PCI_SlotsN;
+        color = colorN;
+        isSLIOrCrossFire = isSLIOrCrossFireN;
+        M2_Slots = M2_SlotsN;
+        miniPCIeSlots = miniPCIeSlotsN;
+        halfMiniPCIeSlots = halfMiniPCIeSlotsN;
+        mSATASlots = mSATASlotsN;
+        onboardEthernet = onboardEthernetN;
+        USB_2_Headers = USB_2_HeadersN;
+        USB_32_1_Headers = USB_32_1_HeadersN;
+        USB_2_Headers_Single_Port = USB_2_Headers_Single_PortN;
+        USB_32_2_Headers = USB_32_2_HeadersN;
+        USB_32_2x2_Headers = USB_32_2x2_HeadersN;
+        isECC = isECCN;
+        wirelessNetworking = wirelessNetworkingN;
+        RAIDSupport = RAIDSupportN;
     }
 
     /**
-     * Determines all the M.2 Slots that exist on the motherboard
-     * @return
-     */
-    private String determineM2_Slots_2DArray() {
-        String M2Slots = "";
-        String[][] M2SlotsArray = {
-                {"M.2 Gen 5 Slots: ", "M.2 Gen 4 Slots: ", "M.2 Gen 3 Slots"},
-                {"" + M2_5_Slots, "" + M2_4_Slots, "" + M2_3_Slots}
-        };
-        for (int i = 0; i < M2SlotsArray.length; i++) {
-            if (Integer.parseInt(M2SlotsArray[i][i]) > 0) {
-                M2Slots = M2Slots + "\n" + M2SlotsArray[i][0] + M2SlotsArray[i][i];
-            }
-        }
-        return M2Slots;
-    }
-    private String determineM2_Slots() {
-        if ((M2_5_Slots > 0) && (M2_4_Slots > 0) && (M2_3_Slots > 0)) {
-            return "M.2 Gen 5 Slots: " + M2_5_Slots + "\nM.2 Gen 4 Slots: " + M2_4_Slots + "\nM.2 Gen 3 Slots: " + M2_3_Slots;
-        }
-        else if ((M2_5_Slots > 0) && (M2_4_Slots > 0) && (M2_3_Slots == 0)) {
-            return "M.2 Gen 5 Slots: " + M2_5_Slots + "\nM.2 Gen 4 Slots: " + M2_4_Slots;
-        }
-        else if ((M2_5_Slots > 0) && (M2_4_Slots == 0) && (M2_3_Slots == 0)) {
-            return "M.2 Gen 5 Slots: " + M2_5_Slots;
-        }
-        else if ((M2_5_Slots > 0) && (M2_4_Slots == 0) && (M2_3_Slots > 0)) {
-            return "M.2 Gen 5 Slots: " +  M2_5_Slots + "\nM.2 Gen 3 Slots: " + M2_4_Slots;
-        }
-        else if ((M2_5_Slots == 0) && (M2_4_Slots > 0) && (M2_3_Slots > 0)) {
-            return "M.2 Gen 4 Slots: " + M2_4_Slots + "\nM.2 Gen 3 Slots: " + M2_3_Slots;
-        }
-        else if ((M2_5_Slots == 0) && (M2_4_Slots > 0) && (M2_3_Slots == 0)) {
-            return "M.2 Gen 4 Slots: " + M2_4_Slots;
-        }
-        else if ((M2_5_Slots == 0) && (M2_4_Slots == 0) && (M2_3_Slots > 0)) {
-            return "M.2 Gen 3 Slots: " + M2_3_Slots;
-        }
-        return "No M.2 Slots";
-    }
-
-    /**
-     * Determines all the PCIe Slots that exist on the motherboard
-     * @return String with all the PCIe slots that exist on the motherboard
-     */
-    private String determinePCIeSlots() {
-        String PCIeSlots = "";
-        String[][] PCIeSlotsArray = {
-                {"PCIe x16 Gen 5 Slots: ", "PCIe x8 Gen 5 Slots: ", "PCIe x4 Gen 5 Slots: ", "PCIe x1 Gen 5 Slots: ", "PCIe x16 Gen 4 Slots: ", "PCIe x8 Gen 4 Slots: ", "PCIe x4 Gen 4 Slots: ", "PCIe x1 Gen 4 Slots: "
-                , "PCIe x16 Gen 3 Slots: ", "PCIe x8 Gen 3 Slots: ", "PCIe x4 Gen 3 Slots: ", "PCIe x1 Gen 3 Slots: "},
-                {"" + PCIe_x16_5_Slots, "" + PCIe_x8_5_Slots, "" + PCIe_x4_5_Slots, "" + PCIe_x1_5_Slots, "" + PCIe_x16_4_Slots, "" + PCIe_x8_4_Slots, "" + PCIe_x4_4_Slots,
-                "" + PCIe_x1_4_Slots, "" + PCIe_x16_3_Slots, "" + PCIe_x8_3_Slots, "" + PCIe_x4_3_Slots, "" + PCIe_x1_3_Slots}
-        };
-        for (int i = 0; i < PCIeSlotsArray.length; i++) {
-            if (Integer.parseInt(PCIeSlotsArray[i][i]) > 0) {
-                PCIeSlots = PCIeSlots + "\n" + PCIeSlotsArray[i][0] + PCIeSlotsArray[i][i];
-            }
-        }
-        return PCIeSlots;
-    }
-
-    /**
-     *
-     * @return
+     * Details of the specific motherboard
+     * @return a string with the details
      */
     public String toString() {
-        String M2_Slots = determineM2_Slots_2DArray();
-        String PCIeSlots = determinePCIeSlots();
-        String specs = "Socket Type: " + socketType + "\nChipset: " + chipSet + "\nForm Factor: " + formFactor + "\nMemory Slots: " + memorySlots
-                + "\nMax Memory: " + totalMemoryAmount + "\nMemory Overclock ability: " + isMemoryOC + "\nSATA Connectors: " + SATAConnectors
-                + "\n" + M2_Slots + "\n" + PCIeSlots + "\n";
-        return specs;
+        return "Manufacturer: " + manufacturer + "\nMotherboard name: " + name + "\nPrice: " + price + "\nPart Number: " + partNumber
+                + "Socket Type: " + socketType + "\nChipset: " + chipSet + "\nForm Factor: " + formFactor + "\nMemory Slots: " + memorySlots
+                + "\nMax Memory: " + memoryMax + "\nMemory Type: " + memoryType + "Max Memory Speed: " + maxMemorySpeed + "\nSATA Connectors: " + SATAConnectors
+                + "\nPCIe x16 Slots: " + PCIe_x16_Slots + "\nPCIe x8 Slots: " + PCIe_x8_Slots + "\nPCIe x4 Slots: " + PCIe_x4_Slots + "\nPCIe x1 Slots: " + PCIe_x1_Slots
+                + "\nPCI Slots: " + PCI_Slots + "\nM.2 Slots: " + M2_Slots + "\nMini-PCIe Slots: " + miniPCIeSlots + "\nHalf Mini-PCIe Slots: " + halfMiniPCIeSlots
+                + "\nmSATA Slots: " + mSATASlots + "\nSATA Connectors: " + SATAConnectors + "\nOnboard Ethernet: " + onboardEthernet + "\nUSB 2.0 Headers: " + USB_2_Headers
+                + "\nUSB 2.0 Headers (Single Port): " + USB_2_Headers_Single_Port + "\nUSB 3.2 Gen 1 Headers: " + USB_32_1_Headers + "\nUSB 3.2 Gen 2 Headers: " + USB_32_2_Headers
+                + "\nUSB 3.2 Gen 2x2 Headers: " + USB_32_2x2_Headers + "\nSupports ECC: " + isECC + "\nWireless Networking: " + wirelessNetworking + "\nRAID Support" + RAIDSupport;
     }
 }
