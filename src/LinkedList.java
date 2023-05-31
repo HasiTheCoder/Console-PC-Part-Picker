@@ -46,6 +46,9 @@ public class LinkedList {
             head = newNode;
         }
     }
+    public boolean isEmpty() {
+        return head == null;
+    }
     public void remove(String data) {
         if (head == null) {
             return; // List is empty, nothing to remove
