@@ -1,33 +1,51 @@
 import java.text.NumberFormat;
-
-import static java.lang.String.format;
-
 public class CPU extends PCComponent{
+    //Amount of cores in the CPU
     int coreCount;
+    //Performance Cores' Clock Speed in Ghz
     double performanceCoreClock;
+    //Performance Cores' Boost Clock Speed in GHZ
     double performanceBoostClock;
+    //The max TDP(Thermal Design Power) of the CPU in watts
     int TDP;
+    //The series of the CPU (Ryzen, Core, Celeron, Pentium, Athlon, etc.)
     String series;
+    //The microarchitecture the CPU is built upon
     String microarchitecture;
+    //The name of the core family that the CPU belongs to
     String coreFamily;
+    //The type of socket that the CPU supports
     String socketType;
+    //The type of integrated graphics supported if any at all
     String integratedGraphics;
+    //Whether the CPU supports ECC or not (Error Correcting Code)
     boolean isECC;
+    //Does it include a cooler
     boolean includesCooler;
+    //How is the CPU packaged
     String packaging;
+    //The Performance L1 Cache of the CPU
     String performanceL1Cache;
+    //The Efficiency L1 Cache of the CPU
     String efficiencyL1Cache;
+    //The Performance L2 Cache of the CPU
     String performanceL2Cache;
+    //The efficiency L2 Cache of the CPU
     String efficiencyL2Cache;
+    //The L3 Cache of the CPU
     String L3Cache;
+    //The lithography used to build the CPU
     String lithography;
+    //Does it include a CPU Cooler
     boolean includesCPUCooler;
+    //Does it support simultaneous multithreading
     boolean isSimultaneousMultiThreading;
+
+    /**
+     * Base Constructor of the CPU object
+     */
     public CPU() {
-        manufacturer = "No manufacturer";
-        name = "No name";
-        partNumber = "No part number";
-        price = 0;
+        super();
         coreCount = 0;
         performanceCoreClock = 0;
         performanceBoostClock = 0;
@@ -49,6 +67,34 @@ public class CPU extends PCComponent{
         includesCPUCooler = false;
         isSimultaneousMultiThreading = false;
     }
+
+    /**
+     * The overloaded constructor of the CPU object
+     * @param manufacturerN
+     * @param nameN
+     * @param partNumberN
+     * @param priceN
+     * @param coreCountN
+     * @param performanceCoreClockN
+     * @param performanceBoostClockN
+     * @param TDPn
+     * @param seriesN
+     * @param microarchitectureN
+     * @param coreFamilyN
+     * @param socketTypeN
+     * @param integratedGraphicsN
+     * @param isECCn
+     * @param includesCoolerN
+     * @param packagingN
+     * @param performanceL1CacheN
+     * @param L3CacheN
+     * @param lithographyN
+     * @param includesCPUCoolerN
+     * @param isSimultaneousMultiThreadingN
+     * @param efficiencyL1CacheN
+     * @param performanceL2CacheN
+     * @param efficiencyL2CacheN
+     */
     public CPU(
             String manufacturerN,
             String nameN,
@@ -74,10 +120,7 @@ public class CPU extends PCComponent{
             String efficiencyL1CacheN,
             String performanceL2CacheN,
             String efficiencyL2CacheN) {
-        manufacturer = manufacturerN;
-        name = nameN;
-        partNumber = partNumberN;
-        price = priceN;
+        super(manufacturerN, partNumberN, nameN, priceN);
         coreCount = coreCountN;
         performanceCoreClock = performanceCoreClockN;
         performanceBoostClock = performanceBoostClockN;
@@ -123,6 +166,26 @@ public class CPU extends PCComponent{
                         Lithography: %s
                         includes CPU Cooler: %s
                         Simultaneous Multithreading: %s""",
-                manufacturer, name, partNumber, price, coreCount, performanceCoreClock, performanceBoostClock, TDP, series, microarchitecture, coreFamily, socketType, integratedGraphics, isECC, includesCooler, packaging, performanceL1Cache, L3Cache, lithography, includesCPUCooler, isSimultaneousMultiThreading);
+                manufacturer,
+                name,
+                partNumber,
+                money.format(price),
+                coreCount,
+                performanceCoreClock,
+                performanceBoostClock,
+                TDP,
+                series,
+                microarchitecture,
+                coreFamily,
+                socketType,
+                integratedGraphics,
+                isECC,
+                includesCooler,
+                packaging,
+                performanceL1Cache,
+                L3Cache,
+                lithography,
+                includesCPUCooler,
+                isSimultaneousMultiThreading);
     }
 }

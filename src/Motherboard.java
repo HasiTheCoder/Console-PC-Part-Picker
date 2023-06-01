@@ -41,7 +41,7 @@ public class Motherboard extends PCComponent{
     int halfMiniPCIeSlots;
     //Number of mSATA slots
     int mSATASlots;
-    //What is the onboard ethernet of the motherboard
+    //What are the details of the onboard ethernet of the motherboard
     String onboardEthernet;
     //Amount of USB 2.0 Headers
     int USB_2_Headers;
@@ -53,11 +53,11 @@ public class Motherboard extends PCComponent{
     int USB_32_2_Headers;
     //Amount of USB 3.2 Gen 2x2 Headers
     int USB_32_2x2_Headers;
-    //Does the motherboard support ECC
+    //Does the motherboard support ECC (Error Correcting Code)
     boolean isECC;
     //What is the wireless networking on the motherboard
     String wirelessNetworking;
-    //does it support RAID
+    //does it support RAID (Redundant Array of Independent Disks)
     boolean RAIDSupport;
 
     /**

@@ -1,4 +1,4 @@
-public class PCComponent {
+public abstract class PCComponent {
     String partNumber;
     String name;
     double price;

@@ -10,6 +10,7 @@
       <change beforePath="$PROJECT_DIR$/src/CPUCooler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CPUCooler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GPU.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GPU.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Motherboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Motherboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PCComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PCComponent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
