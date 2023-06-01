@@ -1,7 +1,11 @@
+import java.text.NumberFormat;
+
+import static java.lang.String.format;
+
 public class CPU extends PCComponent{
     int coreCount;
-    int performanceCoreClock;
-    int performanceBoostClock;
+    double performanceCoreClock;
+    double performanceBoostClock;
     int TDP;
     String series;
     String microarchitecture;
@@ -37,12 +41,39 @@ public class CPU extends PCComponent{
         includesCooler = false;
         packaging = "No packaging";
         performanceL1Cache = "No Cache";
+        efficiencyL1Cache = "No cache";
+        performanceL2Cache = "No cache";
+        efficiencyL2Cache = "no cache";
         L3Cache = "No cache";
         lithography = "No lithography";
         includesCPUCooler = false;
         isSimultaneousMultiThreading = false;
     }
-    public CPU(String manufacturerN, String nameN, String partNumberN, double priceN, int coreCountN, int performanceCoreClockN, int performanceBoostClockN, int TDPn, String seriesN, String microarchitectureN, String coreFamilyN, String socketTypeN, String integratedGraphicsN, boolean isECCn, boolean includesCoolerN, String packagingN, String performanceL1CacheN, String L3CacheN, String lithographyN, boolean includesCPUCoolerN, boolean isSimultaneousMultiThreadingN) {
+    public CPU(
+            String manufacturerN,
+            String nameN,
+            String partNumberN,
+            double priceN,
+            int coreCountN,
+            int performanceCoreClockN,
+            int performanceBoostClockN,
+            int TDPn,
+            String seriesN,
+            String microarchitectureN,
+            String coreFamilyN,
+            String socketTypeN,
+            String integratedGraphicsN,
+            boolean isECCn,
+            boolean includesCoolerN,
+            String packagingN,
+            String performanceL1CacheN,
+            String L3CacheN,
+            String lithographyN,
+            boolean includesCPUCoolerN,
+            boolean isSimultaneousMultiThreadingN,
+            String efficiencyL1CacheN,
+            String performanceL2CacheN,
+            String efficiencyL2CacheN) {
         manufacturer = manufacturerN;
         name = nameN;
         partNumber = partNumberN;
@@ -60,16 +91,38 @@ public class CPU extends PCComponent{
         includesCooler = includesCoolerN;
         packaging = packagingN;
         performanceL1Cache = performanceL1CacheN;
+        efficiencyL1Cache = efficiencyL1CacheN;
+        performanceL2Cache = performanceL2CacheN;
+        efficiencyL2Cache = efficiencyL2CacheN;
         L3Cache = L3CacheN;
         lithography = lithographyN;
         includesCPUCooler = includesCPUCoolerN;
         isSimultaneousMultiThreading = isSimultaneousMultiThreadingN;
     }
     public String toString() {
-        return "Manufacturer: " + manufacturer + "\nName: " + name + "\nPart Number: " + partNumber + "\nPrice: " + price + "\nCore Count: " + coreCount
-                + "\nPerformance Core Clock: " + performanceCoreClock + "\nPerformance Boost Clock: " + performanceBoostClock + "\nTDP: " + TDP + "\nSeries: " + series
-                + "\nMicroarchitecture: " + microarchitecture + "\nCore Family: " + coreFamily + "\nSocket Type: " + socketType + "\nIntegrated Graphics: " + integratedGraphics
-                + "\nECC Support: " + isECC + "\nIncludes Cooler: " + includesCooler + "\nPackaging: " + packaging + "\nPerformance L1 Cache: " + performanceL1Cache
-                + "\nL3 Cache: " + L3Cache + "\nLithography: " + lithography + "\nincludesCPUCooler: " + includesCPUCooler + "\nSimultaneous Multithreading: " + isSimultaneousMultiThreading;
+        NumberFormat money = NumberFormat.getCurrencyInstance();
+        return String.format("""
+                        Manufacturer: %s
+                        Name: %s
+                        Part Number: %s
+                        Price: %s
+                        Core Count: %s
+                        Performance Core Clock(GHz): %s
+                        Performance Boost Clock(GHz): %s
+                        TDP(Watts): %s
+                        Series: %s
+                        Microarchitecture: %s
+                        Core Family: %s
+                        Socket Type: %s
+                        Integrated Graphics: %s
+                        ECC Support: %s
+                        Includes Cooler: %s
+                        Packaging: %s
+                        Performance L1 Cache: %s
+                        L3 Cache: %s
+                        Lithography: %s
+                        includes CPU Cooler: %s
+                        Simultaneous Multithreading: %s""",
+                manufacturer, name, partNumber, price, coreCount, performanceCoreClock, performanceBoostClock, TDP, series, microarchitecture, coreFamily, socketType, integratedGraphics, isECC, includesCooler, packaging, performanceL1Cache, L3Cache, lithography, includesCPUCooler, isSimultaneousMultiThreading);
     }
 }

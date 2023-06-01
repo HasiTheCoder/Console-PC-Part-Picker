@@ -174,13 +174,72 @@ public class Motherboard extends PCComponent{
      * @return a string with the details
      */
     public String toString() {
-        return "Manufacturer: " + manufacturer + "\nMotherboard name: " + name + "\nPrice: " + price + "\nPart Number: " + partNumber
-                + "Socket Type: " + socketType + "\nChipset: " + chipSet + "\nForm Factor: " + formFactor + "\nMemory Slots: " + memorySlots
-                + "\nMax Memory: " + memoryMax + "\nMemory Type: " + memoryType + "Max Memory Speed: " + maxMemorySpeed + "\nSATA Connectors: " + SATAConnectors
-                + "\nPCIe x16 Slots: " + PCIe_x16_Slots + "\nPCIe x8 Slots: " + PCIe_x8_Slots + "\nPCIe x4 Slots: " + PCIe_x4_Slots + "\nPCIe x1 Slots: " + PCIe_x1_Slots
-                + "\nPCI Slots: " + PCI_Slots + "\nM.2 Slots: " + M2_Slots + "\nMini-PCIe Slots: " + miniPCIeSlots + "\nHalf Mini-PCIe Slots: " + halfMiniPCIeSlots
-                + "\nmSATA Slots: " + mSATASlots + "\nSATA Connectors: " + SATAConnectors + "\nOnboard Ethernet: " + onboardEthernet + "\nUSB 2.0 Headers: " + USB_2_Headers
-                + "\nUSB 2.0 Headers (Single Port): " + USB_2_Headers_Single_Port + "\nUSB 3.2 Gen 1 Headers: " + USB_32_1_Headers + "\nUSB 3.2 Gen 2 Headers: " + USB_32_2_Headers
-                + "\nUSB 3.2 Gen 2x2 Headers: " + USB_32_2x2_Headers + "\nSupports ECC: " + isECC + "\nWireless Networking: " + wirelessNetworking + "\nRAID Support" + RAIDSupport;
+        return String.format("""
+                        Manufacturer: %s
+                        Name: %s
+                        Part Number: %s
+                        Price: %s
+                        Color: %s
+                        Socket Type: %s
+                        Chip Set: %s
+                        Form Factor: %s
+                        Memory Slots: %s
+                        Memory Type: %s
+                        Max Memory: %s
+                        Max Memory Speed: %s
+                        PCIe x16 Slots: %s
+                        PCIe x8 Slots: %s
+                        PCIe x4 Slots: %s
+                        PCIe x1 Slots: %s
+                        PCI Slots: %s
+                        SLI/CrossFire Support: %s
+                        SATA Connectors: %s
+                        M.2 Slots: %s
+                        Mini PCIe Slots: %s
+                        Half Mini PCIe Slots: %s
+                        mSATA Slots: %s
+                        Onboard Ethernet: %s
+                        USB 2.0 Headers: %s
+                        USB 2.0 Headers (Single Port): %s
+                        USB 3.2 Gen 1 Headers: %s
+                        USB 3.2 Gen 2 Headers: %s
+                        USB 3.2 Gen 2x2 Headers: %s
+                        ECC Support: %s
+                        Wireless Networking: %s
+                        Raid Support: %s
+                        
+                        """,
+                manufacturer,
+                name,
+                partNumber,
+                price,
+                color,
+                socketType,
+                chipSet,
+                formFactor,
+                memorySlots,
+                memoryType,
+                memoryMax,
+                maxMemorySpeed,
+                PCIe_x16_Slots,
+                PCIe_x8_Slots,
+                PCIe_x4_Slots,
+                PCIe_x1_Slots,
+                PCI_Slots,
+                isSLIOrCrossFire,
+                SATAConnectors,
+                M2_Slots,
+                miniPCIeSlots,
+                halfMiniPCIeSlots,
+                mSATASlots,
+                onboardEthernet,
+                USB_2_Headers,
+                USB_2_Headers_Single_Port,
+                USB_32_1_Headers,
+                USB_32_2_Headers,
+                USB_32_2x2_Headers,
+                isECC,
+                wirelessNetworking,
+                RAIDSupport);
     }
 }
