@@ -174,11 +174,8 @@ public class Motherboard extends PCComponent{
      * @return a string with the details
      */
     public String toString() {
-        return String.format("""
-                        Manufacturer: %s
-                        Name: %s
-                        Part Number: %s
-                        Price: %s
+        return super.toString() + String.format("""
+                        
                         Color: %s
                         Socket Type: %s
                         Chip Set: %s
@@ -209,10 +206,6 @@ public class Motherboard extends PCComponent{
                         Raid Support: %s
                         
                         """,
-                manufacturer,
-                name,
-                partNumber,
-                price,
                 color,
                 socketType,
                 chipSet,

@@ -1,5 +1,5 @@
 public class MemoryKits extends PCComponent{
-    //The speed of the memory
+    //The speed of the memory in MHz with which generation
     private String memorySpeed;
     //The form factor of the memory (Number of pins)
     private String formFactor;
@@ -87,5 +87,38 @@ public class MemoryKits extends PCComponent{
         timing = timingN;
         ECC_Registered = ECC_RegisteredN;
         isHeatSpreader = isHeatSpreaderN;
+    }
+
+    /**
+     * The info of the MemoryKits object
+     * @return
+     * String with the info of the MemoryKits object
+     */
+    public String toString() {
+        return super.toString() + String.format("""
+                        
+                        Memory Speed(MHz): %s
+                        Form Factor: %s
+                        Modules: %s
+                        Price/GB: %s
+                        Color: %s
+                        First Word Latency(ns): %s
+                        CAS Latency: %s
+                        Voltage(V): %s
+                        Timing: %s
+                        ECC/Registered: %s
+                        Heat Spreader: %s
+                        """,
+                memorySpeed,
+                formFactor,
+                modules,
+                pricePerGB,
+                color,
+                firstWordLatency,
+                CASLatency,
+                voltage,
+                timing,
+                ECC_Registered,
+                isHeatSpreader);
     }
 }

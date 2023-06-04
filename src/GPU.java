@@ -1,22 +1,43 @@
-import java.text.NumberFormat;
-
 public class GPU extends PCComponent{
+    //The chipset of the GPU
     private String chipSet;
+    //The amount of video memory on the GPU
     private int vMemory;
+    //The type of video memory on the GPU
     private String vMemoryType;
+    //The core clock of the GPU in MHz
     private int coreClock;
+    //The boost clock of the GPU in MHz
     private int boostClock;
+    //The effective memory clock of the GPU in MHz
+    private int effectiveMemoryClock;
+    //The interface of the GPU
     private String GPUInterface;
+    //The color of the GPU
     private String color;
+    //The frame sync of the GPU
     private String frameSync;
+    //The length of the GPU in mm
     private int length;
+    //The TDP of the GPU in watts
     private int TDP;
+    //The case expansion slot width of the GPU in mm
     private int caseExpansionSlotWidth;
+    //The total slot width of the GPU in mm
     private int totalSlotWidth;
+    //The cooling of the GPU
     private String cooling;
+    //The external power of the GPU
     private String externalPower;
-    private int HDMI_21a_Outputs;
-    private int displayPort_14a_Outputs;
+    //The number of HDMI outputs on the GPU and type of HDMI if applicable
+    private String HDMIOutputs;
+    //The number of DisplayPort outputs on the GPU and type of DisplayPort if applicable
+    private String displayPortOutputs;
+
+    /**
+     * The default constructor of the GPU object
+     */
+
     public GPU() {
         super();
         chipSet = "No chipset";
@@ -24,6 +45,7 @@ public class GPU extends PCComponent{
         vMemoryType = "No memory type";
         coreClock = 0;
         boostClock = 0;
+        effectiveMemoryClock = 0;
         GPUInterface = "No interface";
         color = "No color";
         frameSync = "No frame sync";
@@ -33,9 +55,34 @@ public class GPU extends PCComponent{
         totalSlotWidth = 0;
         cooling = "No cooling";
         externalPower = "No external power";
-        HDMI_21a_Outputs = 0;
-        displayPort_14a_Outputs = 0;
+        HDMIOutputs = "0";
+        displayPortOutputs = "0";
     }
+
+    /**
+     * The overloaded constructor of the GPU object
+     * @param manufacturerN
+     * @param partNumberN
+     * @param nameN
+     * @param priceN
+     * @param chipSetN
+     * @param vMemoryN
+     * @param vMemoryTypeN
+     * @param coreClockN
+     * @param boostClockN
+     * @param effectiveMemoryClockN
+     * @param GPUInterfaceN
+     * @param colorN
+     * @param frameSyncN
+     * @param lengthN
+     * @param TDPn
+     * @param caseExpansionSlotWidthN
+     * @param totalSlotWidthN
+     * @param coolingN
+     * @param externalPowerN
+     * @param HDMIOutputsN
+     * @param displayPortOutputsN
+     */
     public GPU(
             String manufacturerN,
             String partNumberN,
@@ -46,6 +93,7 @@ public class GPU extends PCComponent{
             String vMemoryTypeN,
             int coreClockN,
             int boostClockN,
+            int effectiveMemoryClockN,
             String GPUInterfaceN,
             String colorN,
             String frameSyncN,
@@ -55,14 +103,15 @@ public class GPU extends PCComponent{
             int totalSlotWidthN,
             String coolingN,
             String externalPowerN,
-            int HDMI_21a_OutputsN,
-            int displayPort_14a_OutputsN) {
+            String HDMIOutputsN,
+            String displayPortOutputsN) {
         super(manufacturerN, partNumberN, nameN, priceN);
         chipSet = chipSetN;
         vMemory = vMemoryN;
         vMemoryType = vMemoryTypeN;
         coreClock = coreClockN;
         boostClock = boostClockN;
+        effectiveMemoryClock = effectiveMemoryClockN;
         GPUInterface = GPUInterfaceN;
         color = colorN;
         frameSync = frameSyncN;
@@ -72,21 +121,24 @@ public class GPU extends PCComponent{
         totalSlotWidth = totalSlotWidthN;
         cooling = coolingN;
         externalPower = externalPowerN;
-        HDMI_21a_Outputs = HDMI_21a_OutputsN;
-        displayPort_14a_Outputs = displayPort_14a_OutputsN;
+        HDMIOutputs = HDMIOutputsN;
+        displayPortOutputs = displayPortOutputsN;
     }
+
+    /**
+     * The info of the GPU object
+     * @return
+     * String with the info of the GPU object
+     */
     public String toString() {
-        NumberFormat money = NumberFormat.getCurrencyInstance();
-        return String.format("""
-                        Manufacturer: %s
-                        Name: %s
-                        Part Number: %s
-                        Price: %s
-                        chipSet: %s
+        return super.toString() + String.format("""
+                       
+                        ChipSet: %s
                         Video Memory: %s
                         Video Memory Type: %s
                         Core Clock(GHz): %s
                         Boost Clock(GHz): %s
+                        Effective Memory Clock(MHz): %s
                         Interface: %s
                         Color: %s
                         Frame Sync: %s
@@ -98,15 +150,12 @@ public class GPU extends PCComponent{
                         External Power: %s
                         HDMI 2.1a Outputs: %s
                         DisplayPort 1.4a Outputs: %s""",
-                manufacturer,
-                name,
-                partNumber,
-                money.format(price),
                 chipSet,
                 vMemory,
                 vMemoryType,
                 coreClock,
                 boostClock,
+                effectiveMemoryClock,
                 GPUInterface,
                 color,
                 frameSync,
@@ -116,8 +165,8 @@ public class GPU extends PCComponent{
                 totalSlotWidth,
                 cooling,
                 externalPower,
-                HDMI_21a_Outputs,
-                displayPort_14a_Outputs);
+                HDMIOutputs,
+                displayPortOutputs);
     }
 
 }

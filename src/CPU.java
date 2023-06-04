@@ -1,4 +1,3 @@
-import java.text.NumberFormat;
 public class CPU extends PCComponent{
     //Amount of cores in the CPU
     int coreCount;
@@ -18,6 +17,8 @@ public class CPU extends PCComponent{
     String socketType;
     //The type of integrated graphics supported if any at all
     String integratedGraphics;
+    //The max memory supported by the CPU in GB (might be N/A)
+    String maxMemorySupported;
     //Whether the CPU supports ECC or not (Error Correcting Code)
     boolean isECC;
     //Does it include a cooler
@@ -55,6 +56,7 @@ public class CPU extends PCComponent{
         coreFamily = "No core family";
         socketType = "No socket type";
         integratedGraphics = "No integrated graphics";
+        maxMemorySupported = "0";
         isECC = false;
         includesCooler = false;
         packaging = "No packaging";
@@ -83,6 +85,7 @@ public class CPU extends PCComponent{
      * @param coreFamilyN
      * @param socketTypeN
      * @param integratedGraphicsN
+     * @param maxMemorySupportedN
      * @param isECCn
      * @param includesCoolerN
      * @param packagingN
@@ -109,6 +112,7 @@ public class CPU extends PCComponent{
             String coreFamilyN,
             String socketTypeN,
             String integratedGraphicsN,
+            String maxMemorySupportedN,
             boolean isECCn,
             boolean includesCoolerN,
             String packagingN,
@@ -130,6 +134,7 @@ public class CPU extends PCComponent{
         coreFamily = coreFamilyN;
         socketType = socketTypeN;
         integratedGraphics = integratedGraphicsN;
+        maxMemorySupported = maxMemorySupportedN;
         isECC = isECCn;
         includesCooler = includesCoolerN;
         packaging = packagingN;
@@ -142,13 +147,15 @@ public class CPU extends PCComponent{
         includesCPUCooler = includesCPUCoolerN;
         isSimultaneousMultiThreading = isSimultaneousMultiThreadingN;
     }
+
+    /**
+     * The info of the CPU object
+     * @return
+     * String with the info of the CPU object
+     */
     public String toString() {
-        NumberFormat money = NumberFormat.getCurrencyInstance();
-        return String.format("""
-                        Manufacturer: %s
-                        Name: %s
-                        Part Number: %s
-                        Price: %s
+        return super.toString() + String.format("""
+                        
                         Core Count: %s
                         Performance Core Clock(GHz): %s
                         Performance Boost Clock(GHz): %s
@@ -158,6 +165,7 @@ public class CPU extends PCComponent{
                         Core Family: %s
                         Socket Type: %s
                         Integrated Graphics: %s
+                        Max Memory Supported(GB): %s
                         ECC Support: %s
                         Includes Cooler: %s
                         Packaging: %s
@@ -166,10 +174,6 @@ public class CPU extends PCComponent{
                         Lithography: %s
                         includes CPU Cooler: %s
                         Simultaneous Multithreading: %s""",
-                manufacturer,
-                name,
-                partNumber,
-                money.format(price),
                 coreCount,
                 performanceCoreClock,
                 performanceBoostClock,
@@ -179,6 +183,7 @@ public class CPU extends PCComponent{
                 coreFamily,
                 socketType,
                 integratedGraphics,
+                maxMemorySupported,
                 isECC,
                 includesCooler,
                 packaging,

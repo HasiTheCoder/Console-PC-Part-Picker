@@ -1,12 +1,22 @@
 public class CPUCooler extends PCComponent{
-    //The model of the
+    //The model of the CPU cooler
     String model;
+    //The fan RPM of the CPU cooler
     String fanRPM;
+    //The noise level of the CPU cooler
     String noiseLevel;
+    //The color of the CPU cooler
     String color;
+    //The CPU socket of the CPU cooler
     String[] CPUSocket;
+    //If the CPU cooler is water cooled and the size of the radiator
     String waterCooled;
+    //If the CPU cooler is fan-less
     String fanless;
+
+    /**
+     * The default constructor of the CPUCooler object
+     */
     public CPUCooler() {
         super();
         model = "no model";
@@ -17,6 +27,21 @@ public class CPUCooler extends PCComponent{
         waterCooled = "not water cooled";
         fanless = "not fan-less";
     }
+
+    /**
+     * The overloaded constructor of the CPUCooler object
+     * @param manufacturerN
+     * @param nameN
+     * @param partNumberN
+     * @param priceN
+     * @param modelN
+     * @param fanRPMn
+     * @param noiseLevelN
+     * @param colorN
+     * @param CPUSocketN
+     * @param waterCooledN
+     * @param fanlessN
+     */
     public CPUCooler(String manufacturerN, String nameN, String partNumberN, double priceN, String modelN, String fanRPMn, String noiseLevelN, String colorN, String[] CPUSocketN, String waterCooledN, String fanlessN) {
         super(manufacturerN, partNumberN, nameN, priceN);
         model = modelN;
@@ -28,16 +53,15 @@ public class CPUCooler extends PCComponent{
         fanless = fanlessN;
 
     }
+
+    /**
+     * The info of the CPUCooler object
+     * @return
+     * String of the info of the CPUCooler object
+     */
     public String toString() {
-        String CPUSockets = "";
-        for (int i = 0; i < CPUSocket.length; i++) {
-            CPUSockets += "\n" + CPUSocket[i];
-        }
-        return String.format("""
-                Manufacturer: %s
-                Name: %s
-                Part Number: %s
-                Price: %s
+        return super.toString() + String.format("""
+                
                 Model: %s
                 Fan RPM: %s
                 Noise Level: %s
@@ -45,16 +69,28 @@ public class CPUCooler extends PCComponent{
                 CPU Socket: %s
                 Water Cooled: %s
                 Fan-less: %s
-                """, manufacturer,
-                name,
-                partNumber,
-                price,
+                """,
                 model,
                 fanRPM,
                 noiseLevel,
                 color,
-                CPUSockets,
+                convertArrayToString(CPUSocket),
                 waterCooled,
                 fanless);
+    }
+
+    /**
+     * Convert the array of strings to one string
+     * @param array
+     * @return
+     * String of the array of strings
+     */
+    private String convertArrayToString(String[] array) {
+        String result = "";
+        for (int i = 0; i < array.length; i++) {
+            result += array[i];
+            result += "\n";
+        }
+        return result;
     }
 }
