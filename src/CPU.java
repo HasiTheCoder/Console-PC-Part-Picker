@@ -40,7 +40,7 @@ public class CPU extends PCComponent{
     //Does it include a CPU Cooler
     boolean includesCPUCooler;
     //Does it support simultaneous multithreading
-    boolean isSimultaneousMultiThreading;
+    String isSimultaneousMultiThreading;
 
     /**
      * Base Constructor of the CPU object
@@ -67,7 +67,7 @@ public class CPU extends PCComponent{
         L3Cache = "No cache";
         lithography = "No lithography";
         includesCPUCooler = false;
-        isSimultaneousMultiThreading = false;
+        isSimultaneousMultiThreading = "No";
     }
 
     /**
@@ -120,7 +120,7 @@ public class CPU extends PCComponent{
             String L3CacheN,
             String lithographyN,
             boolean includesCPUCoolerN,
-            boolean isSimultaneousMultiThreadingN,
+            String isSimultaneousMultiThreadingN,
             String efficiencyL1CacheN,
             String performanceL2CacheN,
             String efficiencyL2CacheN) {
