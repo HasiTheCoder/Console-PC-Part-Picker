@@ -134,7 +134,38 @@ public class Motherboard extends PCComponent{
      * @param wirelessNetworkingN
      * @param RAIDSupportN
      */
-    public Motherboard(String nameN, String partNumberN, double priceN, String socketTypeN, String chipSetN, String formFactorN, int memorySlotsN, int SATAConnectorsN, String manufacturerN, String memoryTypeN, int PCI_SlotsN, String colorN, int memoryMaxN, int maxMemorySpeedN, int PCIe_x16_SlotsN, int PCIe_x8_SlotsN, int PCIe_x4_SlotsN, int PCIe_x1_SlotsN, boolean isSLIOrCrossFireN, int M2_SlotsN, int miniPCIeSlotsN, int halfMiniPCIeSlotsN, int mSATASlotsN, String onboardEthernetN, int USB_2_HeadersN, int USB_32_1_HeadersN, int USB_2_Headers_Single_PortN, int USB_32_2_HeadersN, int USB_32_2x2_HeadersN, boolean isECCN, String wirelessNetworkingN, boolean RAIDSupportN) {
+    public Motherboard(String nameN,
+                       String partNumberN,
+                       double priceN,
+                       String socketTypeN,
+                       String chipSetN,
+                       String formFactorN,
+                       int memorySlotsN,
+                       int SATAConnectorsN,
+                       String manufacturerN,
+                       String memoryTypeN,
+                       int PCI_SlotsN,
+                       String colorN,
+                       int memoryMaxN,
+                       int maxMemorySpeedN,
+                       int PCIe_x16_SlotsN,
+                       int PCIe_x8_SlotsN,
+                       int PCIe_x4_SlotsN,
+                       int PCIe_x1_SlotsN,
+                       boolean isSLIOrCrossFireN,
+                       int M2_SlotsN,
+                       int miniPCIeSlotsN,
+                       int halfMiniPCIeSlotsN,
+                       int mSATASlotsN,
+                       String onboardEthernetN,
+                       int USB_2_HeadersN,
+                       int USB_32_1_HeadersN,
+                       int USB_2_Headers_Single_PortN,
+                       int USB_32_2_HeadersN,
+                       int USB_32_2x2_HeadersN,
+                       boolean isECCN,
+                       String wirelessNetworkingN,
+                       boolean RAIDSupportN) {
         name = nameN;
         partNumber = partNumberN;
         price = priceN;

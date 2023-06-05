@@ -10,7 +10,7 @@ public class MemoryKits extends PCComponent{
     //The color of the module
     private String color;
     //The first word latency in ns
-    private int firstWordLatency;
+    private double firstWordLatency;
     //The CAS latency
     private int CASLatency;
     //The voltage of the memory
@@ -66,9 +66,9 @@ public class MemoryKits extends PCComponent{
             String memorySpeedN,
             String formFactorN,
             String modulesN,
-            int pricePerGBn,
+            double pricePerGBn,
             String colorN,
-            int firstWordLatencyN,
+            double firstWordLatencyN,
             int CASLatencyN,
             double voltageN,
             String timingN,

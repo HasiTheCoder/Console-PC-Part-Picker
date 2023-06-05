@@ -1,3 +1,5 @@
+import com.google.gson.Gson;
+
 public class ReferenceData {
     public Case[] Cases;
     public CaseFans[] CaseFans;
@@ -9,6 +11,7 @@ public class ReferenceData {
     public MemoryKits[] MemoryKits;
     public Storage[] Storages;
     public ReferenceData() {
+        /*
         Cases = new Case[0];
         CaseFans = new CaseFans[0];
         CPUs = new CPU[0];
@@ -18,10 +21,9 @@ public class ReferenceData {
         PowerSupplies = new PowerSupply[0];
         MemoryKits = new MemoryKits[0];
         Storages = new Storage[0];
+        */
     }
-    public void readJSON(String path) {
 
-    }
     //TODO:
     //Create one method to read one json file with all the reference data split into sections by type
 }

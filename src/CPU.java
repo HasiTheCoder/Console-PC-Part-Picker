@@ -35,8 +35,8 @@ public class CPU extends PCComponent{
     String efficiencyL2Cache;
     //The L3 Cache of the CPU
     String L3Cache;
-    //The lithography used to build the CPU
-    String lithography;
+    //The lithography used to build the CPU in nm
+    int lithography;
     //Does it include a CPU Cooler
     boolean includesCPUCooler;
     //Does it support simultaneous multithreading
@@ -65,7 +65,7 @@ public class CPU extends PCComponent{
         performanceL2Cache = "No cache";
         efficiencyL2Cache = "no cache";
         L3Cache = "No cache";
-        lithography = "No lithography";
+        lithography = 0;
         includesCPUCooler = false;
         isSimultaneousMultiThreading = "No";
     }
@@ -104,8 +104,8 @@ public class CPU extends PCComponent{
             String partNumberN,
             double priceN,
             int coreCountN,
-            int performanceCoreClockN,
-            int performanceBoostClockN,
+            double performanceCoreClockN,
+            double performanceBoostClockN,
             int TDPn,
             String seriesN,
             String microarchitectureN,
@@ -118,7 +118,7 @@ public class CPU extends PCComponent{
             String packagingN,
             String performanceL1CacheN,
             String L3CacheN,
-            String lithographyN,
+            int lithographyN,
             boolean includesCPUCoolerN,
             String isSimultaneousMultiThreadingN,
             String efficiencyL1CacheN,

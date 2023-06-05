@@ -3,7 +3,7 @@ public class Storage extends PCComponent {
     //The capacity of the storage
     private String capacity;
     //The price per GB of the storage
-    private String pricePerGB;
+    private double pricePerGB;
     //The type of the storage
     private String type;
     //The cache of the storage in MB
@@ -21,7 +21,7 @@ public class Storage extends PCComponent {
     public Storage() {
         super();
         capacity = "No capacity";
-        pricePerGB = "No price per GB";
+        pricePerGB = 0;
         type = "No type";
         cache = 0;
         formFactor = "No form factor";
@@ -49,7 +49,7 @@ public class Storage extends PCComponent {
         String partNumber,
         double price,
         String capacityN,
-        String pricePerGBN,
+        double pricePerGBN,
         String typeN,
         int cacheN,
         String formFactorN,
