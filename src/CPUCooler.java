@@ -1,24 +1,26 @@
 public class CPUCooler extends PCComponent{
+    private PCComponent[][] compatibleComponents;
     //The model of the CPU cooler
-    String model;
+    private String model;
     //The fan RPM of the CPU cooler
-    String fanRPM;
+    private String fanRPM;
     //The noise level of the CPU cooler
-    String noiseLevel;
+    private String noiseLevel;
     //The color of the CPU cooler
-    String color;
+    private String color;
     //The CPU socket of the CPU cooler
-    String[] CPUSocket;
+    private String[] CPUSocket;
     //If the CPU cooler is water cooled and the size of the radiator
-    String waterCooled;
+    private String waterCooled;
     //If the CPU cooler is fan-less
-    String fanless;
+    private String fanless;
 
     /**
      * The default constructor of the CPUCooler object
      */
     public CPUCooler() {
         super();
+        compatibleComponents = new PCComponent[0][0];
         model = "no model";
         fanRPM = "no rpm";
         noiseLevel = "no noise";
@@ -30,6 +32,7 @@ public class CPUCooler extends PCComponent{
 
     /**
      * The overloaded constructor of the CPUCooler object
+     * @param compatibleComponentsN
      * @param manufacturerN
      * @param nameN
      * @param partNumberN
@@ -42,8 +45,22 @@ public class CPUCooler extends PCComponent{
      * @param waterCooledN
      * @param fanlessN
      */
-    public CPUCooler(String manufacturerN, String nameN, String partNumberN, double priceN, String modelN, String fanRPMn, String noiseLevelN, String colorN, String[] CPUSocketN, String waterCooledN, String fanlessN) {
+    public CPUCooler(
+            PCComponent[][] compatibleComponentsN,
+            String manufacturerN,
+            String nameN,
+            String partNumberN,
+            double priceN,
+            String modelN,
+            String fanRPMn,
+            String noiseLevelN,
+            String colorN,
+            String[] CPUSocketN,
+            String waterCooledN,
+            String fanlessN
+    ) {
         super(manufacturerN, partNumberN, nameN, priceN);
+        compatibleComponents = compatibleComponentsN;
         model = modelN;
         fanRPM = fanRPMn;
         noiseLevel = noiseLevelN;

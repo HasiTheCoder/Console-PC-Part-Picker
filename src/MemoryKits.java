@@ -1,4 +1,5 @@
 public class MemoryKits extends PCComponent{
+    private PCComponent[][] compatibleComponents;
     //The speed of the memory in MHz with which generation
     private String memorySpeed;
     //The form factor of the memory (Number of pins)
@@ -27,6 +28,7 @@ public class MemoryKits extends PCComponent{
      */
     public MemoryKits() {
         super();
+        compatibleComponents = new PCComponent[0][0];
         memorySpeed = "No Speed";
         formFactor = "No form factor";
         modules = "No modules";
@@ -42,6 +44,7 @@ public class MemoryKits extends PCComponent{
 
     /**
      * the overloaded constructor of the MemoryKits object
+     * @param compatibleComponentsN
      * @param manufacturer
      * @param partNumber
      * @param name
@@ -59,6 +62,7 @@ public class MemoryKits extends PCComponent{
      * @param isHeatSpreaderN
      */
     public MemoryKits(
+            PCComponent[][] compatibleComponentsN,
             String manufacturer,
             String partNumber,
             String name,
@@ -76,6 +80,7 @@ public class MemoryKits extends PCComponent{
             boolean isHeatSpreaderN)
     {
         super(manufacturer, partNumber, name, price);
+        compatibleComponents = compatibleComponentsN;
         memorySpeed = memorySpeedN;
         formFactor = formFactorN;
         modules = modulesN;

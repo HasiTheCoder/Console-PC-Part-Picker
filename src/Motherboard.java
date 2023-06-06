@@ -4,76 +4,75 @@
  * @Author Hasnain Heryani
  */
 public class Motherboard extends PCComponent{
+    private PCComponent[][] compatibleComponents;
     //AMD vs. Intel Socket and which gen socket
-    String socketType;
+    private String socketType;
     //AMD vs. Intel chipset
-    String chipSet;
+    private String chipSet;
     //Form factor of motherboard, ATX, mATX, ITX, etc.
-    String formFactor;
+    private String formFactor;
     //The number of memory slots the motherboard has
-    int memorySlots;
+    private int memorySlots;
     //Type of memory
-    String memoryType;
+    private String memoryType;
     //Total amount of memory the motherboard supports in GB
-    int memoryMax;
+    private int memoryMax;
     //Max memory speed the motherboard supports in MHz
-    int maxMemorySpeed;
-    int PCIe_x16_Slots;
+    private int maxMemorySpeed;
+    private int PCIe_x16_Slots;
     //Number of PCIe x8 slots
-    int PCIe_x8_Slots;
+    private int PCIe_x8_Slots;
     //Number of PCIe x4 slots
-    int PCIe_x4_Slots;
+    private int PCIe_x4_Slots;
     //Number of PCIe x1 slots
-    int PCIe_x1_Slots;
+    private int PCIe_x1_Slots;
     //Number of PCI slots
-    int PCI_Slots;
+    private int PCI_Slots;
     //color of motherboard
-    String color;
+    private String color;
     //Whether the motherboard support SLI or CrossFire (True if supports one, false if it supports none)
-    boolean isSLIOrCrossFire;
+    private boolean isSLIOrCrossFire;
     //Number of SATA connectors
-    int SATAConnectors;
+    private int SATAConnectors;
     //Number of M.2 SSD Slots
-    int M2_Slots;
+    private int M2_Slots;
     //Number of mini PCIe Slots
-    int miniPCIeSlots;
+    private int miniPCIeSlots;
     //Number of half mini PCIe slots
-    int halfMiniPCIeSlots;
+    private int halfMiniPCIeSlots;
     //Number of mSATA slots
-    int mSATASlots;
+    private int mSATASlots;
     //What are the details of the onboard ethernet of the motherboard
-    String onboardEthernet;
+    private String onboardEthernet;
     //Amount of USB 2.0 Headers
-    int USB_2_Headers;
+    private int USB_2_Headers;
     //Amount of single port USB 2.0 Headers
-    int USB_2_Headers_Single_Port;
+    private int USB_2_Headers_Single_Port;
     //Amount of USB 3.2 Gen 1 Headers
-    int USB_32_1_Headers;
+    private int USB_32_1_Headers;
     //Amount of USB 3.2 Gen 2 Headers
-    int USB_32_2_Headers;
+    private int USB_32_2_Headers;
     //Amount of USB 3.2 Gen 2x2 Headers
-    int USB_32_2x2_Headers;
+    private int USB_32_2x2_Headers;
     //Does the motherboard support ECC (Error Correcting Code)
-    boolean isECC;
+    private boolean isECC;
     //What is the wireless networking on the motherboard
-    String wirelessNetworking;
+    private String wirelessNetworking;
     //does it support RAID (Redundant Array of Independent Disks)
-    boolean RAIDSupport;
+    private boolean RAIDSupport;
 
     /**
      * Motherboard object base constructor
      * no parameters
      */
     public Motherboard() {
-        name = "No name";
-        price = 0;
-        partNumber = "No part number";
+        super();
+        compatibleComponents = new PCComponent[0][0];
         socketType = "No Socket";
         chipSet = "No Chipset";
         formFactor = "No Form Factor";
         memorySlots = 0;
         SATAConnectors = 0;
-        manufacturer = "No Manufacturer";
         memoryType = "No Memory Type";
         memoryMax = 0;
         maxMemorySpeed = 0;
@@ -101,6 +100,7 @@ public class Motherboard extends PCComponent{
 
     /**
      * Overloaded constructor of the Motherboard class
+     * @param compatibleComponentsN
      * @param nameN
      * @param partNumberN
      * @param priceN
@@ -134,47 +134,48 @@ public class Motherboard extends PCComponent{
      * @param wirelessNetworkingN
      * @param RAIDSupportN
      */
-    public Motherboard(String nameN,
-                       String partNumberN,
-                       double priceN,
-                       String socketTypeN,
-                       String chipSetN,
-                       String formFactorN,
-                       int memorySlotsN,
-                       int SATAConnectorsN,
-                       String manufacturerN,
-                       String memoryTypeN,
-                       int PCI_SlotsN,
-                       String colorN,
-                       int memoryMaxN,
-                       int maxMemorySpeedN,
-                       int PCIe_x16_SlotsN,
-                       int PCIe_x8_SlotsN,
-                       int PCIe_x4_SlotsN,
-                       int PCIe_x1_SlotsN,
-                       boolean isSLIOrCrossFireN,
-                       int M2_SlotsN,
-                       int miniPCIeSlotsN,
-                       int halfMiniPCIeSlotsN,
-                       int mSATASlotsN,
-                       String onboardEthernetN,
-                       int USB_2_HeadersN,
-                       int USB_32_1_HeadersN,
-                       int USB_2_Headers_Single_PortN,
-                       int USB_32_2_HeadersN,
-                       int USB_32_2x2_HeadersN,
-                       boolean isECCN,
-                       String wirelessNetworkingN,
-                       boolean RAIDSupportN) {
-        name = nameN;
-        partNumber = partNumberN;
-        price = priceN;
+    public Motherboard(
+            PCComponent[][] compatibleComponentsN,
+            String nameN,
+            String partNumberN,
+            double priceN,
+            String socketTypeN,
+            String chipSetN,
+            String formFactorN,
+            int memorySlotsN,
+            int SATAConnectorsN,
+            String manufacturerN,
+            String memoryTypeN,
+            int PCI_SlotsN,
+            String colorN,
+            int memoryMaxN,
+            int maxMemorySpeedN,
+            int PCIe_x16_SlotsN,
+            int PCIe_x8_SlotsN,
+            int PCIe_x4_SlotsN,
+            int PCIe_x1_SlotsN,
+            boolean isSLIOrCrossFireN,
+            int M2_SlotsN,
+            int miniPCIeSlotsN,
+            int halfMiniPCIeSlotsN,
+            int mSATASlotsN,
+            String onboardEthernetN,
+            int USB_2_HeadersN,
+            int USB_32_1_HeadersN,
+            int USB_2_Headers_Single_PortN,
+            int USB_32_2_HeadersN,
+            int USB_32_2x2_HeadersN,
+            boolean isECCN,
+            String wirelessNetworkingN,
+            boolean RAIDSupportN
+    ) {
+        super(manufacturerN, partNumberN, nameN, priceN);
+        compatibleComponents = compatibleComponentsN;
         socketType = socketTypeN;
         chipSet = chipSetN;
         formFactor = formFactorN;
         memorySlots = memorySlotsN;
         SATAConnectors = SATAConnectorsN;
-        manufacturer = manufacturerN;
         memoryType = memoryTypeN;
         memoryMax = memoryMaxN;
         maxMemorySpeed = maxMemorySpeedN;

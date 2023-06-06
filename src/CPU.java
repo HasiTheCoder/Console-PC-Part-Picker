@@ -1,46 +1,47 @@
 public class CPU extends PCComponent{
+    private PCComponent[][] compatibleComponents;
     //Amount of cores in the CPU
-    int coreCount;
+    private int coreCount;
     //Performance Cores' Clock Speed in Ghz
-    double performanceCoreClock;
+    private double performanceCoreClock;
     //Performance Cores' Boost Clock Speed in GHZ
-    double performanceBoostClock;
+    private double performanceBoostClock;
     //The max TDP(Thermal Design Power) of the CPU in watts
-    int TDP;
+    private int TDP;
     //The series of the CPU (Ryzen, Core, Celeron, Pentium, Athlon, etc.)
-    String series;
+    private String series;
     //The microarchitecture the CPU is built upon
-    String microarchitecture;
+    private String microarchitecture;
     //The name of the core family that the CPU belongs to
-    String coreFamily;
+    private String coreFamily;
     //The type of socket that the CPU supports
-    String socketType;
+    private String socketType;
     //The type of integrated graphics supported if any at all
-    String integratedGraphics;
+    private String integratedGraphics;
     //The max memory supported by the CPU in GB (might be N/A)
-    String maxMemorySupported;
+    private String maxMemorySupported;
     //Whether the CPU supports ECC or not (Error Correcting Code)
-    boolean isECC;
+    private boolean isECC;
     //Does it include a cooler
-    boolean includesCooler;
+    private boolean includesCooler;
     //How is the CPU packaged
-    String packaging;
+    private String packaging;
     //The Performance L1 Cache of the CPU
-    String performanceL1Cache;
+    private String performanceL1Cache;
     //The Efficiency L1 Cache of the CPU
-    String efficiencyL1Cache;
+    private String efficiencyL1Cache;
     //The Performance L2 Cache of the CPU
-    String performanceL2Cache;
+    private String performanceL2Cache;
     //The efficiency L2 Cache of the CPU
-    String efficiencyL2Cache;
+    private String efficiencyL2Cache;
     //The L3 Cache of the CPU
-    String L3Cache;
+    private String L3Cache;
     //The lithography used to build the CPU in nm
-    int lithography;
+    private int lithography;
     //Does it include a CPU Cooler
-    boolean includesCPUCooler;
+    private boolean includesCPUCooler;
     //Does it support simultaneous multithreading
-    String isSimultaneousMultiThreading;
+    private String isSimultaneousMultiThreading;
 
     /**
      * Base Constructor of the CPU object
@@ -72,6 +73,7 @@ public class CPU extends PCComponent{
 
     /**
      * The overloaded constructor of the CPU object
+     * @param compatibleComponentsN
      * @param manufacturerN
      * @param nameN
      * @param partNumberN
@@ -99,6 +101,7 @@ public class CPU extends PCComponent{
      * @param efficiencyL2CacheN
      */
     public CPU(
+            PCComponent[][] compatibleComponentsN,
             String manufacturerN,
             String nameN,
             String partNumberN,
@@ -125,6 +128,7 @@ public class CPU extends PCComponent{
             String performanceL2CacheN,
             String efficiencyL2CacheN) {
         super(manufacturerN, partNumberN, nameN, priceN);
+        compatibleComponents = compatibleComponentsN;
         coreCount = coreCountN;
         performanceCoreClock = performanceCoreClockN;
         performanceBoostClock = performanceBoostClockN;

@@ -1,4 +1,5 @@
 public class GPU extends PCComponent{
+    private PCComponent[][] compatibleComponents;
     //The chipset of the GPU
     private String chipSet;
     //The amount of video memory on the GPU
@@ -40,6 +41,7 @@ public class GPU extends PCComponent{
 
     public GPU() {
         super();
+        compatibleComponents = new PCComponent[0][0];
         chipSet = "No chipset";
         vMemory = 0;
         vMemoryType = "No memory type";
@@ -61,6 +63,7 @@ public class GPU extends PCComponent{
 
     /**
      * The overloaded constructor of the GPU object
+     * @param compatibleComponentsN
      * @param manufacturerN
      * @param partNumberN
      * @param nameN
@@ -84,6 +87,7 @@ public class GPU extends PCComponent{
      * @param displayPortOutputsN
      */
     public GPU(
+            PCComponent[][] compatibleComponentsN,
             String manufacturerN,
             String partNumberN,
             String nameN,
@@ -106,6 +110,7 @@ public class GPU extends PCComponent{
             String HDMIOutputsN,
             String displayPortOutputsN) {
         super(manufacturerN, partNumberN, nameN, priceN);
+        compatibleComponents = compatibleComponentsN;
         chipSet = chipSetN;
         vMemory = vMemoryN;
         vMemoryType = vMemoryTypeN;

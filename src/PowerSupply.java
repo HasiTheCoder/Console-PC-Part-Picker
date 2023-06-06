@@ -1,4 +1,5 @@
 public class PowerSupply extends PCComponent{
+    private PCComponent[][] compatibleComponents;
     //The type of the power supply (form factor)
     private String type;
     //The efficiency rating of the power supply
@@ -37,6 +38,7 @@ public class PowerSupply extends PCComponent{
      */
     public PowerSupply() {
         super();
+        compatibleComponents = new PCComponent[0][0];
         type = "No type";
         efficiencyRating = "No efficiency rating";
         wattage = 0;
@@ -78,27 +80,30 @@ public class PowerSupply extends PCComponent{
      * @param SATAConnectorsN
      * @param molex4PinConnectorsN
      */
-    public PowerSupply(String manufacturer,
-                       String partNumber,
-                       String name,
-                       double price,
-                       String typeN,
-                       String efficiencyRatingN,
-                       int wattageN,
-                       int lengthN,
-                       String modularityN,
-                       String colorN,
-                       boolean fanlessN,
-                       int ATX4PinConnectorsN,
-                       int EPS8PinConnectorsN,
-                       int PCIe_12_4_Pin12VHPWRConnectorsN,
-                       int PCIe12PinConnectorsN,
-                       int PCIe8PinConnectorsN,
-                       int PCIe_6_2_PinConnectorsN,
-                       int PCIe6PinConnectorsN,
-                       int SATAConnectorsN,
-                       int molex4PinConnectorsN) {
+    public PowerSupply(
+            PCComponent[][] compatibleComponentsN,
+            String manufacturer,
+            String partNumber,
+            String name,
+            double price,
+            String typeN,
+            String efficiencyRatingN,
+            int wattageN,
+            int lengthN,
+            String modularityN,
+            String colorN,
+            boolean fanlessN,
+            int ATX4PinConnectorsN,
+            int EPS8PinConnectorsN,
+            int PCIe_12_4_Pin12VHPWRConnectorsN,
+            int PCIe12PinConnectorsN,
+            int PCIe8PinConnectorsN,
+            int PCIe_6_2_PinConnectorsN,
+            int PCIe6PinConnectorsN,
+            int SATAConnectorsN,
+            int molex4PinConnectorsN) {
         super(manufacturer, partNumber, name, price);
+        compatibleComponents = compatibleComponentsN;
         type = typeN;
         efficiencyRating = efficiencyRatingN;
         wattage = wattageN;

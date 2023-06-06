@@ -13,7 +13,7 @@ public class Computer {
      * Default constructor that initializes the Computer object with default values
      */
     public Computer() {
-        computer = new PCComponent[11];
+        computer = new PCComponent[9];
         purpose = "Personal Computer";
 
     }
