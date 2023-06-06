@@ -1,5 +1,5 @@
 public class CPU extends PCComponent{
-    private PCComponent[][] compatibleComponents;
+    private String[][] compatibleComponents;
     //Amount of cores in the CPU
     private int coreCount;
     //Performance Cores' Clock Speed in Ghz
@@ -48,6 +48,7 @@ public class CPU extends PCComponent{
      */
     public CPU() {
         super();
+        compatibleComponents = new String[0][0];
         coreCount = 0;
         performanceCoreClock = 0;
         performanceBoostClock = 0;
@@ -101,7 +102,7 @@ public class CPU extends PCComponent{
      * @param efficiencyL2CacheN
      */
     public CPU(
-            PCComponent[][] compatibleComponentsN,
+            String[][] compatibleComponentsN,
             String manufacturerN,
             String nameN,
             String partNumberN,

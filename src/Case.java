@@ -1,5 +1,5 @@
 public class Case extends PCComponent{
-    private PCComponent[][] compatibleComponents;
+    private String[][] compatibleComponents;
     //What is the form factor of the case
     private String type;
     //What is the color of the case
@@ -36,7 +36,7 @@ public class Case extends PCComponent{
      */
     public Case() {
         super();
-        compatibleComponents = new PCComponent[0][0];
+        compatibleComponents = new String[0][0];
         type = "No type";
         color = "No color";
         includesPowerSupply = false;
@@ -77,7 +77,7 @@ public class Case extends PCComponent{
      * @param volumeFt3N
      */
     public Case(
-            PCComponent[][] compatibleComponentsN,
+            String[][] compatibleComponentsN,
             String name,
             String manufacturer,
             String partNumber,
