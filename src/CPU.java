@@ -121,13 +121,13 @@ public class CPU extends PCComponent{
             boolean includesCoolerN,
             String packagingN,
             String performanceL1CacheN,
+            String efficiencyL1CacheN,
+            String performanceL2CacheN,
+            String efficiencyL2CacheN,
             String L3CacheN,
             int lithographyN,
             boolean includesCPUCoolerN,
-            String isSimultaneousMultiThreadingN,
-            String efficiencyL1CacheN,
-            String performanceL2CacheN,
-            String efficiencyL2CacheN) {
+            String isSimultaneousMultiThreadingN) {
         super(manufacturerN, partNumberN, nameN, priceN);
         compatibleComponents = compatibleComponentsN;
         coreCount = coreCountN;
