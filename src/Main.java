@@ -1,15 +1,153 @@
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.Writer;
+import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.Scanner;
+
 
 public class Main {
     public static void main(String[] args) {
-        serializeRefData();
+        menus();
     }
+    public static Scanner input = new Scanner(System.in);
+    public static ReferenceData referenceData = deserializeRefData();
+    public static PCComponent currentComponent;
+    public static Computer currentComputer = new Computer();
+    public static String[] levelOneMenus = new String[] {
+            """
+        Main Menu
+1. Configure a New computer
+2. Build Computer Report
+3. View Computer
+4. Check Computer Compatibility
+5. Find Prebuilt Computer
+6. Tutorial
+7. Exit""",
+            """
+        Configure a New Computer
+1. Motherboard
+2. CPU
+3. CPU Cooler
+4. GPU
+5. Memory Kit
+6. Storage
+7. Case
+8. Case Fan
+9. Power Supply
+""", "\t\tComputer Report\n" + currentComputer +
+            "\nComputer Cost: " + currentComputer.computerCost(),
+            "\t\tView Computer\n" + currentComputer,
+            "Feature not implemented yet",
+            "Feature not implemented yet",
+            "Feature not implemented yet",
+            "Have a nice day!"};
+    public static String[] levelTwoMenus = new String[] {"Motherboards\n" + referenceData.printComponentList("Motherboards"), "CPUs\n" + referenceData.printComponentList("CPUs"), "CPU Coolers\n" + referenceData.printComponentList("CPU Coolers"), "GPUs\n" + referenceData.printComponentList("GPUs"), "Memory Kits\n" + referenceData.printComponentList("Memory Kits"), "Storages\n" + referenceData.printComponentList("Storages"), "Cases\n" + referenceData.printComponentList("Cases"), "Case Fans\n" + referenceData.printComponentList("Case Fans"), "Power Supplies\n" + referenceData.printComponentList("Power Supplies"), "Prebuilt List in progress"};
+
+    public static void menus() {
+        boolean hasExited = false;
+        while (!hasExited) {
+            int menuChoice = menuLevel1();
+            input.nextLine();
+            if (menuChoice == 1) {
+                System.out.println(levelOneMenus[1]);
+                menuLevel2();
+            }
+            else if (menuChoice == 2) {
+                System.out.println(levelOneMenus[2]);
+            }
+            else if (menuChoice == 3) {
+                System.out.println(levelOneMenus[3]);
+            }
+            else if (menuChoice == 4) {
+                System.out.println(levelOneMenus[4]);
+            }
+            else if (menuChoice == 5) {
+                System.out.println(levelOneMenus[5]);
+                //navigate to prebuilt list and work with user from there
+            }
+            else if (menuChoice == 6) {
+                System.out.println(levelOneMenus[6]);
+            }
+            else if (menuChoice == 7) {
+                hasExited = true;
+            }
+            else {
+                System.out.println("Invalid input");
+                menus();
+            }
+        }
+    }
+
+    private static int menuLevel1() {
+        System.out.println(levelOneMenus[0]);
+        return input.nextInt();
+    }
+
+    public static void menuLevel2() {
+        int menuChoice = input.nextInt();
+        input.nextLine();
+        if (menuChoice > 9 || menuChoice < 1) {
+            System.out.println("Invalid input");
+            System.out.println(levelOneMenus[1]);
+            menuLevel2();
+        }
+        System.out.println(levelTwoMenus[menuChoice - 1]);
+        System.out.println("Enter the number of the part you want to select or enter 0 to go back to the main menu. " +
+                "\nYou may also enter v after the number to view the part details:");
+        menuLevel3(menuChoice);
+    }
+    public static void menuLevel3(int menuChoice) {
+        String partChoice = input.nextLine();
+        String finalPartChoice = "";
+        if (partChoice.contains("v")) {
+            System.out.println(referenceData.getComponent(removeV(partChoice), menuChoice));
+            System.out.println("\nEnter y to select this part or n to go back to the previous menu: ");
+            finalPartChoice = input.next();
+            input.nextLine();
+            if (finalPartChoice.equals("y")) {
+                currentComputer.addComponent(referenceData.getComponent(removeV(partChoice), menuChoice));
+            }
+            else if (finalPartChoice.equals("n")) {
+                menuLevel2();
+            }
+            else {
+                System.out.println("Invalid input");
+                menuLevel2();
+            }
+        }
+        else if (partChoice.equals("0")) {
+            menus();
+        }
+        else {
+            System.out.println("Invalid input");
+            menuLevel2();
+        }
+    }
+    public static int removeV(String partChoice) {
+        while (partChoice.contains("v")) {
+            partChoice = partChoice.substring(0, partChoice.length() - 1);
+        }
+        return Integer.parseInt(partChoice);
+    }
+    public static ReferenceData deserializeRefData()
+    {
+        ReferenceData referenceData = new ReferenceData();
+        Gson gson = new Gson();
+        try {
+            String json = new String(Files.readAllBytes(Paths.get("referenceData.json")));
+            referenceData = gson.fromJson(json, ReferenceData.class);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return referenceData;
+    }
+
+
+
+
+
 
     public static void serializeRefData()
     {
@@ -121,15 +259,15 @@ public class Main {
         PowerSupply powerSupply = new PowerSupply(compatiblePowerSupply2, "Corsair", "CP-9020200-NA", "Corsair RM850x (2021) 850 W 80+ Gold Certified Fully Modular ATX Power Supply", 149.99, "ATX", "80+ Gold", 850, 160, "Full", "Black", false, 0, 3, 0, 0, 0, 4, 0, 14, 4);
         Storage storage = new Storage(compatibleStorage1, "Samsung", "Samsung 970 Evo Plus 1 TB M.2-2280 PCIe 3.0 X4 NVME Solid State Drive", "MZ-V7S1T0B/AM", 69.98, "1 TB", 0.070, "SSD", 1024, "m.2-2280", "M.2 PCIe 3.0 x 4", true);
         ReferenceData refData = new ReferenceData();
-        refData.CaseFans = new CaseFans[]{casefan1, casefan2, casefan3};
-        refData.Cases = new Case[]{case1};
-        refData.CPUs = new CPU[]{CPU1, CPU2, CPU3, CPU4, CPU5, CPU6, CPU7, CPU8, CPU9};
-        refData.CPUCoolers = new CPUCooler[]{cpuCooler1, cpuCooler2, cpuCooler3};
-        refData.GPUs = new GPU[]{gpu};
-        refData.MemoryKits = new MemoryKits[]{memoryKit1, memoryKit2, memoryKit3};
-        refData.Motherboards = new Motherboard[]{motherboard, motherboard2, motherboard3};
-        refData.PowerSupplies = new PowerSupply[]{powerSupply};
-        refData.Storages = new Storage[]{storage};
+        refData.setCaseFans(new CaseFans[]{casefan1, casefan2, casefan3});
+        refData.setCases(new Case[]{case1});
+        refData.setCPUs(new CPU[]{CPU1, CPU2, CPU3, CPU4, CPU5, CPU6, CPU7, CPU8, CPU9});
+        refData.setCPUCoolers(new CPUCooler[]{cpuCooler1, cpuCooler2, cpuCooler3});
+        refData.setGPUs(new GPU[]{gpu1, gpu2, gpu3});
+        refData.setMemoryKits(new MemoryKits[]{memoryKit1, memoryKit2, memoryKit3, memoryKits4, memoryKits5, memoryKits6});
+        refData.setMotherboards(new Motherboard[]{motherboard, motherboard2, motherboard3});
+        refData.setPowerSupplies(new PowerSupply[]{powerSupply});
+        refData.setStorages(new Storage[]{storage});
 
         try (Writer writer = new FileWriter("referenceData.json")) {
             Gson gson = new GsonBuilder().create();
@@ -139,4 +277,5 @@ public class Main {
         }
 
     }
+
 }

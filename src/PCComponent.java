@@ -1,6 +1,6 @@
 import java.text.NumberFormat;
 
-public abstract class PCComponent {
+public class PCComponent {
     //The part number of the component
     String partNumber;
     //The name of the component
@@ -33,7 +33,12 @@ public abstract class PCComponent {
         name = nameN;
         price = priceN;
     }
-
+    public double getPrice() {
+        return price;
+    }
+    public String getName() {
+        return name;
+    }
     /**
      * The info of the PCComponent object
      * @return
