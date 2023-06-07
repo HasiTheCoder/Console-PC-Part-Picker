@@ -1,3 +1,5 @@
+import java.text.NumberFormat;
+
 public class MemoryKits extends PCComponent{
     private String[][] compatibleComponents;
     //The speed of the memory in MHz with which generation
@@ -100,6 +102,7 @@ public class MemoryKits extends PCComponent{
      * String with the info of the MemoryKits object
      */
     public String toString() {
+        NumberFormat money = NumberFormat.getCurrencyInstance();
         return super.toString() + String.format("""
                         
                         Memory Speed(MHz): %s
@@ -117,7 +120,7 @@ public class MemoryKits extends PCComponent{
                 memorySpeed,
                 formFactor,
                 modules,
-                pricePerGB,
+                money.format(pricePerGB),
                 color,
                 firstWordLatency,
                 CASLatency,

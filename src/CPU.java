@@ -19,7 +19,7 @@ public class CPU extends PCComponent{
     //The type of integrated graphics supported if any at all
     private String integratedGraphics;
     //The max memory supported by the CPU in GB (might be N/A)
-    private String maxMemorySupported;
+    private int maxMemorySupported;
     //Whether the CPU supports ECC or not (Error Correcting Code)
     private boolean isECC;
     //Does it include a cooler
@@ -58,7 +58,7 @@ public class CPU extends PCComponent{
         coreFamily = "No core family";
         socketType = "No socket type";
         integratedGraphics = "No integrated graphics";
-        maxMemorySupported = "0";
+        maxMemorySupported = 0;
         isECC = false;
         includesCooler = false;
         packaging = "No packaging";
@@ -116,7 +116,7 @@ public class CPU extends PCComponent{
             String coreFamilyN,
             String socketTypeN,
             String integratedGraphicsN,
-            String maxMemorySupportedN,
+            int maxMemorySupportedN,
             boolean isECCn,
             boolean includesCoolerN,
             String packagingN,

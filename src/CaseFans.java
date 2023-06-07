@@ -9,6 +9,8 @@ public class CaseFans extends PCComponent{
     private int quantity;
     //The RPM of the case fan
     private String RPM;
+    private String airFlow;
+    private String noiseLevel;
     //If the case fan is PWM (Pulse width modulation)
     private boolean isPWM;
     //The LED of the case fan
@@ -30,6 +32,7 @@ public class CaseFans extends PCComponent{
         color = "No color";
         quantity = 0;
         RPM = "No RPM";
+        airFlow = "No airflow";
         isPWM = false;
         LED = "No LED";
         connector = "No connector";
@@ -64,6 +67,8 @@ public class CaseFans extends PCComponent{
             String colorN,
             int QuantityN,
             String RPMn,
+            String airFlowN,
+            String noiseLevelN,
             boolean isPWMn,
             String LEDn,
             String connectorN,
@@ -76,6 +81,8 @@ public class CaseFans extends PCComponent{
         color = colorN;
         quantity = QuantityN;
         RPM = RPMn;
+        airFlow = airFlowN;
+        noiseLevel = noiseLevelN;
         isPWM = isPWMn;
         LED = LEDn;
         connector = connectorN;
