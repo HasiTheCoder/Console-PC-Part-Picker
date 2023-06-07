@@ -117,19 +117,17 @@ public class Main {
         Storage storage1 = new Storage();
         Storage storage2 = new Storage();
         Storage storage3 = new Storage();
-
-        GPU gpu = new GPU("MSI", "RTX3060Ventus2X12GOC", "MSI GeForce RTX 3060 Ventus 2X 12G GeForce RTX 3060 12GB 12 GB Video Card", 289.99, "GeForce RTX 3060 12GB", 12, "GDDR6", 1320, 1777, 15000, "PCIe x 16", "Black", "G-Sync", 235, 170, 2, 2, "2 Fans", "1 PCIe 8-pin", "1", "3");
-        MemoryKits memoryKit = new MemoryKits("Corsair", "CMK32GX5M2B5000C36", "Corsair Vengeance 32 GB (2 x 16 GB) DDR5-5600 CL36 Memory", 92.99, "DDR5-5600", "288-pin DIMM(DDR5)", "2 x 16GB", 2.906, "Black", 12.857, 36, 1.25, "36- 36 - 36 - 76", "Non-ECC/ Unbuffered", true);
-        PowerSupply powerSupply = new PowerSupply("Corsair", "CP-9020200-NA", "Corsair RM850x (2021) 850 W 80+ Gold Certified Fully Modular ATX Power Supply", 149.99, "ATX", "80+ Gold", 850, 160, "Full", "Black", false, 0, 3, 0, 0, 0, 4, 0, 14, 4);
-        Storage storage = new Storage("Samsung", "Samsung 970 Evo Plus 1 TB M.2-2280 PCIe 3.0 X4 NVME Solid State Drive", "MZ-V7S1T0B/AM", 69.98, "1 TB", 0.070, "SSD", 1024, "m.2-2280", "M.2 PCIe 3.0 x 4", true);
+        GPU gpu = new GPU(compatibleGPU1, "MSI", "RTX3060Ventus2X12GOC", "MSI GeForce RTX 3060 Ventus 2X 12G GeForce RTX 3060 12GB 12 GB Video Card", 289.99, "GeForce RTX 3060 12GB", 12, "GDDR6", 1320, 1777, 15000, "PCIe x 16", "Black", "G-Sync", 235, 170, 2, 2, "2 Fans", "1 PCIe 8-pin", "1", "3");
+        PowerSupply powerSupply = new PowerSupply(compatiblePowerSupply2, "Corsair", "CP-9020200-NA", "Corsair RM850x (2021) 850 W 80+ Gold Certified Fully Modular ATX Power Supply", 149.99, "ATX", "80+ Gold", 850, 160, "Full", "Black", false, 0, 3, 0, 0, 0, 4, 0, 14, 4);
+        Storage storage = new Storage(compatibleStorage1, "Samsung", "Samsung 970 Evo Plus 1 TB M.2-2280 PCIe 3.0 X4 NVME Solid State Drive", "MZ-V7S1T0B/AM", 69.98, "1 TB", 0.070, "SSD", 1024, "m.2-2280", "M.2 PCIe 3.0 x 4", true);
         ReferenceData refData = new ReferenceData();
-        refData.CaseFans = new CaseFans[]{caseFan1, caseFan2};
+        refData.CaseFans = new CaseFans[]{casefan1, casefan2, casefan3};
         refData.Cases = new Case[]{case1};
-        refData.CPUs = new CPU[]{cpu};
-        refData.CPUCoolers = new CPUCooler[]{cpuCooler};
+        refData.CPUs = new CPU[]{CPU1, CPU2, CPU3, CPU4, CPU5, CPU6, CPU7, CPU8, CPU9};
+        refData.CPUCoolers = new CPUCooler[]{cpuCooler1, cpuCooler2, cpuCooler3};
         refData.GPUs = new GPU[]{gpu};
-        refData.MemoryKits = new MemoryKits[]{memoryKit};
-        refData.Motherboards = new Motherboard[]{motherboard};
+        refData.MemoryKits = new MemoryKits[]{memoryKit1, memoryKit2, memoryKit3};
+        refData.Motherboards = new Motherboard[]{motherboard, motherboard2, motherboard3};
         refData.PowerSupplies = new PowerSupply[]{powerSupply};
         refData.Storages = new Storage[]{storage};
 
