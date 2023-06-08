@@ -101,37 +101,35 @@ public class ReferenceData {
     public PCComponent[] getPowerSupplies() {
         return PowerSupplies;
     }
-    public String printComponentList(String componentType) {
-        if (componentType.equals("Cases")) {
+    public String printComponentList(int componentType) {
+        if (componentType == 7) {
             return convertArrayToString(Cases);
         }
-        else if (componentType.equals("Case Fans")) {
+        else if (componentType == 8) {
             return convertArrayToString(CaseFans);
         }
-        else if (componentType.equals("CPUs")) {
+        else if (componentType == 2) {
             return convertArrayToString(CPUs);
         }
-        else if (componentType.equals("CPU Coolers")) {
+        else if (componentType == 3) {
             return convertArrayToString(CPUCoolers);
         }
-        else if (componentType.equals("GPUs")) {
+        else if (componentType == 4) {
             return convertArrayToString(GPUs);
         }
-        else if (componentType.equals("Motherboards")) {
+        else if (componentType == 1) {
             return convertArrayToString(Motherboards);
         }
-        else if (componentType.equals("Power Supplies")) {
+        else if (componentType == 9) {
             return convertArrayToString(PowerSupplies);
         }
-        else if (componentType.equals("Memory Kits")) {
+        else if (componentType == 5) {
             return convertArrayToString(MemoryKits);
         }
-        else if (componentType.equals("Storages")) {
+        else if (componentType == 6) {
             return convertArrayToString(Storages);
         }
-        else {
-            return "Invalid component type";
-        }
+        return "Error: Invalid component type.";
     }
     private String convertArrayToString(PCComponent[] array) {
         String result = "";

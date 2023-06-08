@@ -4,37 +4,25 @@ import com.google.gson.GsonBuilder;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 
 public class Main {
-    public static void main(String[] args) {
-        menus();
-    }
-    public static ReferenceData deserialize() {
-        Gson gson = new Gson();
-        try {
-            String json = new String(Files.readAllBytes(Paths.get("referenceData.json")));
-            referenceData = gson.fromJson(json, ReferenceData.class);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return referenceData;
-    }
     public static Scanner input = new Scanner(System.in);
     public static ReferenceData referenceData = deserialize();
-    public static PCComponent currentComponent;
     public static Computer currentComputer = new Computer();
+    public static Menus menus = new Menus("""
+                    Main Menu
+            1. Configure a New computer
+            2. Build Computer Report
+            3. View Computer
+            4. Check Computer Compatibility
+            5. Find Prebuilt Computer
+            6. Tutorial
+            7. Exit
+            """, 7);
     public static String[] levelOneMenus = new String[] {
-            """
-        Main Menu
-1. Configure a New computer
-2. Build Computer Report
-3. View Computer
-4. Check Computer Compatibility
-5. Find Prebuilt Computer
-6. Tutorial
-7. Exit""",
             """
         Configure a New Computer
 1. Motherboard
@@ -46,16 +34,142 @@ public class Main {
 7. Case
 8. Case Fan
 9. Power Supply
-""", "\t\tComputer Report\n" + currentComputer +
-            "\nComputer Cost: " + currentComputer.computerCost(),
-            "\t\tView Computer\n" + currentComputer,
+""", "\t\tComputer Report\n" + printReceipt(),
+            "\t\tView Computer\n" + currentComputer + "\nComputer Cost: " + currentComputer.computerCost(),
             "Feature not implemented yet",
             "Feature not implemented yet",
             "Feature not implemented yet",
             "Have a nice day!"};
-    public static String[] levelTwoMenus = new String[] {"Motherboards\n" + referenceData.printComponentList("Motherboards"), "CPUs\n" + referenceData.printComponentList("CPUs"), "CPU Coolers\n" + referenceData.printComponentList("CPU Coolers"), "GPUs\n" + referenceData.printComponentList("GPUs"), "Memory Kits\n" + referenceData.printComponentList("Memory Kits"), "Storages\n" + referenceData.printComponentList("Storages"), "Cases\n" + referenceData.printComponentList("Cases"), "Case Fans\n" + referenceData.printComponentList("Case Fans"), "Power Supplies\n" + referenceData.printComponentList("Power Supplies"), "Prebuilt List in progress"};
-
-    public static void menus() {
+    public static String[] levelTwoMenus = new String[] {
+            "Motherboards\n" + referenceData.printComponentList(1),
+            "CPUs\n" + referenceData.printComponentList(2),
+            "CPU Coolers\n" + referenceData.printComponentList(3),
+            "GPUs\n" + referenceData.printComponentList(4),
+            "Memory Kits\n" + referenceData.printComponentList(5),
+            "Storages\n" + referenceData.printComponentList(6),
+            "Cases\n" + referenceData.printComponentList(7),
+            "Case Fans\n" + referenceData.printComponentList(8),
+            "Power Supplies\n" + referenceData.printComponentList(9)};
+    public static void main(String[] args) {
+        setSubMenus();
+        boolean hasExited = false;
+        while (!hasExited) {
+            int choice1 = mainMenu();
+            int choice2 = mainMenuSubMenus(choice1);
+            if (choice2 == -2) {
+                hasExited = true;
+            }
+            else if (choice2 != -1) {
+                partList(choice2-1, choice2);
+            }
+        }
+    }
+    public static int mainMenu() {
+        try {
+            System.out.println(menus.getMenus());
+            int choice = input.nextInt();
+            if (choice > 7 || choice < 1) {
+                System.out.println("Invalid input");
+                return mainMenu();
+            }
+            return choice;
+        } catch (InputMismatchException e) {
+            System.out.println("Invalid input");
+            input.nextLine();
+            return mainMenu();
+        }
+    }
+    public static int mainMenuSubMenus(int index) {
+        int choice = -1;
+        try {
+            System.out.println(menus.getSubMenu(index).getMenus());
+            System.out.println("Enter -2 to exit the program");
+            System.out.println("Enter -1 to return to previous menu: ");
+            if (index != 6) {
+                    if (index == 0) {
+                        choice = input.nextInt();
+                        if (choice > 9 || choice < 1) {
+                            System.out.println("Invalid input");
+                            return mainMenuSubMenus(index);
+                        }
+                    }
+                    else if (index == 4) {
+                        //TODO create the if structure for this when this part of program is created
+                    }
+            }
+            else {
+                return -2;
+            }
+            return choice;
+        } catch (InputMismatchException e) {
+            System.out.println("Invalid input");
+            input.nextLine();
+            return mainMenuSubMenus(index);
+        }
+    }
+    public static void partList(int index, int menuChoice) {
+        try {
+            System.out.println(levelTwoMenus[index]);
+            System.out.println("Enter the index of the part you want to add to your computer." +
+                    "\nIf you want to view the part details, enter the index followed by v" +
+                    "\nIf you want to return to the previous menu, enter -1");
+            String partChoice = input.next();
+            input.nextLine();
+            if (partChoice.contains("v")) {
+                int partChoice2 = Integer.parseInt(partChoice.substring(0, partChoice.length() - 1));
+                System.out.println(referenceData.getComponent(partChoice2, menuChoice));
+                System.out.println("Enter y if you would like to add this or n if you would to return to the previous menu");
+                String choice = input.next();
+                if (choice.equals("y")) {
+                    currentComputer.addComponent(referenceData.getComponent(index, menuChoice));
+                }
+                else {
+                    partList(index, menuChoice);
+                }
+            }
+            else if (Integer.parseInt(partChoice) == -1) {
+                mainMenuSubMenus(0);
+            }
+            else {
+                currentComputer.addComponent(referenceData.getComponent(index, Integer.parseInt(partChoice)));
+            }
+        } catch (InputMismatchException e) {
+            e.printStackTrace();
+        }
+    }
+    public static void setSubMenus() {
+        for (int i = 0; i < menus.getSubMenuCount(); i++) {
+            menus.setSubMenu(i , levelOneMenus[i], 0);
+            if (i == 0) {
+                menus.getSubMenu(i).setSubMenuCount(9);
+                for (int j = 0; j < menus.getSubMenu(i).getSubMenuCount(); j++) {
+                    menus.getSubMenu(i).setSubMenu(j, levelTwoMenus[j], 0);
+                }
+            }
+        }
+    }
+    public static ReferenceData deserialize() {
+        Gson gson = new Gson();
+        try {
+            String json = new String(Files.readAllBytes(Paths.get("referenceData.json")));
+            referenceData = gson.fromJson(json, ReferenceData.class);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return referenceData;
+    }
+    private static String printReceipt() {
+        try {
+            BufferedWriter writer = new BufferedWriter(new FileWriter("Receipt.txt"));
+            writer.write(currentComputer.toString());
+            writer.write(currentComputer.computerCost() + "\n");
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return "Receipt printed to file: Receipt.txt";
+    }
+    /*public static void menus() {
         boolean hasExited = false;
         while (!hasExited) {
             int menuChoice = menuLevel1();
@@ -142,7 +256,7 @@ public class Main {
             partChoice = partChoice.substring(0, partChoice.length() - 1);
         }
         return Integer.parseInt(partChoice);
-    }
+    }*/
 
 
 

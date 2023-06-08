@@ -1,6 +1,6 @@
 import java.text.NumberFormat;
 
-public class PCComponent {
+public abstract class PCComponent {
     //The part number of the component
     String partNumber;
     //The name of the component

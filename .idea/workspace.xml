@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ddb3bf8-8a11-4f1f-9ccc-e3b0819c3d8d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Menus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Computer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Computer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/ReferenceData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/ReferenceData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Computer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Messages.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PCComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PCComponent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ReferenceData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReferenceData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,10 +17,30 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2QvempZzj29d7YUx6bq5GO09a6Z" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -32,16 +51,5 @@
       <updated>1686151808328</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
