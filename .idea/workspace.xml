@@ -4,71 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< Updated upstream
-    <list default="true" id="ff33f2bf-61ef-450f-a354-0f3684323b63" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/StringLinkedList.java" afterDir="false" />
+    <list default="true" id="5ddb3bf8-8a11-4f1f-9ccc-e3b0819c3d8d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/CPU.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/CPU.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/CPUCooler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/CPUCooler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Case.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Case.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/CaseFans.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/CaseFans.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Computer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Computer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/GPU.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/GPU.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/MemoryKits.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/MemoryKits.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Motherboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Motherboard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/PCComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/PCComponent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/PowerSupply.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/PowerSupply.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/ReferenceData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/ReferenceData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Storage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Storage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/referenceData.json" beforeDir="false" afterPath="$PROJECT_DIR$/referenceData.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Computer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PCComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PCComponent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ReferenceData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReferenceData.java" afterDir="false" />
     </list>
-=======
-    <list default="true" id="31de5f0c-7f3c-46f4-a6fc-2261c5c06636" name="Changes" comment="" />
->>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="2QrJ9buA47Oc04mNxw8dy2hLFal" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true"
-  }
-}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ff33f2bf-61ef-450f-a354-0f3684323b63" name="Changes" comment="" />
-      <created>1686105618298</created>
+      <changelist id="5ddb3bf8-8a11-4f1f-9ccc-e3b0819c3d8d" name="Changes" comment="" />
+      <created>1686151808328</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1686105618298</updated>
+      <updated>1686151808328</updated>
     </task>
     <servers />
   </component>
@@ -78,14 +39,9 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
           <line>11</line>
-          <option name="timeStamp" value="7" />
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <pin-to-top-manager>
-      <pinned-members>
-        <PinnedItemInfo parentTag="Motherboard" memberName="name" />
-      </pinned-members>
-    </pin-to-top-manager>
   </component>
 </project>

@@ -84,5 +84,6 @@ public class Computer {
 
     public void addComponent(PCComponent component) {
         computer[computerIndex] = component;
+        computerIndex++;
     }
 }

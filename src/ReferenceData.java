@@ -1,5 +1,9 @@
 import com.google.gson.Gson;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
 public class ReferenceData {
     private Case[] Cases;
     private CaseFans[] CaseFans;
@@ -10,6 +14,7 @@ public class ReferenceData {
     private PowerSupply[] PowerSupplies;
     private MemoryKits[] MemoryKits;
     private Storage[] Storages;
+
     public String toString() {
         return String.format("""
                 Cases:
@@ -203,6 +208,39 @@ public class ReferenceData {
             }
         }
         return component;
+    }
+
+    public int getComponentList(int i) {
+        if (i == 1) {
+            return Motherboards.length;
+        }
+        else if (i == 2) {
+            return CPUs.length;
+        }
+        else if (i == 3) {
+            return CPUCoolers.length;
+        }
+        else if (i == 4) {
+            return GPUs.length;
+        }
+        else if (i == 5) {
+            return MemoryKits.length;
+        }
+        else if (i == 6) {
+            return Storages.length;
+        }
+        else if (i == 7) {
+            return Cases.length;
+        }
+        else if (i == 8) {
+            return CaseFans.length;
+        }
+        else if (i == 9) {
+            return PowerSupplies.length;
+        }
+        else {
+            return 0;
+        }
     }
     //TODO:
     //Create one method to read one json file with all the reference data split into sections by type

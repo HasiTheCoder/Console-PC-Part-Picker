@@ -11,8 +11,18 @@ public class Main {
     public static void main(String[] args) {
         menus();
     }
+    public static ReferenceData deserialize() {
+        Gson gson = new Gson();
+        try {
+            String json = new String(Files.readAllBytes(Paths.get("referenceData.json")));
+            referenceData = gson.fromJson(json, ReferenceData.class);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return referenceData;
+    }
     public static Scanner input = new Scanner(System.in);
-    public static ReferenceData referenceData = deserializeRefData();
+    public static ReferenceData referenceData = deserialize();
     public static PCComponent currentComponent;
     public static Computer currentComputer = new Computer();
     public static String[] levelOneMenus = new String[] {
@@ -104,8 +114,7 @@ public class Main {
         if (partChoice.contains("v")) {
             System.out.println(referenceData.getComponent(removeV(partChoice), menuChoice));
             System.out.println("\nEnter y to select this part or n to go back to the previous menu: ");
-            finalPartChoice = input.next();
-            input.nextLine();
+            finalPartChoice = input.nextLine();
             if (finalPartChoice.equals("y")) {
                 currentComputer.addComponent(referenceData.getComponent(removeV(partChoice), menuChoice));
             }
@@ -120,6 +129,9 @@ public class Main {
         else if (partChoice.equals("0")) {
             menus();
         }
+        else if (Integer.parseInt(partChoice) > 0 && Integer.parseInt(partChoice) <= referenceData.getComponentList(Integer.parseInt(partChoice))) {
+            currentComputer.addComponent(referenceData.getComponent(Integer.parseInt(partChoice), menuChoice));
+        }
         else {
             System.out.println("Invalid input");
             menuLevel2();
@@ -131,18 +143,7 @@ public class Main {
         }
         return Integer.parseInt(partChoice);
     }
-    public static ReferenceData deserializeRefData()
-    {
-        ReferenceData referenceData = new ReferenceData();
-        Gson gson = new Gson();
-        try {
-            String json = new String(Files.readAllBytes(Paths.get("referenceData.json")));
-            referenceData = gson.fromJson(json, ReferenceData.class);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return referenceData;
-    }
+
 
 
 
@@ -197,7 +198,7 @@ public class Main {
                 {
                     "Motherboards", "Z790 AORUS ELITE AX", "MAG B660 TOMAHAWK WIFI DDR4", "ROG MAXIMUS Z790 HERO", "B650 GAMING X AX", "MAG X670E TOMAHAWK WIFI",
                     "ROG STRIX X670E-E GAMING WIFI", "MAG B550 TOMAHAWK", "TUF GAMING X570-PLUS (WI-FI)", "Prime B450M-A II"
-                },
+                 },
                 {"CPU Coolers", "MLW-D24M-A18PC-R2", "NH-D15 CHROMAX.BLACK", "RL-KRZ73-01"},
                 {"Power Supplies", "CP-9020200-NA", "CP-9020262-NA", "CP-9020201-NA"},
                 {"GPUs", "RTX3060Ventus2X212GOC", "TUF-RTX4070TI-12G-GAMING", "GV-R66EAGLE-8GD"},
