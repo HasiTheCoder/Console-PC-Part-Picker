@@ -143,65 +143,65 @@ public class ReferenceData {
     public PCComponent getComponent(int partChoice, int menuChoice) {
         PCComponent component = null;
         if (menuChoice == 1) {
-            for (int i = 0; i < Motherboards.length; i++) {
-                if (partChoice-1 == i) {
-                    component = Motherboards[i];
+            for (int i = 1; i < Motherboards.length; i++) {
+                if (partChoice == i) {
+                    component = Motherboards[i-1];
                 }
             }
         }
         else if (menuChoice == 2) {
-            for (int i = 0; i < CPUs.length; i++) {
-                if (partChoice-1 == i) {
-                    component = CPUs[i];
+            for (int i = 1; i < CPUs.length; i++) {
+                if (partChoice == i) {
+                    component = CPUs[i-1];
                 }
             }
         }
         else if (menuChoice == 3) {
-            for (int i = 0; i < CPUCoolers.length; i++) {
-                if (partChoice-1 == i) {
-                    component = CPUCoolers[i];
+            for (int i = 1; i < CPUCoolers.length; i++) {
+                if (partChoice == i) {
+                    component = CPUCoolers[i-1];
                 }
             }
         }
         else if (menuChoice == 4) {
-            for (int i = 0; i < GPUs.length; i++) {
-                if (partChoice-1 == i) {
-                    component = GPUs[i];
+            for (int i = 1; i < GPUs.length; i++) {
+                if (partChoice == i) {
+                    component = GPUs[i-1];
                 }
             }
         }
         else if (menuChoice == 5) {
-            for (int i = 0; i < MemoryKits.length; i++) {
-                if (partChoice-1 == i) {
-                    component = MemoryKits[i];
+            for (int i = 1; i < MemoryKits.length; i++) {
+                if (partChoice == i) {
+                    component = MemoryKits[i-1];
                 }
             }
         }
         else if (menuChoice == 6) {
-            for (int i = 0; i < Storages.length; i++) {
-                if (partChoice-1 == i) {
-                    component = Storages[i];
+            for (int i = 1; i < Storages.length; i++) {
+                if (partChoice == i) {
+                    component = Storages[i-1];
                 }
             }
         }
         else if (menuChoice == 7) {
-            for (int i = 0; i < Cases.length; i++) {
-                if (partChoice-1 == i) {
-                    component = Cases[i];
+            for (int i = 1; i < Cases.length; i++) {
+                if (partChoice == i) {
+                    component = Cases[i-1];
                 }
             }
         }
         else if (menuChoice == 8) {
-            for (int i = 0; i < CaseFans.length; i++) {
-                if (partChoice-1 == i) {
-                    component = CaseFans[i];
+            for (int i = 1; i < CaseFans.length; i++) {
+                if (partChoice == i) {
+                    component = CaseFans[i-1];
                 }
             }
         }
         else if (menuChoice == 9) {
-            for (int i = 0; i < PowerSupplies.length; i++) {
-                if (partChoice-1 == i) {
-                    component = PowerSupplies[i];
+            for (int i = 1; i < PowerSupplies.length; i++) {
+                if (partChoice == i) {
+                    component = PowerSupplies[i-1];
                 }
             }
         }

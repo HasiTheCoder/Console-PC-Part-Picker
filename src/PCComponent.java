@@ -1,6 +1,6 @@
 import java.text.NumberFormat;
 
-public abstract class PCComponent {
+public class PCComponent {
     //The part number of the component
     String partNumber;
     //The name of the component
@@ -55,5 +55,38 @@ public abstract class PCComponent {
                 name,
                 partNumber,
                 price);
+    }
+
+    public String getType() {
+        if (this instanceof Motherboard) {
+            return "Motherboard";
+        }
+        else if (this instanceof CPU) {
+            return "CPU";
+        }
+        else if (this instanceof CPUCooler) {
+            return "CPU Cooler";
+        }
+        else if (this instanceof GPU) {
+            return "GPU";
+        }
+        else if (this instanceof MemoryKits) {
+            return "Memory Kit";
+        }
+        else if (this instanceof Storage) {
+            return "Storage";
+        }
+        else if (this instanceof Case) {
+            return "Case";
+        }
+        else if (this instanceof CaseFans) {
+            return "Case Fan";
+        }
+        else if (this instanceof PowerSupply) {
+            return "Power Supply";
+        }
+        else {
+            return "No type";
+        }
     }
 }
