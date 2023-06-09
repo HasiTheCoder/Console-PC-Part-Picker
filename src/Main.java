@@ -56,6 +56,7 @@ public class Main {
                     }
                     else if (index == 4) {
                         //TODO create the if structure for this when this part of program is created
+                        //This is for the prebuilt computers
                     }
             }
             else {

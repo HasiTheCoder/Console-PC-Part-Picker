@@ -44,7 +44,7 @@ public class Menus {
                         new Menus(("Power Supplies\n" + Main.referenceData.printComponentList(9)), new Menus[0])
                 }),
                         new Menus("\t\tComputer Report\n" + printReceipt(), new Menus[0]),
-                new Menus("\t\tView Computer\n" + Main.currentComputer + "\nComputer Cost: " + Main.currentComputer.computerCost(), new Menus[0]),
+                new Menus("\t\tView Computer\n" + Main.currentComputer.toString() + "\nComputer Cost: " + Main.currentComputer.computerCost(), new Menus[0]),
                 new Menus("Feature not implemented yet", new Menus[0]),
                 new Menus("Feature not implemented yet", new Menus[0]),
                 new Menus("Feature not implemented yet", new Menus[0]),
@@ -60,8 +60,9 @@ public class Menus {
     private static String printReceipt() {
         try {
             BufferedWriter writer = new BufferedWriter(new FileWriter("Receipt.txt"));
+            writer.write("Computer Report\n");
             writer.write(Main.currentComputer.toString());
-            writer.write(Main.currentComputer.computerCost() + "\n");
+            writer.write("Cost:" + Main.currentComputer.computerCost() + "\n");
             writer.close();
         } catch (IOException e) {
             e.printStackTrace();
