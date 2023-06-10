@@ -3,7 +3,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class Menus {
-    private String menus;
+/*    private String menus;
     private Menus[] subMenus;
     public Menus(String menu, Menus[] subMenu) {
         menus = menu;
@@ -71,5 +71,5 @@ public class Menus {
     }
     public String toString() {
         return menus;
-    }
+    }*/
 }
