@@ -29,20 +29,33 @@ public class Menu {
     }
 
     public int getUserChoice() {
-        Scanner input = new Scanner(System.in);
-        String choice = "";
-        boolean validChoice = false;
-        while (!validChoice) {
-            System.out.println("Enter your choice: ");
-            choice = input.next();
 
-            if (Integer.parseInt(choice) >= 1 && Integer.parseInt(choice) <= menuOptions.length) {
-                validChoice = true;
-            } else {
+        Scanner input = new Scanner(System.in);
+        String userChoiceText = "";
+        int userChoice = 0;
+        //reject everything except 1 to menuoptions length +2
+
+        while (true) {
+            System.out.println("Enter your choice: ");
+            userChoiceText = input.nextLine();
+            int maxLength = menuOptions.length+2;
+            try {
+                if (mainMenu == null)
+                {
+                    maxLength = menuOptions.length;
+                }
+
+                userChoice = Integer.parseInt(userChoiceText);
+                if (userChoice >= 1 && userChoice <= maxLength)
+                {
+                    return userChoice;
+                }
+                System.out.println("Invalid choice. Please try again.");
+            }
+            catch (NumberFormatException ex) {
                 System.out.println("Invalid choice. Please try again.");
             }
         }
-        return Integer.parseInt(choice);
     }
     public Menu getMainMenu() {
         return mainMenu;

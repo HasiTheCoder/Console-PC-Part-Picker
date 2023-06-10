@@ -12,17 +12,46 @@ public class Main {
     public static Menus menus = new Menus();*/
     public static void main(String[] args) {
 
-        Menu menu = createMenuStructure();
-        menu.display();
+        Menu currentMenu = createMenuStructure();
+        currentMenu.display();
         int userChoice;
-        while (!menu.getMenuOptions()[(userChoice = menu.getUserChoice())-1].getDisplayText().equals("Exit")) {
-            menu.getMenuOptions()[userChoice - 1].getSubMenu().display();
-            Menu previousMenu = menu;
-            menu = menu.getMenuOptions()[userChoice - 1].getSubMenu();
-            if (menu == null) {
-                menu = previousMenu;
+        while (true) {
+            userChoice = currentMenu.getUserChoice();
+            if (userChoice <= currentMenu.getMenuOptions().length && currentMenu.getMenuOptions()[userChoice-1].getDisplayText().equalsIgnoreCase("Exit"))
+            {
+                break;
+            }
+
+            if (userChoice == currentMenu.getMenuOptions().length + 1) {
+                if (currentMenu.getPreviousMenu() != null) {
+                    (currentMenu = currentMenu.getPreviousMenu()).display();
+                }
+            }
+            else if (userChoice == currentMenu.getMenuOptions().length + 2) {
+                if (currentMenu.getMainMenu() != null) {
+                    (currentMenu = currentMenu.getMainMenu()).display();
+                }
+            }
+            else if (userChoice <= currentMenu.getMenuOptions().length) {
+                    if (currentMenu.getMenuOptions()[userChoice - 1].getSubMenu() == null) {
+                        currentMenu = currentMenu.getPreviousMenu();
+                    } else {
+                        currentMenu.getMenuOptions()[userChoice - 1].getSubMenu().display();
+                        // set the current menu to the selected submenu
+                        currentMenu = currentMenu.getMenuOptions()[userChoice - 1].getSubMenu();
+                    }
+                }
             }
         }
+
+/*        while (!currentMenu.getMenuOptions()[userChoice-1].getDisplayText().equals("Exit")) {
+            currentMenu.getMenuOptions()[userChoice - 1].getSubMenu().display();
+            Menu previousMenu = currentMenu;
+            currentMenu = currentMenu.getMenuOptions()[userChoice - 1].getSubMenu();
+            if (currentMenu == null) {
+                currentMenu = previousMenu;
+            }
+        }*/
 
 
 /*
@@ -38,7 +67,7 @@ public class Main {
             }
         }
 */
-    }
+
 
     private static Menu createMenuStructure() {
         MenuOption[] m1DetailOption = new MenuOption[1];
