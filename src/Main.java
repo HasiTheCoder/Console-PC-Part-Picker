@@ -3,18 +3,16 @@ import com.google.gson.GsonBuilder;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.InputMismatchException;
-import java.util.Scanner;
 public class Main {
-/*    public static Scanner input = new Scanner(System.in);
-    public static ReferenceData referenceData = deserialize();
-    public static Computer currentComputer = new Computer();
-    public static Menus menus = new Menus();*/
     public static void main(String[] args) {
 
-        Menu currentMenu = createMenuStructure();
+        ReferenceData referenceData = LoadReferenceData("referenceData.json");
+        Menu currentMenu = loadMenuStructure();
         currentMenu.display();
         int userChoice;
+
+        Computer currentComputer = new Computer();
+
         while (true) {
             userChoice = currentMenu.getUserChoice();
             if (userChoice <= currentMenu.getMenuOptions().length && currentMenu.getMenuOptions()[userChoice-1].getDisplayText().equalsIgnoreCase("Exit"))
@@ -34,6 +32,18 @@ public class Main {
             }
             else if (userChoice <= currentMenu.getMenuOptions().length) {
                     if (currentMenu.getMenuOptions()[userChoice - 1].getSubMenu() == null) {
+
+                        if (!currentMenu.getKeyIdentifier().isEmpty())
+                        {
+                            PCComponent tempCompoent = referenceData.getPCComponent(currentMenu.getKeyIdentifier());
+                            if (tempCompoent != null) {
+                                currentComputer.addComponent(tempCompoent);
+                            }
+                            else {
+                                System.out.println("Component not found.");
+                            }
+                        }
+                        currentMenu.getPreviousMenu().display();
                         currentMenu = currentMenu.getPreviousMenu();
                     } else {
                         currentMenu.getMenuOptions()[userChoice - 1].getSubMenu().display();
@@ -44,43 +54,30 @@ public class Main {
             }
         }
 
-/*        while (!currentMenu.getMenuOptions()[userChoice-1].getDisplayText().equals("Exit")) {
-            currentMenu.getMenuOptions()[userChoice - 1].getSubMenu().display();
-            Menu previousMenu = currentMenu;
-            currentMenu = currentMenu.getMenuOptions()[userChoice - 1].getSubMenu();
-            if (currentMenu == null) {
-                currentMenu = previousMenu;
-            }
-        }*/
 
-
-/*
-        boolean hasExited = false;
-        while (!hasExited) {
-            int choice1 = menu();
-            int choice2 = mainMenuSubMenus(choice1-1);
-            if (choice2 == -2) {
-                hasExited = true;
-            }
-            else if (choice2 != -1) {
-                partList(choice2-1, choice2);
-            }
+    private static ReferenceData LoadReferenceData(String jsonFilePath) {
+        ReferenceData referenceData = null;
+        Gson gson = new Gson();
+        try {
+            String json = new String(Files.readAllBytes(Paths.get(jsonFilePath)));
+            referenceData = gson.fromJson(json, ReferenceData.class);
+        } catch (IOException e) {
+            System.out.println("Reference Data Load Failed. " + e.toString());
         }
-*/
-
-
-    private static Menu createMenuStructure() {
+        return referenceData;
+    }
+    private static Menu loadMenuStructure() {
         MenuOption[] m1DetailOption = new MenuOption[1];
         m1DetailOption[0] = new MenuOption("M1 Detail String", null);
-        Menu m1DetailMenu = new Menu(m1DetailOption, "M1 Name", null , null );
+        Menu m1DetailMenu = new Menu(m1DetailOption, "M1 Name", null , null, "M1PartNumber");
 
         MenuOption[] m2DetailOption = new MenuOption[1];
         m2DetailOption[0] = new MenuOption("M2 Detail String", null);
-        Menu m2DetailMenu = new Menu(m2DetailOption, "M2 Name", null , null );
+        Menu m2DetailMenu = new Menu(m2DetailOption, "M2 Name", null , null , "M2PartNumber");
 
         MenuOption[] m3DetailOption = new MenuOption[1];
         m3DetailOption[0] = new MenuOption("M3 Detail String", null);
-        Menu m3DetailMenu = new Menu(m3DetailOption, "M3 Name", null , null );
+        Menu m3DetailMenu = new Menu(m3DetailOption, "M3 Name", null , null , "M3PartNumber");
 
         MenuOption[] motherboardListOptions = new MenuOption[3];
         motherboardListOptions[0] = new MenuOption("M1", m1DetailMenu);
@@ -94,15 +91,15 @@ public class Main {
 
         MenuOption[] c1DetailOption = new MenuOption[1];
         c1DetailOption[0] = new MenuOption("C1 Detail String", null);
-        Menu c1DetailMenu = new Menu(c1DetailOption, "C1 Name", null , null );
+        Menu c1DetailMenu = new Menu(c1DetailOption, "C1 Name", null , null , "C1PartNumber");
 
         MenuOption[] c2DetailOption = new MenuOption[1];
         c2DetailOption[0] = new MenuOption("C2 Detail String", null);
-        Menu c2DetailMenu = new Menu(c2DetailOption, "C2 Name", null , null );
+        Menu c2DetailMenu = new Menu(c2DetailOption, "C2 Name", null , null , "C2PartNumber");
 
         MenuOption[] c3DetailOption = new MenuOption[1];
         c3DetailOption[0] = new MenuOption("C3 Detail String", null);
-        Menu c3DetailMenu = new Menu(c3DetailOption, "C3 Name", null , null );
+        Menu c3DetailMenu = new Menu(c3DetailOption, "C3 Name", null , null , "C3PartNumber");
 
         MenuOption[] cpuListOptions = new MenuOption[3];
         cpuListOptions[0] = new MenuOption("C1", c1DetailMenu);
@@ -116,15 +113,15 @@ public class Main {
 
         MenuOption[] g1DetailOption = new MenuOption[1];
         g1DetailOption[0] = new MenuOption("G1 Detail String", null);
-        Menu g1DetailMenu = new Menu(g1DetailOption, "G1 Name", null , null );
+        Menu g1DetailMenu = new Menu(g1DetailOption, "G1 Name", null , null , "G1PartNumber");
 
         MenuOption[] g2DetailOption = new MenuOption[1];
         g2DetailOption[0] = new MenuOption("G2 Detail String", null);
-        Menu g2DetailMenu = new Menu(g2DetailOption, "G2 Name", null , null );
+        Menu g2DetailMenu = new Menu(g2DetailOption, "G2 Name", null , null , "G2PartNumber");
 
         MenuOption[] g3DetailOption = new MenuOption[1];
         g3DetailOption[0] = new MenuOption("G3 Detail String", null);
-        Menu g3DetailMenu = new Menu(g3DetailOption, "G3 Name", null , null );
+        Menu g3DetailMenu = new Menu(g3DetailOption, "G3 Name", null , null , "G3PartNumber");
 
         MenuOption[] gpuListOptions = new MenuOption[3];
         gpuListOptions[0] = new MenuOption("G1", g1DetailMenu);
@@ -170,39 +167,6 @@ public class Main {
         motherboardListMenu.setMainMenu(mainMenu);
         cpuListMenu.setMainMenu(mainMenu);
         gpuListMenu.setMainMenu(mainMenu);
-/*
-        newComputerMenu.getMenuOptions()[3].setSubMenu(mainMenu);
-        newComputerMenu.getMenuOptions()[4].setSubMenu(mainMenu);
-        gpuListMenu.getMenuOptions()[3].setSubMenu(mainMenu);
-        gpuListMenu.getMenuOptions()[4].setSubMenu(newComputerMenu);
-        g1DetailMenu.getMenuOptions()[1].setSubMenu(mainMenu);
-        g1DetailMenu.getMenuOptions()[2].setSubMenu(gpuListMenu);
-        g2DetailMenu.getMenuOptions()[1].setSubMenu(mainMenu);
-        g2DetailMenu.getMenuOptions()[2].setSubMenu(gpuListMenu);
-        g3DetailMenu.getMenuOptions()[1].setSubMenu(mainMenu);
-        g3DetailMenu.getMenuOptions()[2].setSubMenu(gpuListMenu);
-        cpuListMenu.getMenuOptions()[3].setSubMenu(mainMenu);
-        cpuListMenu.getMenuOptions()[4].setSubMenu(newComputerMenu);
-        c1DetailMenu.getMenuOptions()[1].setSubMenu(mainMenu);
-        c1DetailMenu.getMenuOptions()[2].setSubMenu(cpuListMenu);
-        c2DetailMenu.getMenuOptions()[1].setSubMenu(mainMenu);
-        c2DetailMenu.getMenuOptions()[2].setSubMenu(cpuListMenu);
-        c3DetailMenu.getMenuOptions()[1].setSubMenu(mainMenu);
-        c3DetailMenu.getMenuOptions()[2].setSubMenu(cpuListMenu);
-        motherboardListMenu.getMenuOptions()[3].setSubMenu(mainMenu);
-        motherboardListMenu.getMenuOptions()[4].setSubMenu(newComputerMenu);
-        m1DetailMenu.getMenuOptions()[1].setSubMenu(mainMenu);
-        m1DetailMenu.getMenuOptions()[2].setSubMenu(motherboardListMenu);
-        m2DetailMenu.getMenuOptions()[1].setSubMenu(mainMenu);
-        m2DetailMenu.getMenuOptions()[2].setSubMenu(motherboardListMenu);
-        m3DetailMenu.getMenuOptions()[1].setSubMenu(mainMenu);
-        m3DetailMenu.getMenuOptions()[2].setSubMenu(motherboardListMenu);
-*/
-
-
-
-
-
         return mainMenu;
     }
 
@@ -285,16 +249,6 @@ public class Main {
         } catch (InputMismatchException e) {
             e.printStackTrace();
         }
-    }
-    public static ReferenceData deserialize() {
-        Gson gson = new Gson();
-        try {
-            String json = new String(Files.readAllBytes(Paths.get("referenceData.json")));
-            referenceData = gson.fromJson(json, ReferenceData.class);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return referenceData;
     }*/
 
     /*public static void menus() {

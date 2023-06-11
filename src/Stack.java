@@ -1,5 +1,5 @@
 public class Stack {
-private PCComponentLinkedList list;
+    private PCComponentLinkedList list;
     public Stack() {
         list = new PCComponentLinkedList();
     }
@@ -11,15 +11,15 @@ private PCComponentLinkedList list;
         list.addToBack(n);
     }
     //look at the top item
-    public String top() {
+    public PCComponent top() {
         if (isEmpty()) {
-            return "No Computer";
+            return null;
         }
-        return list.getHead().getName();
+        return list.getHeadData();
     }
     //removing items from the stack
     public PCComponent pop() {
-        return list.removeFirstItem();
+        return list.removeHeadData();
     }
     //number of items in stack
     public int size() {

@@ -6,8 +6,8 @@ public class PCComponentLinkedList {
         private class Node {
             private PCComponent data;
             private Node next;
-            private Node(PCComponent dataN) {
-                data = dataN;
+            private Node(PCComponent paramData) {
+                data = paramData;
             }
             private PCComponent getData() {
                 return data;
@@ -18,23 +18,24 @@ public class PCComponentLinkedList {
             private void setNext(Node n) {
                 next = n;
             }
-            private void setData(PCComponent dataN) {
-                data = dataN;
-            }
         }
-        public PCComponent getHead() {
+        public PCComponent getHeadData() {
             return head.getData();
         }
-        public PCComponent removeFirstItem(){
+
+        public PCComponent removeHeadData(){
             if (isEmpty()) {
                 return null;
             }
             else {
-                PCComponent temp = head.getData();
+                Node tempNode = head;
                 head = head.getNext();
-                return temp;
+                PCComponent tempPCComponent = tempNode.getData();
+                tempNode.setNext(null);
+                return tempPCComponent;
             }
         }
+/*
         public void removeLastTime() {
             if (isEmpty()) {
                 return;
@@ -51,6 +52,7 @@ public class PCComponentLinkedList {
             }
             beforeCurrent.setNext(null);
         }
+*/
         public void addToBack(PCComponent data) {
             if (head == null) {
                 head = new Node(data);
@@ -61,40 +63,7 @@ public class PCComponentLinkedList {
                 while (temp.getNext()!=null) {
                     temp = temp.getNext();
                 }
-                temp.next = newNode;
-            }
-        }
-        public void addToFront(PCComponent data) {
-            if (head == null) {
-                head = new Node(data);
-            }
-            else {
-                Node newNode = new Node(data);
-                newNode.setNext(head);
-                head = newNode;
-            }
-        }
-        public void remove(PCComponent data) {
-            if (head == null) {
-                return; // List is empty, nothing to remove
-            }
-
-            if (data.equals(head.getData())) {
-                head = head.getNext();
-                return; // Found and removed the node from the head
-            }
-
-            Node previous = head;
-            Node current = head.getNext();
-
-            while (current != null) {
-                if (data == current.getData()) {
-                    previous.setNext(current.getNext());
-                    return; // Found and removed the node
-                }
-
-                previous = current;
-                current = current.getNext();
+                temp.setNext(newNode);
             }
         }
         public boolean isEmpty() {
@@ -109,6 +78,8 @@ public class PCComponentLinkedList {
             }
             return size;
         }
+
+        // TODO: please fix memory leak here
         public void makeEmpty() {
             head = null;
         }

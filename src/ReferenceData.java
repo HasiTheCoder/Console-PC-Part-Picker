@@ -15,6 +15,7 @@ public class ReferenceData {
     private MemoryKits[] MemoryKits;
     private Storage[] Storages;
 
+
     public String toString() {
         return String.format("""
                 Cases:
@@ -139,75 +140,6 @@ public class ReferenceData {
         }
         return result;
     }
-
-    public PCComponent getComponent(int partChoice, int menuChoice) {
-        PCComponent component = null;
-        if (menuChoice == 1) {
-            for (int i = 1; i <= Motherboards.length; i++) {
-                if (partChoice == i) {
-                    component = Motherboards[i-1];
-                }
-            }
-        }
-        else if (menuChoice == 2) {
-            for (int i = 1; i <= CPUs.length; i++) {
-                if (partChoice == i) {
-                    component = CPUs[i-1];
-                }
-            }
-        }
-        else if (menuChoice == 3) {
-            for (int i = 1; i <= CPUCoolers.length; i++) {
-                if (partChoice == i) {
-                    component = CPUCoolers[i-1];
-                }
-            }
-        }
-        else if (menuChoice == 4) {
-            for (int i = 1; i <= GPUs.length; i++) {
-                if (partChoice == i) {
-                    component = GPUs[i-1];
-                }
-            }
-        }
-        else if (menuChoice == 5) {
-            for (int i = 1; i <= MemoryKits.length; i++) {
-                if (partChoice == i) {
-                    component = MemoryKits[i-1];
-                }
-            }
-        }
-        else if (menuChoice == 6) {
-            for (int i = 1; i <= Storages.length; i++) {
-                if (partChoice == i) {
-                    component = Storages[i-1];
-                }
-            }
-        }
-        else if (menuChoice == 7) {
-            for (int i = 1; i <= Cases.length; i++) {
-                if (partChoice == i) {
-                    component = Cases[i-1];
-                }
-            }
-        }
-        else if (menuChoice == 8) {
-            for (int i = 1; i <= CaseFans.length; i++) {
-                if (partChoice == i) {
-                    component = CaseFans[i-1];
-                }
-            }
-        }
-        else if (menuChoice == 9) {
-            for (int i = 1; i <= PowerSupplies.length; i++) {
-                if (partChoice == i) {
-                    component = PowerSupplies[i-1];
-                }
-            }
-        }
-        return component;
-    }
-
     public int getComponentList(int i) {
         if (i == 1) {
             return Motherboards.length;
@@ -239,6 +171,55 @@ public class ReferenceData {
         else {
             return 0;
         }
+    }
+
+    public PCComponent getPCComponent(String keyIdentifier) {
+        for (int i = 0; i < Motherboards.length; i++) {
+            if (Motherboards[i].getPartNumber().equals(keyIdentifier)) {
+                return Motherboards[i];
+            }
+        }
+        for (int i = 0; i < CPUs.length; i++) {
+            if (CPUs[i].getPartNumber().equals(keyIdentifier)) {
+                return CPUs[i];
+            }
+        }
+        for (int i = 0; i < CPUCoolers.length; i++) {
+            if (CPUCoolers[i].getPartNumber().equals(keyIdentifier)) {
+                return CPUCoolers[i];
+            }
+        }
+        for (int i = 0; i < GPUs.length; i++) {
+            if (GPUs[i].getPartNumber().equals(keyIdentifier)) {
+                return GPUs[i];
+            }
+        }
+        for (int i = 0; i < MemoryKits.length; i++) {
+            if (MemoryKits[i].getPartNumber().equals(keyIdentifier)) {
+                return MemoryKits[i];
+            }
+        }
+        for (int i = 0; i < Storages.length; i++) {
+            if (Storages[i].getPartNumber().equals(keyIdentifier)) {
+                return Storages[i];
+            }
+        }
+        for (int i = 0; i < Cases.length; i++) {
+            if (Cases[i].getPartNumber().equals(keyIdentifier)) {
+                return Cases[i];
+            }
+        }
+        for (int i = 0; i < CaseFans.length; i++) {
+            if (CaseFans[i].getPartNumber().equals(keyIdentifier)) {
+                return CaseFans[i];
+            }
+        }
+        for (int i = 0; i < PowerSupplies.length; i++) {
+            if (PowerSupplies[i].getPartNumber().equals(keyIdentifier)) {
+                return PowerSupplies[i];
+            }
+        }
+        return null;
     }
     //TODO:
     //Create one method to read one json file with all the reference data split into sections by type

@@ -10,10 +10,15 @@ public class MenuOption {
     private String displayText;
     private Menu subMenu;
 
+
+
+
     public MenuOption(String paramDisplayText, Menu paramSubMenu) {
         displayText = paramDisplayText;
         subMenu = paramSubMenu;
+
     }
+
     public String getDisplayText() {
         return displayText;
     }

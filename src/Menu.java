@@ -7,6 +7,20 @@ public class Menu {
     private Menu previousMenu;
     private MenuOption[] menuOptions;
 
+    private String keyIdentifier = "";
+
+    public Menu()
+    {
+
+    }
+    public Menu(MenuOption[] paramMenuOptions, String paramMenuTitle, Menu paramMainMenu, Menu paramPreviousMenu, String paramKeyIdentifier) {
+        menuTitle = paramMenuTitle;
+        mainMenu = paramMainMenu;
+        previousMenu = paramPreviousMenu;
+        menuOptions = paramMenuOptions;
+        keyIdentifier = paramKeyIdentifier;
+    }
+
     public Menu(MenuOption[] paramMenuOptions, String paramMenuTitle, Menu paramMainMenu, Menu paramPreviousMenu) {
         menuTitle = paramMenuTitle;
         mainMenu = paramMainMenu;
@@ -25,6 +39,10 @@ public class Menu {
         }
         if (mainMenu != null) {
             System.out.println((i+2) + ". Return to Main Menu.");
+        }
+        if (!keyIdentifier.isEmpty())
+        {
+            System.out.println("Press 1 to add this to your new computer.");
         }
     }
 
@@ -75,5 +93,9 @@ public class Menu {
 
     public MenuOption[] getMenuOptions() {
         return menuOptions;
+    }
+
+    public String getKeyIdentifier() {
+        return keyIdentifier;
     }
 }

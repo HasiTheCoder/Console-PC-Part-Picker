@@ -4,23 +4,23 @@
  * @Author Hasnain Heryani
  */
 public class Computer {
-    private Stack computer;
-    private double price;
+    private Stack components;
+    private double currentPrice;
     /**
      * Default constructor that initializes the Computer object with default values
      */
     public Computer() {
-        computer = new Stack();
-        price = 0;
+        components = new Stack();
+        currentPrice = 0;
     }
-    public double computerCost() {
-        return price;
+    public double getCurrentPrice() {
+        return currentPrice;
     }
     public String toString() {
-        return computer.toString();
+        return components.toString();
     }
     public void addComponent(PCComponent component) {
-        computer.push(component);
-        price += component.getPrice();
+        components.push(component);
+        currentPrice += component.getPrice();
     }
 }
