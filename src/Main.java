@@ -5,8 +5,8 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 public class Main {
     public static void main(String[] args) {
-
-        ReferenceData referenceData = LoadReferenceData("referenceData.json");
+        serializeRefData();
+        /*ReferenceData referenceData = LoadReferenceData("referenceData.json");
         Menu currentMenu = loadMenuStructure();
         currentMenu.display();
         int userChoice;
@@ -51,7 +51,7 @@ public class Main {
                         currentMenu = currentMenu.getMenuOptions()[userChoice - 1].getSubMenu();
                     }
                 }
-            }
+            }*/
         }
 
 
@@ -448,29 +448,36 @@ public class Main {
         GPU gpu1 = new GPU(compatibleGPU1, "MSI", "RTX3060Ventus2X12GOC", "MSI GeForce RTX 3060 Ventus 2X 12G GeForce RTX 3060 12GB 12 GB Video Card", 289.99, "GeForce RTX 3060 12GB", 12, "GDDR6", 1320, 1777, 15000, "PCIe x 16", "Black", "G-Sync", 235, 170, 2, 2, "2 Fans", "1 PCIe 8-pin", "1 HDMI Outputs", "3 DisplayPort Outputs");
         GPU gpu2 = new GPU(compatibleGPU2, "Asus", "TUF-RTX4070TI-12G-GAMING", "Asus TUF GAMING GeForce RTX 4070 Ti 12 GB Video Card", 799.99, "GeForce RTX 4070 Ti", 12, "GDDR6X", 2310, 2640, 21000, "PCIe x 16", "Black", "G-Sync", 305, 285, 2, 4, "3 Fans", "1 PCIe 16-pin", "2 HDMI 2.1a Outputs", "3 DisplayPort 1.4a Outputs");
         GPU gpu3 = new GPU(compatibleGPU3, "Gigabyte", "GV-R66EAGLE-8GD", "Gigabyte EAGLE Radeon RX 6600 8 GB Video Card", 199.99, "Radeon RX 6600", 8, "GDDR6", 1626, 2491, 14000, "PCIe x 16", "Black/Silver", "FreeSync", 282, 132, 2, 2, "3 Fans", "1 PCIe 8-pin", "2 HDMI Outputs", "2 DisplayPort Outputs");
-        String[][] compatiblePowerSupply1 = new String[][]{{}, {}, {}};
-        String[][] compatiblePowerSupply2 = new String[][]{{}, {}, {}};
-        String[][] compatiblePowerSupply3 = new String[][]{{}, {}, {}};
+        String[][] compatiblePowerSupply1 = new String[][]{{"Cases", "PC-O11DEW", "CC-9011200-WW", "CC-H51FB-01"}, {"Motherboards", "Z790 AORUS ELITE AX", "MAG B660 TOMAHAWK WIFI DDR4", "ROG MAXIMUS Z790 HERO", "B650 GAMING X AX", "MAG X670E TOMAHAWK WIFI",
+            "ROG STRIX X670E-E GAMING WIFI", "MAG B550 TOMAHAWK", "TUF GAMING X570-PLUS (WI-FI)", "Prime B450M-A II"}, {"GPUs", "RTX3060Ventus2X12GOC", "TUF-RTX4070TI-12G-GAMING", "GV-R66EAGLE-8GD"}};
+        String[][] compatiblePowerSupply2 = new String[][]{{"Cases", "PC-O11DEW", "CC-9011200-WW", "CC-H51FB-01"}, {"Motherboards", "Z790 AORUS ELITE AX", "MAG B660 TOMAHAWK WIFI DDR4", "ROG MAXIMUS Z790 HERO", "B650 GAMING X AX", "MAG X670E TOMAHAWK WIFI",
+                "ROG STRIX X670E-E GAMING WIFI", "MAG B550 TOMAHAWK", "TUF GAMING X570-PLUS (WI-FI)", "Prime B450M-A II"}, {"GPUs", "RTX3060Ventus2X12GOC", "TUF-RTX4070TI-12G-GAMING", "GV-R66EAGLE-8GD"}};
+        String[][] compatiblePowerSupply3 = new String[][]{{"Cases", "PC-O11DEW", "CC-9011200-WW", "CC-H51FB-01"}, {"Motherboards", "Z790 AORUS ELITE AX", "MAG B660 TOMAHAWK WIFI DDR4", "ROG MAXIMUS Z790 HERO", "B650 GAMING X AX", "MAG X670E TOMAHAWK WIFI",
+                "ROG STRIX X670E-E GAMING WIFI", "MAG B550 TOMAHAWK", "TUF GAMING X570-PLUS (WI-FI)", "Prime B450M-A II"}, {"GPUs", "RTX3060Ventus2X12GOC", "TUF-RTX4070TI-12G-GAMING", "GV-R66EAGLE-8GD"}};
         PowerSupply powerSupply = new PowerSupply(compatiblePowerSupply1, "Corsair", "CP-9020200-NA", "Corsair RM850x (2021) 850 W 80+ Gold Certified Fully Modular ATX Power Supply", 149.99, "ATX", "80+ Gold", 850, 160, "Full", "Black", false, 0, 3, 0, 0, 0, 4, 0, 14, 4);
-        PowerSupply powerSupply2 = new PowerSupply();
-        PowerSupply powerSupply3 = new PowerSupply();
-        String[][] compatibleStorage1 = new String[][]{{}, {}};
-        String[][] compatibleStorage2 = new String[][]{{}, {}};
-        Storage storage1 = new Storage();
-        Storage storage2 = new Storage();
-        Storage storage3 = new Storage();
+        PowerSupply powerSupply2 = new PowerSupply(compatiblePowerSupply2, "Corsair", "CP-9020262-NA", "Corsair RM750e (2023) 750 W 80+ Gold Certified Fully Modular ATX Power Supply", 99.99, "ATX", "80+ Gold", 750, 140, "Full", "Black", false, 0, 2, 1, 0, 0, 3, 0, 7, 4);
+        PowerSupply powerSupply3 = new PowerSupply(compatiblePowerSupply3, "Corsair", "CP-9020201-NA", "Corsair RM1000x (2021) 1000 W 80+ Gold Certified Fully Modular ATX Power Supply", 174.99, "ATX", "80+ Gold", 1000, 180, "Full", "Black", false, 0, 3, 0, 0, 0, 4, 0, 14, 8);
+        String[][] compatibleStorage1 = new String[][]{{"Cases", "PC-O11DEW", "CC-9011200-WW", "CC-H51FB-01"}, {"Motherboards", "Z790 AORUS ELITE AX", "MAG B660 TOMAHAWK WIFI DDR4", "ROG MAXIMUS Z790 HERO", "B650 GAMING X AX", "MAG X670E TOMAHAWK WIFI",
+                "ROG STRIX X670E-E GAMING WIFI", "MAG B550 TOMAHAWK", "TUF GAMING X570-PLUS (WI-FI)", "Prime B450M-A II"}};
+        String[][] compatibleStorage2 = new String[][]{{"Cases", "PC-O11DEW", "CC-9011200-WW", "CC-H51FB-01"}, {"Motherboards", "Z790 AORUS ELITE AX", "MAG B660 TOMAHAWK WIFI DDR4", "ROG MAXIMUS Z790 HERO", "B650 GAMING X AX", "MAG X670E TOMAHAWK WIFI",
+                "ROG STRIX X670E-E GAMING WIFI", "MAG B550 TOMAHAWK", "TUF GAMING X570-PLUS (WI-FI)", "Prime B450M-A II"}};
+        String[][] compatibleStorage3 = new String[][]{{"Cases", "PC-O11DEW", "CC-9011200-WW", "CC-H51FB-01"}, {"Motherboards", "Z790 AORUS ELITE AX", "MAG B660 TOMAHAWK WIFI DDR4", "ROG MAXIMUS Z790 HERO", "B650 GAMING X AX", "MAG X670E TOMAHAWK WIFI",
+                "ROG STRIX X670E-E GAMING WIFI", "MAG B550 TOMAHAWK", "TUF GAMING X570-PLUS (WI-FI)", "Prime B450M-A II"}};
+        Storage storage = new Storage(compatibleStorage1, "Samsung", "Samsung 970 Evo Plus 1 TB M.2-2280 PCIe 3.0 X4 NVME Solid State Drive", "MZ-V7S1T0B/AM", 69.98, "1 TB", 0.070, "SSD", 1024, "M.2-2280", "M.2 PCIe 3.0 x 4", true);
+        Storage storage2 = new Storage(compatibleStorage2, "Samsung", "Samsung 980 Pro 2 TB M.2-2280 PCIe 4.0 X4 NVME Solid State Drive", "MZ-V8P2T0B/AM", 129.99, "2 TB", 0.065, "SSD", 2048, "M.2-2280", "M.2 PCIe 4.0 x 4", true);
+        Storage storage3 = new Storage(compatibleStorage3, "Seagate", "Seagate Barracuda Compute 2 TB 3.5\" 7200 RPM Internal Hard Drive", "ST2000DM008", 49.99, "2 TB", 0.025, "HDD - 7200 RPM", 256, "3.5\"", "SATA 6.0 Gb/s", false);
 
-        Storage storage = new Storage(compatibleStorage1, "Samsung", "Samsung 970 Evo Plus 1 TB M.2-2280 PCIe 3.0 X4 NVME Solid State Drive", "MZ-V7S1T0B/AM", 69.98, "1 TB", 0.070, "SSD", 1024, "m.2-2280", "M.2 PCIe 3.0 x 4", true);
+
         ReferenceData refData = new ReferenceData();
         refData.setCaseFans(new CaseFans[]{casefan1, casefan2, casefan3});
-        refData.setCases(new Case[]{case1});
+        refData.setCases(new Case[]{case1, case2, case3});
         refData.setCPUs(new CPU[]{CPU1, CPU2, CPU3, CPU4, CPU5, CPU6, CPU7, CPU8, CPU9});
         refData.setCPUCoolers(new CPUCooler[]{cpuCooler1, cpuCooler2, cpuCooler3});
         refData.setGPUs(new GPU[]{gpu1, gpu2, gpu3});
         refData.setMemoryKits(new MemoryKits[]{memoryKit1, memoryKit2, memoryKit3, memoryKits4, memoryKits5, memoryKits6});
-        refData.setMotherboards(new Motherboard[]{motherboard, motherboard2, motherboard3});
-        refData.setPowerSupplies(new PowerSupply[]{powerSupply});
-        refData.setStorages(new Storage[]{storage});
+        refData.setMotherboards(new Motherboard[]{motherboard, motherboard2, motherboard3, motherboard4, motherboard5, motherboard6, motherboard7, motherboard8, motherboard9});
+        refData.setPowerSupplies(new PowerSupply[]{powerSupply, powerSupply2, powerSupply3});
+        refData.setStorages(new Storage[]{storage, storage2, storage3});
 
         try (Writer writer = new FileWriter("referenceData.json")) {
             Gson gson = new GsonBuilder().create();
