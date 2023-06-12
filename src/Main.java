@@ -348,17 +348,22 @@ public class Main {
     public static void serializeRefData()
     {
         String[][] compatibleMotherboard = new String[][] {{"CPUs", "BX8071513900K", "BX8071513700K", "BX8071512700KF"}, {"CPU Coolers", "MLW-D24M-A18PC-R2", "NH-D15 CHROMAX.BLACK", "RL-KRZ73"}, {"Memory Kits", "CMK32GX5M2B5600C36", "F5-6000J3636F16GX2-TZ5RK", "F5-6400J3239G32GX2-TZ5RK"}, {"GPUs", "RTX3060Ventus2X212GOC", "TUF-RTX4070TI-12G-GAMING", "GV-R66EAGLE-8GD"}, {"Power Supplies", "CP-9020200-NA", "CP-9020262-NA", "CP-9020201-NA"}, {"Cases", "CC-9011200-WW", "CC-H51FB-01", "PC-O11DEW"}, {"Storages", "MZ-V7S1T0B/AM", "MZ-V8P2T0B/AM", "ST2000DM008"}};
-        String[][] compatibleMotherboard2 = new String[][] {{"CPUs", "100-100000593WOF", "100-100001015BOX", "100-100000910WOF"}, {"CPU Coolers", "MLW-D24M-A18PC-R2", "NH-D15 CHROMAX.BLACK", "RL-KRZ73"}, {"Memory Kits", "", "", ""}, {"GPUs", "RTX3060Ventus2X212GOC", "TUF-RTX4070TI-12G-GAMING", "GV-R66EAGLE-8GD"}, {"Power Supplies", "CP-9020200-NA", "CP-9020262-NA", "CP-9020201-NA"}, {"Cases", "CC-9011200-WW", "CC-H51FB-01", "PC-O11DEW"}, {"Storages", "MZ-V7S1T0B/AM", "MZ-V8P2T0B/AM", "ST2000DM008"}};
+        String[][] compatibleMotherboard2 = new String[][] {{"CPUs", "100-100000593WOF", "100-100001015BOX", "100-100000910WOF"}, {"CPU Coolers", "MLW-D24M-A18PC-R2", "NH-D15 CHROMAX.BLACK", "RL-KRZ73"}, {"Memory Kits", "CMK16GX4M2B3200C16", "SP016GXLZU320BDAJ5", "AX4U32008G16A-DW50"}, {"GPUs", "RTX3060Ventus2X212GOC", "TUF-RTX4070TI-12G-GAMING", "GV-R66EAGLE-8GD"}, {"Power Supplies", "CP-9020200-NA", "CP-9020262-NA", "CP-9020201-NA"}, {"Cases", "CC-9011200-WW", "CC-H51FB-01", "PC-O11DEW"}, {"Storages", "MZ-V7S1T0B/AM", "MZ-V8P2T0B/AM", "ST2000DM008"}};
         String[][] compatibleMotherboard3 = new String[][] {{"CPUs", "100-100000065BOX", "100-100000063WOF", "100-100000059WOF"}, {"CPU Coolers", "MLW-D24M-A18PC-R2", "NH-D15 CHROMAX.BLACK", "RL-KRZ73"}, {"Memory Kits", "CMK32GX5M2B5600C36", "F5-6000J3636F16GX2-TZ5RK", "F5-6400J3239G32GX2-TZ5RK"}, {"GPUs", "RTX3060Ventus2X212GOC", "TUF-RTX4070TI-12G-GAMING", "GV-R66EAGLE-8GD"}, {"Power Supplies", "CP-9020200-NA", "CP-9020262-NA", "CP-9020201-NA"}, {"Cases", "CC-9011200-WW", "CC-H51FB-01", "PC-O11DEW"}, {"Storages", "MZ-V7S1T0B/AM", "MZ-V8P2T0B/AM", "ST2000DM008"}};
+        String[][] compatibleMotherboard4 = new String[][] {{"CPUs", "100-100000065BOX", "100-100000063WOF", "100-100000059WOF"}, {"CPU Coolers", "MLW-D24M-A18PC-R2", "NH-D15 CHROMAX.BLACK", "RL-KRZ73"}, {"Memory Kits", "CMK16GX4M2B3200C16", "SP016GXLZU320BDAJ5", "AX4U32008G16A-DW50"}, {"GPUs", "RTX3060Ventus2X212GOC", "TUF-RTX4070TI-12G-GAMING", "GV-R66EAGLE-8GD"}, {"Power Supplies", "CP-9020200-NA", "CP-9020262-NA", "CP-9020201-NA"}, {"Cases", "CC-9011200-WW", "CC-H51FB-01", "PC-O11DEW"}, {"Storages", "MZ-V7S1T0B/AM", "MZ-V8P2T0B/AM", "ST2000DM008"}};
         Motherboard motherboard = new Motherboard(compatibleMotherboard, "Gigabyte Z790 AORUS ELITE AX ATX LGA1700 Motherboard", "Z790 AORUS ELITE AX", 254.99, "LGA1700", "Intel Z790", "ATX", 4, 6, "Gigabyte", "DDR5", 0, "Black", 128, 7600, 3, 0, 0, 0, true, 4, 0, 0, 0, "1 x 2.5 Gb/s (Realtek)", 2, 1, 0, 1, 0, false, "Wi-Fi 6E", true);
         Motherboard motherboard3 = new Motherboard(compatibleMotherboard3, "Asus TUF GAMING X570-PLUS (Wi-Fi) ATX AM4 Motherboard", "TUF GAMING X570-PLUS (Wi-Fi)", 209.99, "AM4", "AMD X570", "ATX", 4, 8, "Asus", "DDR4", 0, "Black/Gold", 128, 4400, 2, 0, 0, 2, true, 2, 0, 0, 0, "1 x 1Gb/s (Realtek L8200A)", 2, 1, 0, 0, 0, false, "Wi-Fi 5", true);
-        Motherboard motherboard2 = new Motherboard(compatibleMotherboard2, "Gigabyte B650 GAMING X AX ATX AM5 Motherboard", "B650 GAMING X AX", 179.99, "AM5", "AMD B650", "ATX", 4, 4, "Gigabyte", "DDR5", 0, "Black/Gray", 128, 6400, 3, 0, 0, 0, false, 3, 0, 0, 0, "1 x 2.5 Gb/s (Realtek)", 2, 1, 0, 0, 1, false, "Wi-Fi 6E", true);
-        Motherboard motherboard4 = new Motherboard(compatibleMotherboard, "MSI MAG B660 TOMAHAWK WIFI DDR4 ATX LGA1700 Motherboard", ); //MAG B660 TOMAHAWK WIFI DDR4
-        Motherboard motherboard5 = new Motherboard(compatibleMotherboard); //ROG MAXIMUS Z790 HERO
-        Motherboard motherboard6 = new Motherboard(compatibleMotherboard2); //MAG X670E TOMAHAWK WIFI
-        Motherboard motherboard7 = new Motherboard(compatibleMotherboard2); //ROG STRIX X670E-E GAMING WIFI
-        Motherboard motherboard8 = new Motherboard(compatibleMotherboard2); //MAG B550 TOMAHAWK
-        Motherboard motherboard9 = new Motherboard(compatibleMotherboard2); //Prime B450M-A II
+        Motherboard motherboard2 = new Motherboard(compatibleMotherboard3, "Gigabyte B650 GAMING X AX ATX AM5 Motherboard", "B650 GAMING X AX", 179.99, "AM5", "AMD B650", "ATX", 4, 4, "Gigabyte", "DDR5", 0, "Black/Gray", 128, 6400, 3, 0, 0, 0, false, 3, 0, 0, 0, "1 x 2.5 Gb/s (Realtek)", 2, 1, 0, 0, 1, false, "Wi-Fi 6E", true);
+        Motherboard motherboard4 = new Motherboard(compatibleMotherboard4, "MSI MAG B660 TOMAHAWK WIFI DDR4 ATX LGA1700 Motherboard", "MAG B660 TOMAHAWK WIFI DDR4", 189.99, "LGA1700", "Intel B660", "ATX", 4, 6, "MSI", "DDR4", 0, "Black/Silver", 128, 4800, 2, 0, 0, 1,true, 4, 0, 0, 0, "1 x 2.5 Gb/s (Realtek RTL8125B-CG)", 2, 1, 0, 1, 0, false, "Wi-Fi 6", true); //MAG B660 TOMAHAWK WIFI DDR4
+        Motherboard motherboard5 = new Motherboard(compatibleMotherboard, "Asus ROG MAXIMUS Z790 HERO ATX LGA1700 Motherboard", "ROG MAXIMUS Z790 HERO", 559.99, "LGA1700", "Intel Z790", "ATX", 4, 6, "Asus", "DDR5", 0, "Black", 128, 7800, 3, 0, 0, 0, true, 3, 0, 0, 0, "1 x 2.5 Gb/s (Intel)", 2, 2, 0, 0, 1, false, "Wi-Fi 6E", true); //ROG MAXIMUS Z790 HERO
+        //Fill in these motherboards
+        Motherboard motherboard6 = new Motherboard(compatibleMotherboard2, "MSI MAG X670E TOMAHAWK WIFI ATX AM5 Motherboard", "MAG X670E TOMAHAWK WIFI", 309.99, "AM5", "AMD X670E", "ATX", 4, 4, "MSI", "DDR5", 0, "Black", 192, 6600, 3, 0, 0, 1, false, 4, 0, 0, 0, "1 x 2.5 Gb/s (Realtek RTL8125BG)", 2, 2, 0, 1, 0, false, "Wi-Fi 6E", true); //MAG X670E TOMAHAWK WIFI
+        // ROG STRIX X670E-E GAMING WIFI
+        Motherboard motherboard7 = new Motherboard(compatibleMotherboard2, "Asus ROG STRIX X670E-E GAMING WIFI ATX AM5 Motherboard", "ROG STRIX X670E-E GAMING WIFI", 482.99, "AM5", "AMD X670E", "ATX", 4, 4, "Asus", "DDR5", 0, "Black/Silver", 128, 6400, 3, 0, 0, 0, false, 4, 0, 0, 0, "1 x 2.5 Gb/s (Intel)", 3, 1, 0, 0, 1, false, "Wi-Fi 6E", true); //ROG STRIX X670E-E GAMING WIFI
+        //MAG B550 TOMAHAWK
+        Motherboard motherboard8 = new Motherboard(compatibleMotherboard2, "MSI MAG B550 TOMAHAWK ATX AM4 Motherboard", "MAG B550 TOMAHAWK", 169.99, "AM4", "AMD B550", "ATX", 4, 6, "MSI", "DDR4", 0, "Black/Silver", 128, 4866, 2, 0, 0, 2, true, 4, 0, 0, 0, "1 x 1 Gb/s\n1 x 2.5 Gb/s", 2, 1, 0, 1, 0, false, "None", true); //MAG B550 TOMAHAWK
+        //Prime B450M-A II
+        Motherboard motherboard9 = new Motherboard(compatibleMotherboard2, "Asus Prime B450M-A II Micro ATX AM4 Motherboard", "Prime B450M-A II", 79.98, "AM4", "AMD B450", "Micro ATX", 4, 6, "Asus", "DDR4", 0, "Black/White", 128, 4400, 1, 0, 0, 2, false, 1, 0, 0, 0, "1 x 1 Gb/s", 2, 1, 0, 0, 0, false, "None", true); //Prime B450M-A II
         String[][] compatibleCPU1 = new String[][]{{"CPU Coolers", "MLW-D24M-A18PC-R2", "NH-D15 CHROMAX.BLACK", "RL-KRZ73-01"}, {"Motherboards", "Z790 AORUS ELITE AX", "MAG B660 TOMAHAWK WIFI DDR4", "ROG MAXIMUS Z790 HERO"}};
         String[][] compatibleCPU2 = new String[][]{{"CPU Coolers", "MLW-D24M-A18PC-R2", "NH-D15 CHROMAX.BLACK", "RL-KRZ73-01"}, {"Motherboards", "Z790 AORUS ELITE AX", "MAG B660 TOMAHAWK WIFI DDR4", "ROG MAXIMUS Z790 HERO"}};
         String[][] compatibleCPU3 = new String[][]{{"CPU Coolers", "MLW-D24M-A18PC-R2", "NH-D15 CHROMAX.BLACK", "RL-KRZ73-01"}, {"Motherboards", "Z790 AORUS ELITE AX", "MAG B660 TOMAHAWK WIFI DDR4", "ROG MAXIMUS Z790 HERO"}};
@@ -425,25 +430,28 @@ public class Main {
                 "ROG STRIX X670E-E GAMING WIFI", "MAG B550 TOMAHAWK"}};
         String[][] compatibleMemoryKit3 = new String[][]{{"Motherboards", "Z790 AORUS ELITE AX", "MAG B660 TOMAHAWK WIFI DDR4", "ROG MAXIMUS Z790 HERO", "B650 GAMING X AX", "MAG X670E TOMAHAWK WIFI",
                 "ROG STRIX X670E-E GAMING WIFI", "MAG B550 TOMAHAWK"}};
-        String[][] compatibleMemoryKit4 = new String[][]{{}};
-        String[][] compatibleMemoryKit5 = new String[][]{{}};
-        String[][] compatibleMemoryKit6 = new String[][]{{}};
+        String[][] compatibleMemoryKit4 = new String[][]{{"Motherboards", "TUF GAMING X570-PLUS (Wi-Fi)", "MAG B660 TOMAHAWK WIFI DDR4", "Prime B450M-A II", "MAG B550 TOMAHAWK" }};
+        String[][] compatibleMemoryKit5 = new String[][]{{"Motherboards", "TUF GAMING X570-PLUS (Wi-Fi)", "MAG B660 TOMAHAWK WIFI DDR4", "Prime B450M-A II", "MAG B550 TOMAHAWK" }};
+        String[][] compatibleMemoryKit6 = new String[][]{{"Motherboards", "TUF GAMING X570-PLUS (Wi-Fi)", "MAG B660 TOMAHAWK WIFI DDR4", "Prime B450M-A II", "MAG B550 TOMAHAWK" }};
         MemoryKits memoryKit1 = new MemoryKits(compatibleMemoryKit1, "Corsair", "CMK32GX5M2B5600C36", "Corsair Vengeance 32 GB (2 x 16 GB) DDR5-5600 CL36 Memory", 94.99, "DDR5-5600", "288-pin DIMM (DDR5)", "2 x 16GB", 2.906 ,"Black", 12.857, 36, 1.25, "36-36-36-76", "Non-ECC/Unbuffered", true);
         MemoryKits memoryKit2 = new MemoryKits(compatibleMemoryKit2, "G.Skill", "F5-6000J3636F16GX2-TZ5RK", "G.Skill Trident Z5 RGB 32 GB (2 x 16 GB) DDR5-6000 CL36 Memory", 109.99, "DDR5-6000", "288-pin DIMM (DDR5)", "2 x 16GB", 3.437,"Black", 12, 36, 1.35, "36-36-36-96", "Non-ECC/Unbuffered", true);
         MemoryKits memoryKit3 = new MemoryKits(compatibleMemoryKit3, "G.Skill", "F5-6400J3239G32GX2-TZ5RK", "G.Skill Trident Z5 RGB 64 GB (2 x 32 GB) DDR5-6400 CL32 Memory", 237.99, "DDR5-6400", "288-pin DIMM (DDR5)", "2 x 32GB", 3.719,"Black/Silver", 10, 32, 1.4, "32-39-39-102", "Non-ECC/Unbuffered", true);
-        MemoryKits memoryKits4 = new MemoryKits();
-        MemoryKits memoryKits5 = new MemoryKits();
-        MemoryKits memoryKits6 = new MemoryKits();
-        String[][] compatibleGPU1 = new String[][]{{}, {}, {}};
-        String[][] compatibleGPU2 = new String[][]{{}, {}, {}};
-        String[][] compatibleGPU3 = new String[][]{{}, {}, {}};
-        GPU gpu1 = new GPU();
-        GPU gpu2 = new GPU();
-        GPU gpu3 = new GPU();
+        MemoryKits memoryKits4 = new MemoryKits(compatibleMemoryKit4, "Corsair", "CMK16GX4M2B3200C16", "Corsair Vengeance LPX 16 GB (2 x 8 GB) DDR4-3200 CL16 Memory", 39.99, "DDR4-3200", "288-pin DIMM (DDR4)", "2 x 8GB", 2.499, "Black/Yellow", 10, 16, 1.35, "16-18-18-36", "Non-ECC/Unbuffered", true);
+        MemoryKits memoryKits5 = new MemoryKits(compatibleMemoryKit5, "Silicon Power", "SP016GXLZU320BDAJ5", "Silicon Power GAMING 16 GB (2 x 8 GB) DDR4-3200 CL16 Memory", 29.97, "DDR4-3200", "288-pin DIMM (DDR4)", "2 x 8GB", 1.873, "Black/Gray", 10, 16, 1.35, "16-18-18-38", "Non-ECC/Unbuffered", true);
+        MemoryKits memoryKits6 = new MemoryKits(compatibleMemoryKit6, "ADATA", "AX4U32008G16A-DW50", "ADATA XPG SPECTRIX D50 16 GB (2 x 8 GB) DDR4-3200 CL16 Memory", 43.99, "DDR4-3200", "288-pin DIMM (DDR4)", "2 x 8GB", 2.749, "White", 10, 16, 1.35, "16-20-20", "Non-ECC/Unbuffered", true);
+        String[][] compatibleGPU1 = new String[][]{{"Cases", "PC-O11DEW", "CC-9011200-WW", "CC-H51FB-01"}, {"Motherboards", "Z790 AORUS ELITE AX", "MAG B660 TOMAHAWK WIFI DDR4", "ROG MAXIMUS Z790 HERO", "B650 GAMING X AX", "MAG X670E TOMAHAWK WIFI",
+                "ROG STRIX X670E-E GAMING WIFI", "MAG B550 TOMAHAWK", "TUF GAMING X570-PLUS (WI-FI)", "Prime B450M-A II"}, {"Power Supplies", "CP-9020200-NA", "CP-9020262-NA", "CP-9020201-NA"}};
+        String[][] compatibleGPU2 = new String[][]{{"Cases", "PC-O11DEW", "CC-9011200-WW", "CC-H51FB-01"}, {"Motherboards", "Z790 AORUS ELITE AX", "MAG B660 TOMAHAWK WIFI DDR4", "ROG MAXIMUS Z790 HERO", "B650 GAMING X AX", "MAG X670E TOMAHAWK WIFI",
+                "ROG STRIX X670E-E GAMING WIFI", "MAG B550 TOMAHAWK", "TUF GAMING X570-PLUS (WI-FI)", "Prime B450M-A II"}, {"Power Supplies", "CP-9020200-NA", "CP-9020262-NA", "CP-9020201-NA"}};
+        String[][] compatibleGPU3 = new String[][]{{"Cases", "PC-O11DEW", "CC-9011200-WW", "CC-H51FB-01"}, {"Motherboards", "Z790 AORUS ELITE AX", "MAG B660 TOMAHAWK WIFI DDR4", "ROG MAXIMUS Z790 HERO", "B650 GAMING X AX", "MAG X670E TOMAHAWK WIFI",
+                "ROG STRIX X670E-E GAMING WIFI", "MAG B550 TOMAHAWK", "TUF GAMING X570-PLUS (WI-FI)", "Prime B450M-A II"}, {"Power Supplies", "CP-9020200-NA", "CP-9020262-NA", "CP-9020201-NA"}};
+        GPU gpu1 = new GPU(compatibleGPU1, "MSI", "RTX3060Ventus2X12GOC", "MSI GeForce RTX 3060 Ventus 2X 12G GeForce RTX 3060 12GB 12 GB Video Card", 289.99, "GeForce RTX 3060 12GB", 12, "GDDR6", 1320, 1777, 15000, "PCIe x 16", "Black", "G-Sync", 235, 170, 2, 2, "2 Fans", "1 PCIe 8-pin", "1 HDMI Outputs", "3 DisplayPort Outputs");
+        GPU gpu2 = new GPU(compatibleGPU2, "Asus", "TUF-RTX4070TI-12G-GAMING", "Asus TUF GAMING GeForce RTX 4070 Ti 12 GB Video Card", 799.99, "GeForce RTX 4070 Ti", 12, "GDDR6X", 2310, 2640, 21000, "PCIe x 16", "Black", "G-Sync", 305, 285, 2, 4, "3 Fans", "1 PCIe 16-pin", "2 HDMI 2.1a Outputs", "3 DisplayPort 1.4a Outputs");
+        GPU gpu3 = new GPU(compatibleGPU3, "Gigabyte", "GV-R66EAGLE-8GD", "Gigabyte EAGLE Radeon RX 6600 8 GB Video Card", 199.99, "Radeon RX 6600", 8, "GDDR6", 1626, 2491, 14000, "PCIe x 16", "Black/Silver", "FreeSync", 282, 132, 2, 2, "3 Fans", "1 PCIe 8-pin", "2 HDMI Outputs", "2 DisplayPort Outputs");
         String[][] compatiblePowerSupply1 = new String[][]{{}, {}, {}};
         String[][] compatiblePowerSupply2 = new String[][]{{}, {}, {}};
         String[][] compatiblePowerSupply3 = new String[][]{{}, {}, {}};
-        PowerSupply powerSupply1 = new PowerSupply();
+        PowerSupply powerSupply = new PowerSupply(compatiblePowerSupply1, "Corsair", "CP-9020200-NA", "Corsair RM850x (2021) 850 W 80+ Gold Certified Fully Modular ATX Power Supply", 149.99, "ATX", "80+ Gold", 850, 160, "Full", "Black", false, 0, 3, 0, 0, 0, 4, 0, 14, 4);
         PowerSupply powerSupply2 = new PowerSupply();
         PowerSupply powerSupply3 = new PowerSupply();
         String[][] compatibleStorage1 = new String[][]{{}, {}};
@@ -451,8 +459,7 @@ public class Main {
         Storage storage1 = new Storage();
         Storage storage2 = new Storage();
         Storage storage3 = new Storage();
-        GPU gpu = new GPU(compatibleGPU1, "MSI", "RTX3060Ventus2X12GOC", "MSI GeForce RTX 3060 Ventus 2X 12G GeForce RTX 3060 12GB 12 GB Video Card", 289.99, "GeForce RTX 3060 12GB", 12, "GDDR6", 1320, 1777, 15000, "PCIe x 16", "Black", "G-Sync", 235, 170, 2, 2, "2 Fans", "1 PCIe 8-pin", "1", "3");
-        PowerSupply powerSupply = new PowerSupply(compatiblePowerSupply2, "Corsair", "CP-9020200-NA", "Corsair RM850x (2021) 850 W 80+ Gold Certified Fully Modular ATX Power Supply", 149.99, "ATX", "80+ Gold", 850, 160, "Full", "Black", false, 0, 3, 0, 0, 0, 4, 0, 14, 4);
+
         Storage storage = new Storage(compatibleStorage1, "Samsung", "Samsung 970 Evo Plus 1 TB M.2-2280 PCIe 3.0 X4 NVME Solid State Drive", "MZ-V7S1T0B/AM", 69.98, "1 TB", 0.070, "SSD", 1024, "m.2-2280", "M.2 PCIe 3.0 x 4", true);
         ReferenceData refData = new ReferenceData();
         refData.setCaseFans(new CaseFans[]{casefan1, casefan2, casefan3});
