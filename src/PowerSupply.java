@@ -1,5 +1,5 @@
 public class PowerSupply extends PCComponent{
-    private String[][] compatibleComponents;
+
     //The type of the power supply (form factor)
     private String type;
     //The efficiency rating of the power supply
@@ -38,7 +38,6 @@ public class PowerSupply extends PCComponent{
      */
     public PowerSupply() {
         super();
-        compatibleComponents = new String[0][0];
         type = "No type";
         efficiencyRating = "No efficiency rating";
         wattage = 0;
@@ -102,8 +101,7 @@ public class PowerSupply extends PCComponent{
             int PCIe6PinConnectorsN,
             int SATAConnectorsN,
             int molex4PinConnectorsN) {
-        super(manufacturer, partNumber, name, price);
-        compatibleComponents = compatibleComponentsN;
+        super(manufacturer, partNumber, name, price, compatibleComponentsN);
         type = typeN;
         efficiencyRating = efficiencyRatingN;
         wattage = wattageN;

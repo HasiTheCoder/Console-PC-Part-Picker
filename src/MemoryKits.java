@@ -1,7 +1,6 @@
 import java.text.NumberFormat;
 
 public class MemoryKits extends PCComponent{
-    private String[][] compatibleComponents;
     //The speed of the memory in MHz with which generation
     private String memorySpeed;
     //The form factor of the memory (Number of pins)
@@ -30,7 +29,6 @@ public class MemoryKits extends PCComponent{
      */
     public MemoryKits() {
         super();
-        compatibleComponents = new String[0][0];
         memorySpeed = "No Speed";
         formFactor = "No form factor";
         modules = "No modules";
@@ -81,8 +79,7 @@ public class MemoryKits extends PCComponent{
             String ECC_RegisteredN,
             boolean isHeatSpreaderN)
     {
-        super(manufacturer, partNumber, name, price);
-        compatibleComponents = compatibleComponentsN;
+        super(manufacturer, partNumber, name, price, compatibleComponentsN);
         memorySpeed = memorySpeedN;
         formFactor = formFactorN;
         modules = modulesN;

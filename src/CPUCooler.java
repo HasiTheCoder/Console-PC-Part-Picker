@@ -1,5 +1,4 @@
 public class CPUCooler extends PCComponent{
-    private String[][] compatibleComponents;
     //The model of the CPU cooler
     private String model;
     //The fan RPM of the CPU cooler
@@ -20,7 +19,6 @@ public class CPUCooler extends PCComponent{
      */
     public CPUCooler() {
         super();
-        compatibleComponents = new String[0][0];
         model = "no model";
         fanRPM = "no rpm";
         noiseLevel = "no noise";
@@ -59,8 +57,7 @@ public class CPUCooler extends PCComponent{
             String waterCooledN,
             String fanlessN
     ) {
-        super(manufacturerN, partNumberN, nameN, priceN);
-        compatibleComponents = compatibleComponentsN;
+        super(manufacturerN, partNumberN, nameN, priceN, compatibleComponentsN);
         model = modelN;
         fanRPM = fanRPMn;
         noiseLevel = noiseLevelN;

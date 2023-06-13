@@ -91,7 +91,7 @@ public class PCComponentLinkedList {
             Node temp = head;
             String list = "";
             while (temp != null) {
-                list += temp.getData() + " ";
+                list += temp.getData().getName() + " ";
                 temp = temp.getNext();
             }
             return list;

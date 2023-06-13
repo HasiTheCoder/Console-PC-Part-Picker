@@ -75,34 +75,34 @@ public class ReferenceData {
     public void setPowerSupplies(PowerSupply[] powerSuppliesN) {
         PowerSupplies = powerSuppliesN;
     }
-    public PCComponent[] getMotherboards() {
+    public Motherboard[] getMotherboards() {
         return Motherboards;
     }
-    public PCComponent[] getCPUs() {
+    public CPU[] getCPUs() {
         return CPUs;
     }
-    public PCComponent[] getGPUs() {
+    public GPU[] getGPUs() {
         return GPUs;
     }
-    public PCComponent[] getMemoryKits() {
+    public MemoryKits[] getMemoryKits() {
         return MemoryKits;
     }
-    public PCComponent[] getStorages() {
+    public Storage[] getStorages() {
         return Storages;
     }
-    public PCComponent[] getCases() {
+    public Case[] getCases() {
         return Cases;
     }
-    public PCComponent[] getCaseFans() {
+    public CaseFans[] getCaseFans() {
         return CaseFans;
     }
-    public PCComponent[] getCPUCoolers() {
+    public CPUCooler[] getCPUCoolers() {
         return CPUCoolers;
     }
-    public PCComponent[] getPowerSupplies() {
+    public PowerSupply[] getPowerSupplies() {
         return PowerSupplies;
     }
-    public String printComponentList(int componentType) {
+/*    public String printComponentList(int componentType) {
         if (componentType == 7) {
             return convertArrayToString(Cases);
         }
@@ -131,7 +131,7 @@ public class ReferenceData {
             return convertArrayToString(Storages);
         }
         return "Error: Invalid component type.";
-    }
+    }*/
     private String convertArrayToString(PCComponent[] array) {
         String result = "";
         for (int i = 0; i < array.length; i++) {
@@ -140,7 +140,7 @@ public class ReferenceData {
         }
         return result;
     }
-    public int getComponentList(int i) {
+/*    public int getComponentList(int i) {
         if (i == 1) {
             return Motherboards.length;
         }
@@ -171,7 +171,7 @@ public class ReferenceData {
         else {
             return 0;
         }
-    }
+    }*/
 
     public PCComponent getPCComponent(String keyIdentifier) {
         for (int i = 0; i < Motherboards.length; i++) {

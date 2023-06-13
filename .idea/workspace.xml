@@ -7,7 +7,21 @@
     <list default="true" id="cfc34737-a13a-4be9-a16e-737092c26daf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/referenceData.json" beforeDir="false" afterPath="$PROJECT_DIR$/referenceData.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CPU.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CPU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CPUCooler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CPUCooler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Case.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Case.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseFans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseFans.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Computer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GPU.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GPU.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MemoryKits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MemoryKits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Motherboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Motherboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PCComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PCComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PCComponentLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PCComponentLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PowerSupply.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PowerSupply.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReferenceData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReferenceData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Storage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,14 +59,19 @@
     <servers />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="Computer" memberName="components" />
+        <PinnedItemInfo parentTag="PCComponentLinkedList" memberName="head" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="motherboardListOptions" />
+        <watch expression="mainMenu" />
+        <watch expression="currentCompatibleComponents[0]" />
+        <watch expression="intersectionResult[0]" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

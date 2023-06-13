@@ -1,5 +1,5 @@
 public class CPU extends PCComponent{
-    private String[][] compatibleComponents;
+
     //Amount of cores in the CPU
     private int coreCount;
     //Performance Cores' Clock Speed in Ghz
@@ -48,7 +48,6 @@ public class CPU extends PCComponent{
      */
     public CPU() {
         super();
-        compatibleComponents = new String[0][0];
         coreCount = 0;
         performanceCoreClock = 0;
         performanceBoostClock = 0;
@@ -128,8 +127,8 @@ public class CPU extends PCComponent{
             int lithographyN,
             boolean includesCPUCoolerN,
             String isSimultaneousMultiThreadingN) {
-        super(manufacturerN, partNumberN, nameN, priceN);
-        compatibleComponents = compatibleComponentsN;
+
+        super(manufacturerN, partNumberN, nameN, priceN, compatibleComponentsN);
         coreCount = coreCountN;
         performanceCoreClock = performanceCoreClockN;
         performanceBoostClock = performanceBoostClockN;

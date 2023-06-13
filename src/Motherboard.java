@@ -4,7 +4,7 @@
  * @Author Hasnain Heryani
  */
 public class Motherboard extends PCComponent{
-    private String[][] compatibleComponents;
+
     //AMD vs. Intel Socket and which gen socket
     private String socketType;
     //AMD vs. Intel chipset
@@ -67,7 +67,6 @@ public class Motherboard extends PCComponent{
      */
     public Motherboard() {
         super();
-        compatibleComponents = new String[0][0];
         socketType = "No Socket";
         chipSet = "No Chipset";
         formFactor = "No Form Factor";
@@ -169,8 +168,7 @@ public class Motherboard extends PCComponent{
             String wirelessNetworkingN,
             boolean RAIDSupportN
     ) {
-        super(manufacturerN, partNumberN, nameN, priceN);
-        compatibleComponents = compatibleComponentsN;
+        super(manufacturerN, partNumberN, nameN, priceN, compatibleComponentsN);
         socketType = socketTypeN;
         chipSet = chipSetN;
         formFactor = formFactorN;

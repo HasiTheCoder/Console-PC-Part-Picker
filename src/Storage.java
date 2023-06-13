@@ -1,6 +1,6 @@
 import java.text.NumberFormat;
 public class Storage extends PCComponent {
-    private String[][] compatibleComponents;
+
     //The capacity of the storage
     private String capacity;
     //The price per GB of the storage
@@ -21,7 +21,6 @@ public class Storage extends PCComponent {
      */
     public Storage() {
         super();
-        compatibleComponents = new String[0][0];
         capacity = "No capacity";
         pricePerGB = 0;
         type = "No type";
@@ -59,8 +58,7 @@ public class Storage extends PCComponent {
             String interfaceTypeN,
             boolean isNVMeN
     ) {
-        super(manufacturer, name, partNumber, price);
-        compatibleComponents = compatibleComponentsN;
+        super(manufacturer, name, partNumber, price, compatibleComponentsN);
         capacity = capacityN;
         pricePerGB = pricePerGBN;
         type = typeN;

@@ -2,6 +2,9 @@ import java.util.Scanner;
 
 public class Menu {
 
+    public static final String VIEW_COMPUTER_IDENTIFIER = "##ViewComputer##";
+    public static final String BUILD_COMPUTER_REPORT = "##BuildComputerReport##";
+    public static final String TUTORIAL = "##Tutorial##";
     private String menuTitle;
     private Menu mainMenu;
     private Menu previousMenu;
@@ -27,7 +30,6 @@ public class Menu {
         previousMenu = paramPreviousMenu;
         menuOptions = paramMenuOptions;
     }
-
     public void display() {
         System.out.println(menuTitle);
         int i;
@@ -40,9 +42,21 @@ public class Menu {
         if (mainMenu != null) {
             System.out.println((i+2) + ". Return to Main Menu.");
         }
-        if (!keyIdentifier.isEmpty())
+        if (!keyIdentifier.isEmpty() && !keyIdentifier.equalsIgnoreCase(Menu.VIEW_COMPUTER_IDENTIFIER))
         {
             System.out.println("Press 1 to add this to your new computer.");
+        }
+    }
+
+    public void display(Computer currentComputer)
+    {
+        System.out.println(currentComputer.getName());
+        System.out.println("1." + currentComputer + "\n");
+        if (previousMenu != null) {
+            System.out.println("2. Return to Previous Menu.");
+        }
+        if (mainMenu != null) {
+            System.out.println("3. Return to Main Menu.");
         }
     }
 
@@ -52,8 +66,6 @@ public class Menu {
         String userChoiceText = "";
         int userChoice = 0;
         //reject everything except 1 to menuoptions length +2
-
-        while (true) {
             System.out.println("Enter your choice: ");
             userChoiceText = input.nextLine();
             int maxLength = menuOptions.length+2;
@@ -69,11 +81,12 @@ public class Menu {
                     return userChoice;
                 }
                 System.out.println("Invalid choice. Please try again.");
+                return getUserChoice();
             }
             catch (NumberFormatException ex) {
                 System.out.println("Invalid choice. Please try again.");
+                return getUserChoice();
             }
-        }
     }
     public Menu getMainMenu() {
         return mainMenu;

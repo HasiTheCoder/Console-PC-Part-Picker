@@ -73,9 +73,10 @@ public class CaseFans extends PCComponent{
             String LEDn,
             String connectorN,
             String controllerN,
-            String staticPressureN
+            String staticPressureN,
+            String[][] compatibleComponentsN
             ) {
-        super(name, manufacturer, partNumber, price);
+        super(name, manufacturer, partNumber, price, compatibleComponentsN);
         model = modelN;
         size = sizeN;
         color = colorN;

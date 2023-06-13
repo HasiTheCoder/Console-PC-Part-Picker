@@ -1,6 +1,8 @@
 import java.text.NumberFormat;
 
 public abstract class PCComponent {
+
+    private String[][] compatibleComponents;
     //The part number of the component
     String partNumber;
     //The name of the component
@@ -14,6 +16,7 @@ public abstract class PCComponent {
      * The default constructor of the PCComponent object
      */
     public PCComponent() {
+        compatibleComponents = new String[0][0];
         manufacturer = "No manufacturer";
         partNumber = "No Part number";
         name = "No name";
@@ -22,16 +25,17 @@ public abstract class PCComponent {
 
     /**
      * The overloaded constructor of the PCComponent object
-     * @param manufacturerN
-     * @param partNumberN
+     * @param paramManufacturer
+     * @param paramPartNumber
      * @param nameN
      * @param priceN
      */
-    public PCComponent(String manufacturerN, String partNumberN, String nameN, double priceN) {
-        manufacturer = manufacturerN;
-        partNumber = partNumberN;
+    public PCComponent(String paramManufacturer, String paramPartNumber, String nameN, double priceN, String[][] compatibleComponentsN) {
+        manufacturer = paramManufacturer;
+        partNumber = paramPartNumber;
         name = nameN;
         price = priceN;
+        compatibleComponents = compatibleComponentsN;
     }
     public double getPrice() {
         return price;
@@ -93,5 +97,9 @@ public abstract class PCComponent {
         else {
             return "No type";
         }
+    }
+
+    public String[][] getCompatibleComponents() {
+        return compatibleComponents;
     }
 }
