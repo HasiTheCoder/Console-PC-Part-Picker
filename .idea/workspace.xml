@@ -4,43 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cfc34737-a13a-4be9-a16e-737092c26daf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Receipt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Receipt.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Account.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/CPU.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/CPU.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/CPUCooler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/CPUCooler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Case.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Case.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/CaseFans.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/CaseFans.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Computer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Computer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/GPU.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/GPU.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/LinkedList$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/LinkedList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/MemoryKits.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/MemoryKits.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/MenuOption.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/MenuOption.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Menus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/PCComponentLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/PCComponentLinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/ReferenceData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/ReferenceData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/referenceData.json" beforeDir="false" afterPath="$PROJECT_DIR$/referenceData.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Account.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CPU.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CPU.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CPUCooler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CPUCooler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Case.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Case.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseFans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseFans.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Computer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GPU.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GPU.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TutorialLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MemoryKits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MemoryKits.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MenuOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MenuOption.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Menus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PCComponentLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PCComponentLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReferenceData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReferenceData.java" afterDir="false" />
-    </list>
+    <list default="true" id="cfc34737-a13a-4be9-a16e-737092c26daf" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
