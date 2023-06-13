@@ -1,3 +1,9 @@
+/**
+ * GPU Class that extends from PCComponent class
+ * Contains all the information relevant to a GPU
+ *
+ * @author Hasnain Heryani
+ */
 public class GPU extends PCComponent{
     //The chipset of the GPU
     private String chipSet;
@@ -134,7 +140,6 @@ public class GPU extends PCComponent{
      */
     public String toString() {
         return super.toString() + String.format("""
-                       
                         ChipSet: %s
                         Video Memory: %s
                         Video Memory Type: %s

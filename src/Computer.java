@@ -1,6 +1,7 @@
+import java.text.NumberFormat;
+
 /**
  * Description: The computer object, where all the PCComponents are stored
- *
  * @Author Hasnain Heryani
  */
 public class Computer {
@@ -20,7 +21,8 @@ public class Computer {
         return currentPrice;
     }
     public String toString() {
-        return components.toString() + "\nTotal Price: $" + currentPrice;
+        NumberFormat money = NumberFormat.getCurrencyInstance();
+        return components.toString() + "\nTotal Price: " + money.format(currentPrice);
     }
 
     public String getName() {

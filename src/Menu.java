@@ -42,7 +42,7 @@ public class Menu {
         if (mainMenu != null) {
             System.out.println((i+2) + ". Return to Main Menu.");
         }
-        if (!keyIdentifier.isEmpty() && !keyIdentifier.equalsIgnoreCase(Menu.VIEW_COMPUTER_IDENTIFIER))
+        if (!keyIdentifier.isEmpty() && (!keyIdentifier.equalsIgnoreCase(Menu.VIEW_COMPUTER_IDENTIFIER) && !keyIdentifier.equalsIgnoreCase(Menu.BUILD_COMPUTER_REPORT)  && !keyIdentifier.equalsIgnoreCase(Menu.TUTORIAL)))
         {
             System.out.println("Press 1 to add this to your new computer.");
         }
@@ -51,9 +51,10 @@ public class Menu {
     public void display(Computer currentComputer)
     {
         System.out.println(currentComputer.getName());
-        System.out.println("1." + currentComputer + "\n");
+        System.out.println("1.\n" + currentComputer + "\n");
         if (previousMenu != null) {
             System.out.println("2. Return to Previous Menu.");
+            System.out.println();
         }
         if (mainMenu != null) {
             System.out.println("3. Return to Main Menu.");
@@ -110,5 +111,23 @@ public class Menu {
 
     public String getKeyIdentifier() {
         return keyIdentifier;
+    }
+    public String toString() {
+        String output = "";
+        output += menuTitle + "\n";
+        for (int i = 0; i < menuOptions.length; i++) {
+            output += (i+1) + ". " + menuOptions[i].getDisplayText() + "\n";
+        }
+        if (previousMenu != null) {
+            output += (menuOptions.length+1) + ". Return to Previous Menu.\n";
+        }
+        if (mainMenu != null) {
+            output += (menuOptions.length+2) + ". Return to Main Menu.\n";
+        }
+        if (!keyIdentifier.isEmpty() && (!keyIdentifier.equalsIgnoreCase(Menu.VIEW_COMPUTER_IDENTIFIER) && !keyIdentifier.equalsIgnoreCase(Menu.BUILD_COMPUTER_REPORT)  && !keyIdentifier.equalsIgnoreCase(Menu.TUTORIAL)))
+        {
+            output += "Press 1 to add this to your new computer.\n";
+        }
+        return output;
     }
 }

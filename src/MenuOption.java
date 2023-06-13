@@ -30,4 +30,7 @@ public class MenuOption {
     public void setSubMenu(Menu paramSubMenu) {
         subMenu = paramSubMenu;
     }
+    public String toString() {
+        return displayText;
+    }
 }

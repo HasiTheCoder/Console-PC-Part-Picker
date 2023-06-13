@@ -89,9 +89,9 @@ public class PCComponentLinkedList {
          */
         public String toString() {
             Node temp = head;
-            String list = "";
+            String list = "\n";
             while (temp != null) {
-                list += temp.getData().getName() + " ";
+                list += temp.getData().getName() + "\n";
                 temp = temp.getNext();
             }
             return list;

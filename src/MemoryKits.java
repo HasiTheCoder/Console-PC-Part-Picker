@@ -101,7 +101,6 @@ public class MemoryKits extends PCComponent{
     public String toString() {
         NumberFormat money = NumberFormat.getCurrencyInstance();
         return super.toString() + String.format("""
-                        
                         Memory Speed(MHz): %s
                         Form Factor: %s
                         Modules: %s

@@ -48,6 +48,86 @@ public class ReferenceData {
                 convertArrayToString(Storages)
                 );
     }
+    public void sortReferenceData() {
+        sort(Cases, 0, Cases.length - 1);
+        sort(CaseFans, 0, CaseFans.length - 1);
+        sort(CPUs, 0, CPUs.length - 1);
+        sort(CPUCoolers, 0, CPUCoolers.length - 1);
+        sort(GPUs, 0, GPUs.length - 1);
+        sort(Motherboards, 0, Motherboards.length - 1);
+        sort(PowerSupplies, 0, PowerSupplies.length - 1);
+        sort(MemoryKits, 0, MemoryKits.length - 1);
+        sort(Storages, 0, Storages.length - 1);
+    }
+
+    public void merge(PCComponent arr[], int l, int m, int r)
+    {
+        // Find sizes of two subarrays to be merged
+        int n1 = m - l + 1;
+        int n2 = r - m;
+
+        // Create temp arrays
+        PCComponent L[] = new PCComponent[n1];
+        PCComponent R[] = new PCComponent[n2];
+
+        // Copy data to temp arrays
+        for (int i = 0; i < n1; ++i)
+            L[i] = arr[l + i];
+        for (int j = 0; j < n2; ++j)
+            R[j] = arr[m + 1 + j];
+
+        // Merge the temp arrays
+
+        // Initial indices of first and second subarrays
+        int i = 0, j = 0;
+
+        // Initial index of merged subarray array
+        int k = l;
+        while (i < n1 && j < n2) {
+            if (L[i].getPrice() <= R[j].getPrice()) {
+                arr[k] = L[i];
+                i++;
+            }
+            else {
+                arr[k] = R[j];
+                j++;
+            }
+            k++;
+        }
+
+        // Copy remaining elements of L[] if any
+        while (i < n1) {
+            arr[k] = L[i];
+            i++;
+            k++;
+        }
+
+        // Copy remaining elements of R[] if any
+        while (j < n2) {
+            arr[k] = R[j];
+            j++;
+            k++;
+        }
+    }
+
+    // Main function that sorts arr[l..r] using
+    // merge()
+    public void sort(PCComponent arr[], int l, int r)
+    {
+        if (l < r) {
+
+            // Find the middle point
+            int m = l + (r - l) / 2;
+
+            // Sort first and second halves
+            sort(arr, l, m);
+            sort(arr, m + 1, r);
+
+            // Merge the sorted halves
+            merge(arr, l, m, r);
+        }
+    }
+
     public void setMotherboards(Motherboard[] motherboardsN) {
         Motherboards = motherboardsN;
     }
@@ -102,36 +182,6 @@ public class ReferenceData {
     public PowerSupply[] getPowerSupplies() {
         return PowerSupplies;
     }
-/*    public String printComponentList(int componentType) {
-        if (componentType == 7) {
-            return convertArrayToString(Cases);
-        }
-        else if (componentType == 8) {
-            return convertArrayToString(CaseFans);
-        }
-        else if (componentType == 2) {
-            return convertArrayToString(CPUs);
-        }
-        else if (componentType == 3) {
-            return convertArrayToString(CPUCoolers);
-        }
-        else if (componentType == 4) {
-            return convertArrayToString(GPUs);
-        }
-        else if (componentType == 1) {
-            return convertArrayToString(Motherboards);
-        }
-        else if (componentType == 9) {
-            return convertArrayToString(PowerSupplies);
-        }
-        else if (componentType == 5) {
-            return convertArrayToString(MemoryKits);
-        }
-        else if (componentType == 6) {
-            return convertArrayToString(Storages);
-        }
-        return "Error: Invalid component type.";
-    }*/
     private String convertArrayToString(PCComponent[] array) {
         String result = "";
         for (int i = 0; i < array.length; i++) {
@@ -140,39 +190,6 @@ public class ReferenceData {
         }
         return result;
     }
-/*    public int getComponentList(int i) {
-        if (i == 1) {
-            return Motherboards.length;
-        }
-        else if (i == 2) {
-            return CPUs.length;
-        }
-        else if (i == 3) {
-            return CPUCoolers.length;
-        }
-        else if (i == 4) {
-            return GPUs.length;
-        }
-        else if (i == 5) {
-            return MemoryKits.length;
-        }
-        else if (i == 6) {
-            return Storages.length;
-        }
-        else if (i == 7) {
-            return Cases.length;
-        }
-        else if (i == 8) {
-            return CaseFans.length;
-        }
-        else if (i == 9) {
-            return PowerSupplies.length;
-        }
-        else {
-            return 0;
-        }
-    }*/
-
     public PCComponent getPCComponent(String keyIdentifier) {
         for (int i = 0; i < Motherboards.length; i++) {
             if (Motherboards[i].getPartNumber().equals(keyIdentifier)) {

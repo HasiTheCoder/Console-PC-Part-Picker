@@ -1,1 +1,2747 @@
-{"Cases":[{"type":"ATX Mid Tower","color":"White/Gray","includesPowerSupply":false,"sidePanel":"Tempered Glass","includePowerSupplyShroud":true,"frontPanelUSB":"USB 3.2 Gen 2 Type C, USB 3.2 Gen 1 Type A","motherboardFormFactor":["ATX","EATX","Micro ATX","Mini ITX"],"maximumVideoCardLength_mm":422.0,"MaximumVideoCardLengthInches":16.614,"driveBays":["6 x internal 3.5\"","3 x Internal 2.5\""],"expansionSlots":["8 x Full Height"],"dimensions_mm":"446 x 272 x 445","dimensionsInches":"17.6 x 10.7 x 17.5","volumeL":53.98,"volumeFt3":1.91,"compatibleComponents":[["Motherboards","Z790 AORUS ELITE AX","MAG B660 TOMAHAWK WIFI DDR4","ROG MAXIMUS Z790 HERO","B650 GAMING X AX","MAG X670E TOMAHAWK WIFI","ROG STRIX X670E-E GAMING WIFI","MAG B550 TOMAHAWK","TUF GAMING X570-PLUS (WI-FI)","Prime B450M-A II"],["CPU Coolers","MLW-D24M-A18PC-R2","NH-D15 CHROMAX.BLACK","RL-KRZ73-01"],["Power Supplies","CP-9020200-NA","CP-9020262-NA","CP-9020201-NA"],["GPUs","RTX3060Ventus2X212GOC","TUF-RTX4070TI-12G-GAMING","GV-R66EAGLE-8GD"],["Storages","MZ-V7S1T0B/AM","MZ-V8P2T0B/AM","ST2000DM008"],[""],[""],[""],[""]],"partNumber":"Lian Li","name":"PC-O11DEW","price":157.99,"manufacturer":"Lian Li O11 Dynamic EVO ATX Mid Tower Case"},{"type":"ATX Mid Tower","color":"Black","includesPowerSupply":false,"sidePanel":"Tinted Tempered Glass","includePowerSupplyShroud":true,"frontPanelUSB":"USB 3.2 Gen 1 Type C, USB 3.2 Gen 1 Type A","motherboardFormFactor":["ATX","EATX","Micro ATX","Mini ITX"],"maximumVideoCardLength_mm":360.0,"MaximumVideoCardLengthInches":14.173,"driveBays":["2 x internal 3.5\"","2 x Internal 2.5\""],"expansionSlots":["7 x Full Height"],"dimensions_mm":"453 x 230 x 466","dimensionsInches":"17.8 x 9.1 x 18.3","volumeL":48.553,"volumeFt3":1.715,"compatibleComponents":[["Motherboards","Z790 AORUS ELITE AX","MAG B660 TOMAHAWK WIFI DDR4","ROG MAXIMUS Z790 HERO","B650 GAMING X AX","MAG X670E TOMAHAWK WIFI","ROG STRIX X670E-E GAMING WIFI","MAG B550 TOMAHAWK","TUF GAMING X570-PLUS (WI-FI)","Prime B450M-A II"],["CPU Coolers","MLW-D24M-A18PC-R2","NH-D15 CHROMAX.BLACK","RL-KRZ73-01"],["Power Supplies","CP-9020200-NA","CP-9020262-NA","CP-9020201-NA"],["GPUs","RTX3060Ventus2X212GOC","TUF-RTX4070TI-12G-GAMING","GV-R66EAGLE-8GD"],["Storages","MZ-V7S1T0B/AM","MZ-V8P2T0B/AM","ST2000DM008"],[""],[""],[""],[""]],"partNumber":"Corsair","name":"CC-9011200-WW","price":94.99,"manufacturer":"Corsair 4000D Airflow ATX Mid Tower Case"},{"type":"ATX Mid Tower","color":"Black","includesPowerSupply":false,"sidePanel":"Tempered Glass","includePowerSupplyShroud":true,"frontPanelUSB":"USB 3.2 Gen 2 Type C, USB 3.2 Gen 1 Type A","motherboardFormFactor":["ATX","EATX","Micro ATX","Mini ITX"],"maximumVideoCardLength_mm":365.0,"MaximumVideoCardLengthInches":14.37,"driveBays":["1 x internal 3.5\"","1 x Internal 2.5\""],"expansionSlots":["7 x Full Height"],"dimensions_mm":"446 x 227 x 464","dimensionsInches":"17.6 x 8.9 x 18.3","volumeL":46.976,"volumeFt3":1.659,"compatibleComponents":[["Motherboards","Z790 AORUS ELITE AX","MAG B660 TOMAHAWK WIFI DDR4","ROG MAXIMUS Z790 HERO","B650 GAMING X AX","MAG X670E TOMAHAWK WIFI","ROG STRIX X670E-E GAMING WIFI","MAG B550 TOMAHAWK","TUF GAMING X570-PLUS (WI-FI)","Prime B450M-A II"],["CPU Coolers","MLW-D24M-A18PC-R2","NH-D15 CHROMAX.BLACK","RL-KRZ73-01"],["Power Supplies","CP-9020200-NA","CP-9020262-NA","CP-9020201-NA"],["GPUs","RTX3060Ventus2X212GOC","TUF-RTX4070TI-12G-GAMING","GV-R66EAGLE-8GD"],["Storages","MZ-V7S1T0B/AM","MZ-V8P2T0B/AM","ST2000DM008"],[""],[""],[""],[""]],"partNumber":"NZXT","name":"CC-H51FB-01","price":94.99,"manufacturer":"NZXT H5 Flow ATX Mid Tower Case"}],"CaseFans":[{"model":"iCUE SP120 RGB ELITE","size":120.0,"color":"Black/White","quantity":3,"RPM":"400 - 1500 RPM","airFlow":"---","noiseLevel":"---","isPWM":true,"LED":"Addressable RGB","connector":"4-pin PWM + proprietary RGB","controller":"USB","staticPressure":"1.46 mmH2O","compatibleComponents":[],"partNumber":"Corsair","name":"CO-9050109-WW","price":71.98,"manufacturer":"Corsair iCUE SP120 RGB ELITE 47.7 CFM 120 mm Fans 3-Pack"},{"model":"UNI SL120","size":120.0,"color":"White","quantity":3,"RPM":"800 - 1900 RPM","airFlow":"58.54 CFM","noiseLevel":"17 - 31 dB","isPWM":true,"LED":"Addressable RGB","connector":"4-pin PWM + proprietary RGB","controller":"USB","staticPressure":"2.54 mmH2O","compatibleComponents":[],"partNumber":"Lian Li","name":"UF-SL120-3W","price":96.95,"manufacturer":"Lian Li UNI SL120 58.54 CFM 120 mm Fans 3-Pack"},{"model":"A12x25 PWM","size":120.0,"color":"Brown","quantity":1,"RPM":"450 - 2000 RPM","airFlow":"49.73 - 60.1 CFM","noiseLevel":"18.8 - 22.6 dB","isPWM":true,"LED":"None","connector":"4-pin PWM","controller":"None","staticPressure":"2.34 mmH2O","compatibleComponents":[],"partNumber":"Noctua","name":"NF-A12x25 PWM","price":32.95,"manufacturer":"Noctua A12x25 PWM 60.1 CFM 120 mm Fan"}],"CPUs":[{"coreCount":24,"performanceCoreClock":3.0,"performanceBoostClock":5.8,"TDP":125,"series":"Intel Core i9","microarchitecture":"Raptor Lake","coreFamily":"Raptor Lake","socketType":"LGA1700","integratedGraphics":"Intel UHD Graphics 770","maxMemorySupported":128,"isECC":true,"includesCooler":false,"packaging":"Boxed","performanceL1Cache":"8 x 32 kB Instruction, 8 x 48 kB Data","efficiencyL1Cache":"16 x 32 kB Instruction, 16 x 64 kB Data","performanceL2Cache":"8 x 2 MB","efficiencyL2Cache":"4 x 4 MB","L3Cache":"1 x 36 MB","lithography":10,"includesCPUCooler":false,"isSimultaneousMultiThreading":"Yes: Hyper-Threading","compatibleComponents":[["CPU Coolers","MLW-D24M-A18PC-R2","NH-D15 CHROMAX.BLACK","RL-KRZ73-01"],["Motherboards","Z790 AORUS ELITE AX","MAG B660 TOMAHAWK WIFI DDR4","ROG MAXIMUS Z790 HERO"],[""],[""],[""],[""],[""],[""],[""]],"partNumber":"BX8071513900K","name":"Intel Core i9-13900K 3 GHz 24-Core Processor","price":559.99,"manufacturer":"Intel"},{"coreCount":16,"performanceCoreClock":3.4,"performanceBoostClock":5.4,"TDP":125,"series":"Intel Core i7","microarchitecture":"Raptor Lake","coreFamily":"Raptor Lake","socketType":"LGA1700","integratedGraphics":"Intel UHD Graphics 770","maxMemorySupported":128,"isECC":true,"includesCooler":false,"packaging":"Boxed","performanceL1Cache":"8 x 32 kB Instruction, 8 x 48 kB Data","efficiencyL1Cache":"8 x 32 kB Instruction, 8 x 64 kB Data","performanceL2Cache":"8 x 2 MB","efficiencyL2Cache":"2 x 4 MB","L3Cache":"1 x 30 MB","lithography":10,"includesCPUCooler":false,"isSimultaneousMultiThreading":"Yes: Hyper-Threading","compatibleComponents":[["CPU Coolers","MLW-D24M-A18PC-R2","NH-D15 CHROMAX.BLACK","RL-KRZ73-01"],["Motherboards","Z790 AORUS ELITE AX","MAG B660 TOMAHAWK WIFI DDR4","ROG MAXIMUS Z790 HERO"],[""],[""],[""],[""],[""],[""],[""]],"partNumber":"BX8071513700K","name":"Intel Core i7-13700K 3.4 GHz 16-Core Processor","price":419.99,"manufacturer":"Intel"},{"coreCount":12,"performanceCoreClock":3.6,"performanceBoostClock":5.0,"TDP":125,"series":"Intel Core i7","microarchitecture":"Alder Lake","coreFamily":"Alder Lake","socketType":"LGA1700","integratedGraphics":"None","maxMemorySupported":128,"isECC":false,"includesCooler":false,"packaging":"Boxed","performanceL1Cache":"8 x 32 kB Instruction, 8 x 48 kB Data","efficiencyL1Cache":"4 x 32 kB Instruction, 4 x 64 kB Data","performanceL2Cache":"8 x 1.25 MB","efficiencyL2Cache":"1 x 2 MB","L3Cache":"1 x 25 MB","lithography":10,"includesCPUCooler":false,"isSimultaneousMultiThreading":"Yes: Hyper-Threading","compatibleComponents":[["CPU Coolers","MLW-D24M-A18PC-R2","NH-D15 CHROMAX.BLACK","RL-KRZ73-01"],["Motherboards","Z790 AORUS ELITE AX","MAG B660 TOMAHAWK WIFI DDR4","ROG MAXIMUS Z790 HERO"],[""],[""],[""],[""],[""],[""],[""]],"partNumber":"BX8071512700KF","name":"Intel Core i7-12700KF 3.6 GHz 12-Core Processor","price":294.99,"manufacturer":"Intel"},{"coreCount":6,"performanceCoreClock":4.7,"performanceBoostClock":5.3,"TDP":105,"series":"AMD Ryzen 5","microarchitecture":"Zen 4","coreFamily":"Raphael","socketType":"AM5","integratedGraphics":"Radeon","maxMemorySupported":128,"isECC":true,"includesCooler":false,"packaging":"Boxed","performanceL1Cache":"6 x 32 kB Instruction, 6 x 32 kB Data","efficiencyL1Cache":"None","performanceL2Cache":"6 x 1 MB","efficiencyL2Cache":"None","L3Cache":"1 x 32 MB","lithography":5,"includesCPUCooler":false,"isSimultaneousMultiThreading":"Yes","compatibleComponents":[["CPU Coolers","MLW-D24M-A18PC-R2","NH-D15 CHROMAX.BLACK","RL-KRZ73-01"],["Motherboards","B650 GAMING X AX","MAG X670E TOMAHAWK WIFI","ROG STRIX X670E-E GAMING WIFI"],[""],[""],[""],[""],[""],[""],[""]],"partNumber":"100-100000593WOF","name":"AMD Ryzen 5 7600X 4.7 GHz 6-Core Processor","price":241.83,"manufacturer":"AMD"},{"coreCount":6,"performanceCoreClock":3.8,"performanceBoostClock":5.1,"TDP":65,"series":"AMD Ryzen 5","microarchitecture":"Zen 4","coreFamily":"Raphael","socketType":"AM5","integratedGraphics":"Radeon","maxMemorySupported":128,"isECC":true,"includesCooler":true,"packaging":"Boxed","performanceL1Cache":"6 x 32 kB Instruction, 6 x 32 kB Data","efficiencyL1Cache":"None","performanceL2Cache":"6 x 1 MB","efficiencyL2Cache":"None","L3Cache":"1 x 32 MB","lithography":5,"includesCPUCooler":true,"isSimultaneousMultiThreading":"Yes","compatibleComponents":[["CPU Coolers","MLW-D24M-A18PC-R2","NH-D15 CHROMAX.BLACK","RL-KRZ73-01"],["Motherboards","B650 GAMING X AX","MAG X670E TOMAHAWK WIFI","ROG STRIX X670E-E GAMING WIFI"],[""],[""],[""],[""],[""],[""],[""]],"partNumber":"100-100001015BOX","name":"AMD Ryzen 5 7600 3.8 GHz 6-Core Processor","price":219.99,"manufacturer":"AMD"},{"coreCount":8,"performanceCoreClock":4.2,"performanceBoostClock":5.0,"TDP":120,"series":"AMD Ryzen 7","microarchitecture":"Zen 4","coreFamily":"Raphael","socketType":"AM5","integratedGraphics":"Radeon","maxMemorySupported":128,"isECC":true,"includesCooler":false,"packaging":"Boxed","performanceL1Cache":"8 x 32 kB Instruction, 8 x 32 kB Data","efficiencyL1Cache":"None","performanceL2Cache":"8 x 1 MB","efficiencyL2Cache":"None","L3Cache":"1 x 96 MB","lithography":5,"includesCPUCooler":false,"isSimultaneousMultiThreading":"Yes","compatibleComponents":[["CPU Coolers","MLW-D24M-A18PC-R2","NH-D15 CHROMAX.BLACK","RL-KRZ73-01"],["Motherboards","B650 GAMING X AX","MAG X670E TOMAHAWK WIFI","ROG STRIX X670E-E GAMING WIFI"],[""],[""],[""],[""],[""],[""],[""]],"partNumber":"100-100000910WOF","name":"AMD Ryzen 7 7800X3D 4.2 GHz 8-Core Processor","price":449.0,"manufacturer":"AMD"},{"coreCount":6,"performanceCoreClock":3.7,"performanceBoostClock":4.6,"TDP":65,"series":"AMD Ryzen 5","microarchitecture":"Zen 3","coreFamily":"Vermeer","socketType":"AM4","integratedGraphics":"None","maxMemorySupported":128,"isECC":false,"includesCooler":true,"packaging":"Boxed","performanceL1Cache":"6 x 32 kB Instruction, 6 x 32 kB Data","efficiencyL1Cache":"None","performanceL2Cache":"6 x 512 kB","efficiencyL2Cache":"None","L3Cache":"1 x 32 MB","lithography":7,"includesCPUCooler":true,"isSimultaneousMultiThreading":"Yes","compatibleComponents":[["CPU Coolers","MLW-D24M-A18PC-R2","NH-D15 CHROMAX.BLACK","RL-KRZ73-01"],["Motherboards","MAG B550 TOMAHAWK","TUF GAMING X570-PLUS (WI-FI)","Prime B450M-A II"],[""],[""],[""],[""],[""],[""],[""]],"partNumber":"100-100000065BOX","name":"AMD Ryzen 5 5600X 3.7 GHz 6-Core Processor","price":148.99,"manufacturer":"AMD"},{"coreCount":8,"performanceCoreClock":3.8,"performanceBoostClock":4.7,"TDP":105,"series":"AMD Ryzen 7","microarchitecture":"Zen 3","coreFamily":"Vermeer","socketType":"AM4","integratedGraphics":"None","maxMemorySupported":128,"isECC":false,"includesCooler":false,"packaging":"Boxed","performanceL1Cache":"8 x 32 kB Instruction, 8 x 32 kB Data","efficiencyL1Cache":"None","performanceL2Cache":"8 x 512 kB","efficiencyL2Cache":"None","L3Cache":"1 x 32 MB","lithography":7,"includesCPUCooler":false,"isSimultaneousMultiThreading":"Yes","compatibleComponents":[["CPU Coolers","MLW-D24M-A18PC-R2","NH-D15 CHROMAX.BLACK","RL-KRZ73-01"],["Motherboards","MAG B550 TOMAHAWK","TUF GAMING X570-PLUS (WI-FI)","Prime B450M-A II"],[""],[""],[""],[""],[""],[""],[""]],"partNumber":"100-100000063WOF","name":"AMD Ryzen 7 5800X 3.8 GHz 8-Core Processor","price":229.0,"manufacturer":"AMD"},{"coreCount":16,"performanceCoreClock":3.4,"performanceBoostClock":4.9,"TDP":105,"series":"AMD Ryzen 9","microarchitecture":"Zen 3","coreFamily":"Vermeer","socketType":"AM4","integratedGraphics":"None","maxMemorySupported":128,"isECC":false,"includesCooler":false,"packaging":"Boxed","performanceL1Cache":"16 x 32 kB Instruction, 16 x 32 kB Data","efficiencyL1Cache":"None","performanceL2Cache":"16 x 512 kB","efficiencyL2Cache":"None","L3Cache":"2 x 32 MB","lithography":7,"includesCPUCooler":false,"isSimultaneousMultiThreading":"Yes","compatibleComponents":[["CPU Coolers","MLW-D24M-A18PC-R2","NH-D15 CHROMAX.BLACK","RL-KRZ73-01"],["Motherboards","MAG B550 TOMAHAWK","TUF GAMING X570-PLUS (WI-FI)","Prime B450M-A II"],[""],[""],[""],[""],[""],[""],[""]],"partNumber":"100-100000059WOF","name":"AMD Ryzen 9 5950X 3.4 GHz 16-Core Processor","price":459.0,"manufacturer":"AMD"}],"CPUCoolers":[{"model":"MASTERLIQUID ML240L RGB V2","fanRPM":"650 - 1800","noiseLevel":"6-27 dB","color":"Black","CPUSocket":["AM2","AM2+","AM3","AM3+","AM4","AM5","FM1","FM2","FM2+","LGA1150","LGA 1151","LGA 1155","LGA 1156","LGA 1200","LGA 1366","LGA 1700","LGA 2011","LGA 2011-3","LGA 2066"],"waterCooled":"Yes - 240mm","fanless":"No","compatibleComponents":[["CPUs","BX8071513900K","BX8071513700K","BX8071512700KF","100-100000593WOF","100-100001015BOX","100-100000910WOF","100-100000065BOX","100-100000063WOF","100-100000059WOF"],["Cases","CC-9011200-WW","CC-H51FB-01","PC-O11DEW"],["Motherboards","Z790 AORUS ELITE AX","MAG B660 TOMAHAWK WIFI DDR4","ROG MAXIMUS Z790 HERO","B650 GAMING X AX","MAG X670E TOMAHAWK WIFI","ROG STRIX X670E-E GAMING WIFI","MAG B550 TOMAHAWK","TUF GAMING X570-PLUS (WI-FI)","Prime B450M-A II"],[""],[""],[""],[""],[""],[""],[""]],"partNumber":"MLW-D24M-A18PC-R2","name":"Cooler Master MASTERLIQUID ML240L RGB V2 65.59 CFM Liquid CPU Cooler","price":89.99,"manufacturer":"Cooler Master"},{"model":"NH-D15 chromax.black","fanRPM":"300 - 1500","noiseLevel":"19.2 - 24.6 dB","color":"Black","CPUSocket":["AM2","AM2+","AM3","AM3+","AM4","AM5","FM1","FM2","FM2+","LGA1150","LGA 1151","LGA 1155","LGA 1156","LGA 1200","LGA 1700","LGA 2011","LGA 2011-3","LGA 2066"],"waterCooled":"Yes - 140mm","fanless":"No","compatibleComponents":[["CPUs","BX8071513900K","BX8071513700K","BX8071512700KF","100-100000593WOF","100-100001015BOX","100-100000910WOF","100-100000065BOX","100-100000063WOF","100-100000059WOF"],["Cases","CC-9011200-WW","CC-H51FB-01","PC-O11DEW"],["Motherboards","Z790 AORUS ELITE AX","MAG B660 TOMAHAWK WIFI DDR4","ROG MAXIMUS Z790 HERO","B650 GAMING X AX","MAG X670E TOMAHAWK WIFI","ROG STRIX X670E-E GAMING WIFI","MAG B550 TOMAHAWK","TUF GAMING X570-PLUS (WI-FI)","Prime B450M-A II"],[""],[""],[""],[""],[""],[""],[""]],"partNumber":"NH-D15 CHROMAX.BLACK","name":"Noctua NH-D15 chromax.black 82.52 CFM CPU Cooler","price":119.95,"manufacturer":"Noctua"},{"model":"Kraken Z73","fanRPM":"500 - 1800","noiseLevel":"21 - 36 dB","color":"Black","CPUSocket":["AM4","AM5","sTR4","sTRX4","LGA1150","LGA 1151","LGA 1155","LGA 1156","LGA 1200","LGA 1366","LGA 1700","LGA 2011","LGA 2011-3","LGA 2066"],"waterCooled":"Yes - 360mm","fanless":"No","compatibleComponents":[["CPUs","BX8071513900K","BX8071513700K","BX8071512700KF","100-100000593WOF","100-100001015BOX","100-100000910WOF","100-100000065BOX","100-100000063WOF","100-100000059WOF"],["Cases","CC-9011200-WW","CC-H51FB-01","PC-O11DEW"],["Motherboards","Z790 AORUS ELITE AX","MAG B660 TOMAHAWK WIFI DDR4","ROG MAXIMUS Z790 HERO","B650 GAMING X AX","MAG X670E TOMAHAWK WIFI","ROG STRIX X670E-E GAMING WIFI","MAG B550 TOMAHAWK","TUF GAMING X570-PLUS (WI-FI)","Prime B450M-A II"],[""],[""],[""],[""],[""],[""],[""]],"partNumber":"RL-KRZ73-01","name":"NZXT Kraken Z73 73.11 CFM Liquid CPU Cooler","price":279.99,"manufacturer":"NZXT"}],"GPUs":[{"chipSet":"GeForce RTX 3060 12GB","vMemory":12,"vMemoryType":"GDDR6","coreClock":1320,"boostClock":1777,"effectiveMemoryClock":15000,"GPUInterface":"PCIe x 16","color":"Black","frameSync":"G-Sync","length":235,"TDP":170,"caseExpansionSlotWidth":2,"totalSlotWidth":2,"cooling":"2 Fans","externalPower":"1 PCIe 8-pin","HDMIOutputs":"1 HDMI Outputs","displayPortOutputs":"3 DisplayPort Outputs","compatibleComponents":[["Cases","PC-O11DEW","CC-9011200-WW","CC-H51FB-01"],["Motherboards","Z790 AORUS ELITE AX","MAG B660 TOMAHAWK WIFI DDR4","ROG MAXIMUS Z790 HERO","B650 GAMING X AX","MAG X670E TOMAHAWK WIFI","ROG STRIX X670E-E GAMING WIFI","MAG B550 TOMAHAWK","TUF GAMING X570-PLUS (WI-FI)","Prime B450M-A II"],["Power Supplies","CP-9020200-NA","CP-9020262-NA","CP-9020201-NA"],[""],[""],[""],[""],[""],[""]],"partNumber":"RTX3060Ventus2X12GOC","name":"MSI GeForce RTX 3060 Ventus 2X 12G GeForce RTX 3060 12GB 12 GB Video Card","price":289.99,"manufacturer":"MSI"},{"chipSet":"GeForce RTX 4070 Ti","vMemory":12,"vMemoryType":"GDDR6X","coreClock":2310,"boostClock":2640,"effectiveMemoryClock":21000,"GPUInterface":"PCIe x 16","color":"Black","frameSync":"G-Sync","length":305,"TDP":285,"caseExpansionSlotWidth":2,"totalSlotWidth":4,"cooling":"3 Fans","externalPower":"1 PCIe 16-pin","HDMIOutputs":"2 HDMI 2.1a Outputs","displayPortOutputs":"3 DisplayPort 1.4a Outputs","compatibleComponents":[["Cases","PC-O11DEW","CC-9011200-WW","CC-H51FB-01"],["Motherboards","Z790 AORUS ELITE AX","MAG B660 TOMAHAWK WIFI DDR4","ROG MAXIMUS Z790 HERO","B650 GAMING X AX","MAG X670E TOMAHAWK WIFI","ROG STRIX X670E-E GAMING WIFI","MAG B550 TOMAHAWK","TUF GAMING X570-PLUS (WI-FI)","Prime B450M-A II"],["Power Supplies","CP-9020200-NA","CP-9020262-NA","CP-9020201-NA"],[""],[""],[""],[""],[""],[""]],"partNumber":"TUF-RTX4070TI-12G-GAMING","name":"Asus TUF GAMING GeForce RTX 4070 Ti 12 GB Video Card","price":799.99,"manufacturer":"Asus"},{"chipSet":"Radeon RX 6600","vMemory":8,"vMemoryType":"GDDR6","coreClock":1626,"boostClock":2491,"effectiveMemoryClock":14000,"GPUInterface":"PCIe x 16","color":"Black/Silver","frameSync":"FreeSync","length":282,"TDP":132,"caseExpansionSlotWidth":2,"totalSlotWidth":2,"cooling":"3 Fans","externalPower":"1 PCIe 8-pin","HDMIOutputs":"2 HDMI Outputs","displayPortOutputs":"2 DisplayPort Outputs","compatibleComponents":[["Cases","PC-O11DEW","CC-9011200-WW","CC-H51FB-01"],["Motherboards","Z790 AORUS ELITE AX","MAG B660 TOMAHAWK WIFI DDR4","ROG MAXIMUS Z790 HERO","B650 GAMING X AX","MAG X670E TOMAHAWK WIFI","ROG STRIX X670E-E GAMING WIFI","MAG B550 TOMAHAWK","TUF GAMING X570-PLUS (WI-FI)","Prime B450M-A II"],["Power Supplies","CP-9020200-NA","CP-9020262-NA","CP-9020201-NA"],[""],[""],[""],[""],[""],[""]],"partNumber":"GV-R66EAGLE-8GD","name":"Gigabyte EAGLE Radeon RX 6600 8 GB Video Card","price":199.99,"manufacturer":"Gigabyte"}],"Motherboards":[{"socketType":"LGA1700","chipSet":"Intel Z790","formFactor":"ATX","memorySlots":4,"memoryType":"DDR5","memoryMax":128,"maxMemorySpeed":7600,"PCIe_x16_Slots":3,"PCIe_x8_Slots":0,"PCIe_x4_Slots":0,"PCIe_x1_Slots":0,"PCI_Slots":0,"color":"Black","isSLIOrCrossFire":true,"SATAConnectors":6,"M2_Slots":4,"miniPCIeSlots":0,"halfMiniPCIeSlots":0,"mSATASlots":0,"onboardEthernet":"1 x 2.5 Gb/s (Realtek)","USB_2_Headers":2,"USB_2_Headers_Single_Port":0,"USB_32_1_Headers":1,"USB_32_2_Headers":1,"USB_32_2x2_Headers":0,"isECC":false,"wirelessNetworking":"Wi-Fi 6E","RAIDSupport":true,"compatibleComponents":[["CPUs","BX8071513900K","BX8071513700K","BX8071512700KF"],["CPU Coolers","MLW-D24M-A18PC-R2","NH-D15 CHROMAX.BLACK","RL-KRZ73"],["Memory Kits","CMK32GX5M2B5600C36","F5-6000J3636F16GX2-TZ5RK","F5-6400J3239G32GX2-TZ5RK"],["GPUs","RTX3060Ventus2X212GOC","TUF-RTX4070TI-12G-GAMING","GV-R66EAGLE-8GD"],["Power Supplies","CP-9020200-NA","CP-9020262-NA","CP-9020201-NA"],["Cases","CC-9011200-WW","CC-H51FB-01","PC-O11DEW"],["Storages","MZ-V7S1T0B/AM","MZ-V8P2T0B/AM","ST2000DM008"],[""],[""]],"partNumber":"Z790 AORUS ELITE AX","name":"Gigabyte Z790 AORUS ELITE AX ATX LGA1700 Motherboard","price":254.99,"manufacturer":"Gigabyte"},{"socketType":"AM5","chipSet":"AMD B650","formFactor":"ATX","memorySlots":4,"memoryType":"DDR5","memoryMax":128,"maxMemorySpeed":6400,"PCIe_x16_Slots":3,"PCIe_x8_Slots":0,"PCIe_x4_Slots":0,"PCIe_x1_Slots":0,"PCI_Slots":0,"color":"Black/Gray","isSLIOrCrossFire":false,"SATAConnectors":4,"M2_Slots":3,"miniPCIeSlots":0,"halfMiniPCIeSlots":0,"mSATASlots":0,"onboardEthernet":"1 x 2.5 Gb/s (Realtek)","USB_2_Headers":2,"USB_2_Headers_Single_Port":0,"USB_32_1_Headers":1,"USB_32_2_Headers":0,"USB_32_2x2_Headers":1,"isECC":false,"wirelessNetworking":"Wi-Fi 6E","RAIDSupport":true,"compatibleComponents":[["CPUs","100-100000065BOX","100-100000063WOF","100-100000059WOF"],["CPU Coolers","MLW-D24M-A18PC-R2","NH-D15 CHROMAX.BLACK","RL-KRZ73"],["Memory Kits","CMK32GX5M2B5600C36","F5-6000J3636F16GX2-TZ5RK","F5-6400J3239G32GX2-TZ5RK"],["GPUs","RTX3060Ventus2X212GOC","TUF-RTX4070TI-12G-GAMING","GV-R66EAGLE-8GD"],["Power Supplies","CP-9020200-NA","CP-9020262-NA","CP-9020201-NA"],["Cases","CC-9011200-WW","CC-H51FB-01","PC-O11DEW"],["Storages","MZ-V7S1T0B/AM","MZ-V8P2T0B/AM","ST2000DM008"],[""],[""]],"partNumber":"B650 GAMING X AX","name":"Gigabyte B650 GAMING X AX ATX AM5 Motherboard","price":179.99,"manufacturer":"Gigabyte"},{"socketType":"AM4","chipSet":"AMD X570","formFactor":"ATX","memorySlots":4,"memoryType":"DDR4","memoryMax":128,"maxMemorySpeed":4400,"PCIe_x16_Slots":2,"PCIe_x8_Slots":0,"PCIe_x4_Slots":0,"PCIe_x1_Slots":2,"PCI_Slots":0,"color":"Black/Gold","isSLIOrCrossFire":true,"SATAConnectors":8,"M2_Slots":2,"miniPCIeSlots":0,"halfMiniPCIeSlots":0,"mSATASlots":0,"onboardEthernet":"1 x 1Gb/s (Realtek L8200A)","USB_2_Headers":2,"USB_2_Headers_Single_Port":0,"USB_32_1_Headers":1,"USB_32_2_Headers":0,"USB_32_2x2_Headers":0,"isECC":false,"wirelessNetworking":"Wi-Fi 5","RAIDSupport":true,"compatibleComponents":[["CPUs","100-100000065BOX","100-100000063WOF","100-100000059WOF"],["CPU Coolers","MLW-D24M-A18PC-R2","NH-D15 CHROMAX.BLACK","RL-KRZ73"],["Memory Kits","CMK32GX5M2B5600C36","F5-6000J3636F16GX2-TZ5RK","F5-6400J3239G32GX2-TZ5RK"],["GPUs","RTX3060Ventus2X212GOC","TUF-RTX4070TI-12G-GAMING","GV-R66EAGLE-8GD"],["Power Supplies","CP-9020200-NA","CP-9020262-NA","CP-9020201-NA"],["Cases","CC-9011200-WW","CC-H51FB-01","PC-O11DEW"],["Storages","MZ-V7S1T0B/AM","MZ-V8P2T0B/AM","ST2000DM008"],[""],[""]],"partNumber":"TUF GAMING X570-PLUS (Wi-Fi)","name":"Asus TUF GAMING X570-PLUS (Wi-Fi) ATX AM4 Motherboard","price":209.99,"manufacturer":"Asus"},{"socketType":"LGA1700","chipSet":"Intel B660","formFactor":"ATX","memorySlots":4,"memoryType":"DDR4","memoryMax":128,"maxMemorySpeed":4800,"PCIe_x16_Slots":2,"PCIe_x8_Slots":0,"PCIe_x4_Slots":0,"PCIe_x1_Slots":1,"PCI_Slots":0,"color":"Black/Silver","isSLIOrCrossFire":true,"SATAConnectors":6,"M2_Slots":4,"miniPCIeSlots":0,"halfMiniPCIeSlots":0,"mSATASlots":0,"onboardEthernet":"1 x 2.5 Gb/s (Realtek RTL8125B-CG)","USB_2_Headers":2,"USB_2_Headers_Single_Port":0,"USB_32_1_Headers":1,"USB_32_2_Headers":1,"USB_32_2x2_Headers":0,"isECC":false,"wirelessNetworking":"Wi-Fi 6","RAIDSupport":true,"compatibleComponents":[["CPUs","100-100000065BOX","100-100000063WOF","100-100000059WOF"],["CPU Coolers","MLW-D24M-A18PC-R2","NH-D15 CHROMAX.BLACK","RL-KRZ73"],["Memory Kits","CMK16GX4M2B3200C16","SP016GXLZU320BDAJ5","AX4U32008G16A-DW50"],["GPUs","RTX3060Ventus2X212GOC","TUF-RTX4070TI-12G-GAMING","GV-R66EAGLE-8GD"],["Power Supplies","CP-9020200-NA","CP-9020262-NA","CP-9020201-NA"],["Cases","CC-9011200-WW","CC-H51FB-01","PC-O11DEW"],["Storages","MZ-V7S1T0B/AM","MZ-V8P2T0B/AM","ST2000DM008"],[""],[""]],"partNumber":"MAG B660 TOMAHAWK WIFI DDR4","name":"MSI MAG B660 TOMAHAWK WIFI DDR4 ATX LGA1700 Motherboard","price":189.99,"manufacturer":"MSI"},{"socketType":"LGA1700","chipSet":"Intel Z790","formFactor":"ATX","memorySlots":4,"memoryType":"DDR5","memoryMax":128,"maxMemorySpeed":7800,"PCIe_x16_Slots":3,"PCIe_x8_Slots":0,"PCIe_x4_Slots":0,"PCIe_x1_Slots":0,"PCI_Slots":0,"color":"Black","isSLIOrCrossFire":true,"SATAConnectors":6,"M2_Slots":3,"miniPCIeSlots":0,"halfMiniPCIeSlots":0,"mSATASlots":0,"onboardEthernet":"1 x 2.5 Gb/s (Intel)","USB_2_Headers":2,"USB_2_Headers_Single_Port":0,"USB_32_1_Headers":2,"USB_32_2_Headers":0,"USB_32_2x2_Headers":1,"isECC":false,"wirelessNetworking":"Wi-Fi 6E","RAIDSupport":true,"compatibleComponents":[["CPUs","BX8071513900K","BX8071513700K","BX8071512700KF"],["CPU Coolers","MLW-D24M-A18PC-R2","NH-D15 CHROMAX.BLACK","RL-KRZ73"],["Memory Kits","CMK32GX5M2B5600C36","F5-6000J3636F16GX2-TZ5RK","F5-6400J3239G32GX2-TZ5RK"],["GPUs","RTX3060Ventus2X212GOC","TUF-RTX4070TI-12G-GAMING","GV-R66EAGLE-8GD"],["Power Supplies","CP-9020200-NA","CP-9020262-NA","CP-9020201-NA"],["Cases","CC-9011200-WW","CC-H51FB-01","PC-O11DEW"],["Storages","MZ-V7S1T0B/AM","MZ-V8P2T0B/AM","ST2000DM008"],[""],[""]],"partNumber":"ROG MAXIMUS Z790 HERO","name":"Asus ROG MAXIMUS Z790 HERO ATX LGA1700 Motherboard","price":559.99,"manufacturer":"Asus"},{"socketType":"AM5","chipSet":"AMD X670E","formFactor":"ATX","memorySlots":4,"memoryType":"DDR5","memoryMax":192,"maxMemorySpeed":6600,"PCIe_x16_Slots":3,"PCIe_x8_Slots":0,"PCIe_x4_Slots":0,"PCIe_x1_Slots":1,"PCI_Slots":0,"color":"Black","isSLIOrCrossFire":false,"SATAConnectors":4,"M2_Slots":4,"miniPCIeSlots":0,"halfMiniPCIeSlots":0,"mSATASlots":0,"onboardEthernet":"1 x 2.5 Gb/s (Realtek RTL8125BG)","USB_2_Headers":2,"USB_2_Headers_Single_Port":0,"USB_32_1_Headers":2,"USB_32_2_Headers":1,"USB_32_2x2_Headers":0,"isECC":false,"wirelessNetworking":"Wi-Fi 6E","RAIDSupport":true,"compatibleComponents":[["CPUs","100-100000593WOF","100-100001015BOX","100-100000910WOF"],["CPU Coolers","MLW-D24M-A18PC-R2","NH-D15 CHROMAX.BLACK","RL-KRZ73"],["Memory Kits","CMK16GX4M2B3200C16","SP016GXLZU320BDAJ5","AX4U32008G16A-DW50"],["GPUs","RTX3060Ventus2X212GOC","TUF-RTX4070TI-12G-GAMING","GV-R66EAGLE-8GD"],["Power Supplies","CP-9020200-NA","CP-9020262-NA","CP-9020201-NA"],["Cases","CC-9011200-WW","CC-H51FB-01","PC-O11DEW"],["Storages","MZ-V7S1T0B/AM","MZ-V8P2T0B/AM","ST2000DM008"],[""],[""]],"partNumber":"MAG X670E TOMAHAWK WIFI","name":"MSI MAG X670E TOMAHAWK WIFI ATX AM5 Motherboard","price":309.99,"manufacturer":"MSI"},{"socketType":"AM5","chipSet":"AMD X670E","formFactor":"ATX","memorySlots":4,"memoryType":"DDR5","memoryMax":128,"maxMemorySpeed":6400,"PCIe_x16_Slots":3,"PCIe_x8_Slots":0,"PCIe_x4_Slots":0,"PCIe_x1_Slots":0,"PCI_Slots":0,"color":"Black/Silver","isSLIOrCrossFire":false,"SATAConnectors":4,"M2_Slots":4,"miniPCIeSlots":0,"halfMiniPCIeSlots":0,"mSATASlots":0,"onboardEthernet":"1 x 2.5 Gb/s (Intel)","USB_2_Headers":3,"USB_2_Headers_Single_Port":0,"USB_32_1_Headers":1,"USB_32_2_Headers":0,"USB_32_2x2_Headers":1,"isECC":false,"wirelessNetworking":"Wi-Fi 6E","RAIDSupport":true,"compatibleComponents":[["CPUs","100-100000593WOF","100-100001015BOX","100-100000910WOF"],["CPU Coolers","MLW-D24M-A18PC-R2","NH-D15 CHROMAX.BLACK","RL-KRZ73"],["Memory Kits","CMK16GX4M2B3200C16","SP016GXLZU320BDAJ5","AX4U32008G16A-DW50"],["GPUs","RTX3060Ventus2X212GOC","TUF-RTX4070TI-12G-GAMING","GV-R66EAGLE-8GD"],["Power Supplies","CP-9020200-NA","CP-9020262-NA","CP-9020201-NA"],["Cases","CC-9011200-WW","CC-H51FB-01","PC-O11DEW"],["Storages","MZ-V7S1T0B/AM","MZ-V8P2T0B/AM","ST2000DM008"],[""],[""]],"partNumber":"ROG STRIX X670E-E GAMING WIFI","name":"Asus ROG STRIX X670E-E GAMING WIFI ATX AM5 Motherboard","price":482.99,"manufacturer":"Asus"},{"socketType":"AM4","chipSet":"AMD B550","formFactor":"ATX","memorySlots":4,"memoryType":"DDR4","memoryMax":128,"maxMemorySpeed":4866,"PCIe_x16_Slots":2,"PCIe_x8_Slots":0,"PCIe_x4_Slots":0,"PCIe_x1_Slots":2,"PCI_Slots":0,"color":"Black/Silver","isSLIOrCrossFire":true,"SATAConnectors":6,"M2_Slots":4,"miniPCIeSlots":0,"halfMiniPCIeSlots":0,"mSATASlots":0,"onboardEthernet":"1 x 1 Gb/s\n1 x 2.5 Gb/s","USB_2_Headers":2,"USB_2_Headers_Single_Port":0,"USB_32_1_Headers":1,"USB_32_2_Headers":1,"USB_32_2x2_Headers":0,"isECC":false,"wirelessNetworking":"None","RAIDSupport":true,"compatibleComponents":[["CPUs","100-100000593WOF","100-100001015BOX","100-100000910WOF"],["CPU Coolers","MLW-D24M-A18PC-R2","NH-D15 CHROMAX.BLACK","RL-KRZ73"],["Memory Kits","CMK16GX4M2B3200C16","SP016GXLZU320BDAJ5","AX4U32008G16A-DW50"],["GPUs","RTX3060Ventus2X212GOC","TUF-RTX4070TI-12G-GAMING","GV-R66EAGLE-8GD"],["Power Supplies","CP-9020200-NA","CP-9020262-NA","CP-9020201-NA"],["Cases","CC-9011200-WW","CC-H51FB-01","PC-O11DEW"],["Storages","MZ-V7S1T0B/AM","MZ-V8P2T0B/AM","ST2000DM008"],[""],[""]],"partNumber":"MAG B550 TOMAHAWK","name":"MSI MAG B550 TOMAHAWK ATX AM4 Motherboard","price":169.99,"manufacturer":"MSI"},{"socketType":"AM4","chipSet":"AMD B450","formFactor":"Micro ATX","memorySlots":4,"memoryType":"DDR4","memoryMax":128,"maxMemorySpeed":4400,"PCIe_x16_Slots":1,"PCIe_x8_Slots":0,"PCIe_x4_Slots":0,"PCIe_x1_Slots":2,"PCI_Slots":0,"color":"Black/White","isSLIOrCrossFire":false,"SATAConnectors":6,"M2_Slots":1,"miniPCIeSlots":0,"halfMiniPCIeSlots":0,"mSATASlots":0,"onboardEthernet":"1 x 1 Gb/s","USB_2_Headers":2,"USB_2_Headers_Single_Port":0,"USB_32_1_Headers":1,"USB_32_2_Headers":0,"USB_32_2x2_Headers":0,"isECC":false,"wirelessNetworking":"None","RAIDSupport":true,"compatibleComponents":[["CPUs","100-100000593WOF","100-100001015BOX","100-100000910WOF"],["CPU Coolers","MLW-D24M-A18PC-R2","NH-D15 CHROMAX.BLACK","RL-KRZ73"],["Memory Kits","CMK16GX4M2B3200C16","SP016GXLZU320BDAJ5","AX4U32008G16A-DW50"],["GPUs","RTX3060Ventus2X212GOC","TUF-RTX4070TI-12G-GAMING","GV-R66EAGLE-8GD"],["Power Supplies","CP-9020200-NA","CP-9020262-NA","CP-9020201-NA"],["Cases","CC-9011200-WW","CC-H51FB-01","PC-O11DEW"],["Storages","MZ-V7S1T0B/AM","MZ-V8P2T0B/AM","ST2000DM008"],[""],[""]],"partNumber":"Prime B450M-A II","name":"Asus Prime B450M-A II Micro ATX AM4 Motherboard","price":79.98,"manufacturer":"Asus"}],"PowerSupplies":[{"type":"ATX","efficiencyRating":"80+ Gold","wattage":850,"length":160,"modularity":"Full","color":"Black","fanless":false,"ATX4PinConnectors":0,"EPS8PinConnectors":3,"PCIe_12_4_Pin12VHPWRConnectors":0,"PCIe12PinConnectors":0,"PCIe8PinConnectors":0,"PCIe_6_2_PinConnectors":4,"PCIe6PinConnectors":0,"SATAConnectors":14,"molex4PinConnectors":4,"compatibleComponents":[["Cases","PC-O11DEW","CC-9011200-WW","CC-H51FB-01"],["Motherboards","Z790 AORUS ELITE AX","MAG B660 TOMAHAWK WIFI DDR4","ROG MAXIMUS Z790 HERO","B650 GAMING X AX","MAG X670E TOMAHAWK WIFI","ROG STRIX X670E-E GAMING WIFI","MAG B550 TOMAHAWK","TUF GAMING X570-PLUS (WI-FI)","Prime B450M-A II"],["GPUs","RTX3060Ventus2X12GOC","TUF-RTX4070TI-12G-GAMING","GV-R66EAGLE-8GD"],[""],[""],[""],[""],[""],[""]],"partNumber":"CP-9020200-NA","name":"Corsair RM850x (2021) 850 W 80+ Gold Certified Fully Modular ATX Power Supply","price":149.99,"manufacturer":"Corsair"},{"type":"ATX","efficiencyRating":"80+ Gold","wattage":750,"length":140,"modularity":"Full","color":"Black","fanless":false,"ATX4PinConnectors":0,"EPS8PinConnectors":2,"PCIe_12_4_Pin12VHPWRConnectors":1,"PCIe12PinConnectors":0,"PCIe8PinConnectors":0,"PCIe_6_2_PinConnectors":3,"PCIe6PinConnectors":0,"SATAConnectors":7,"molex4PinConnectors":4,"compatibleComponents":[["Cases","PC-O11DEW","CC-9011200-WW","CC-H51FB-01"],["Motherboards","Z790 AORUS ELITE AX","MAG B660 TOMAHAWK WIFI DDR4","ROG MAXIMUS Z790 HERO","B650 GAMING X AX","MAG X670E TOMAHAWK WIFI","ROG STRIX X670E-E GAMING WIFI","MAG B550 TOMAHAWK","TUF GAMING X570-PLUS (WI-FI)","Prime B450M-A II"],["GPUs","RTX3060Ventus2X12GOC","TUF-RTX4070TI-12G-GAMING","GV-R66EAGLE-8GD"],[""],[""],[""],[""],[""],[""]],"partNumber":"CP-9020262-NA","name":"Corsair RM750e (2023) 750 W 80+ Gold Certified Fully Modular ATX Power Supply","price":99.99,"manufacturer":"Corsair"},{"type":"ATX","efficiencyRating":"80+ Gold","wattage":1000,"length":180,"modularity":"Full","color":"Black","fanless":false,"ATX4PinConnectors":0,"EPS8PinConnectors":3,"PCIe_12_4_Pin12VHPWRConnectors":0,"PCIe12PinConnectors":0,"PCIe8PinConnectors":0,"PCIe_6_2_PinConnectors":4,"PCIe6PinConnectors":0,"SATAConnectors":14,"molex4PinConnectors":8,"compatibleComponents":[["Cases","PC-O11DEW","CC-9011200-WW","CC-H51FB-01"],["Motherboards","Z790 AORUS ELITE AX","MAG B660 TOMAHAWK WIFI DDR4","ROG MAXIMUS Z790 HERO","B650 GAMING X AX","MAG X670E TOMAHAWK WIFI","ROG STRIX X670E-E GAMING WIFI","MAG B550 TOMAHAWK","TUF GAMING X570-PLUS (WI-FI)","Prime B450M-A II"],["GPUs","RTX3060Ventus2X12GOC","TUF-RTX4070TI-12G-GAMING","GV-R66EAGLE-8GD"],[""],[""],[""],[""],[""],[""]],"partNumber":"CP-9020201-NA","name":"Corsair RM1000x (2021) 1000 W 80+ Gold Certified Fully Modular ATX Power Supply","price":174.99,"manufacturer":"Corsair"}],"MemoryKits":[{"memorySpeed":"DDR5-5600","formFactor":"288-pin DIMM (DDR5)","modules":"2 x 16GB","pricePerGB":2.906,"color":"Black","firstWordLatency":12.857,"CASLatency":36,"voltage":1.25,"timing":"36-36-36-76","ECC_Registered":"Non-ECC/Unbuffered","isHeatSpreader":true,"compatibleComponents":[["Motherboards","Z790 AORUS ELITE AX","MAG B660 TOMAHAWK WIFI DDR4","ROG MAXIMUS Z790 HERO","B650 GAMING X AX","MAG X670E TOMAHAWK WIFI","ROG STRIX X670E-E GAMING WIFI","MAG B550 TOMAHAWK"],[""],[""],[""],[""],[""],[""],[""],[""]],"partNumber":"CMK32GX5M2B5600C36","name":"Corsair Vengeance 32 GB (2 x 16 GB) DDR5-5600 CL36 Memory","price":94.99,"manufacturer":"Corsair"},{"memorySpeed":"DDR5-6000","formFactor":"288-pin DIMM (DDR5)","modules":"2 x 16GB","pricePerGB":3.437,"color":"Black","firstWordLatency":12.0,"CASLatency":36,"voltage":1.35,"timing":"36-36-36-96","ECC_Registered":"Non-ECC/Unbuffered","isHeatSpreader":true,"compatibleComponents":[["Motherboards","Z790 AORUS ELITE AX","MAG B660 TOMAHAWK WIFI DDR4","ROG MAXIMUS Z790 HERO","B650 GAMING X AX","MAG X670E TOMAHAWK WIFI","ROG STRIX X670E-E GAMING WIFI","MAG B550 TOMAHAWK"],[""],[""],[""],[""],[""],[""],[""],[""]],"partNumber":"F5-6000J3636F16GX2-TZ5RK","name":"G.Skill Trident Z5 RGB 32 GB (2 x 16 GB) DDR5-6000 CL36 Memory","price":109.99,"manufacturer":"G.Skill"},{"memorySpeed":"DDR5-6400","formFactor":"288-pin DIMM (DDR5)","modules":"2 x 32GB","pricePerGB":3.719,"color":"Black/Silver","firstWordLatency":10.0,"CASLatency":32,"voltage":1.4,"timing":"32-39-39-102","ECC_Registered":"Non-ECC/Unbuffered","isHeatSpreader":true,"compatibleComponents":[["Motherboards","Z790 AORUS ELITE AX","MAG B660 TOMAHAWK WIFI DDR4","ROG MAXIMUS Z790 HERO","B650 GAMING X AX","MAG X670E TOMAHAWK WIFI","ROG STRIX X670E-E GAMING WIFI","MAG B550 TOMAHAWK"],[""],[""],[""],[""],[""],[""],[""],[""]],"partNumber":"F5-6400J3239G32GX2-TZ5RK","name":"G.Skill Trident Z5 RGB 64 GB (2 x 32 GB) DDR5-6400 CL32 Memory","price":237.99,"manufacturer":"G.Skill"},{"memorySpeed":"DDR4-3200","formFactor":"288-pin DIMM (DDR4)","modules":"2 x 8GB","pricePerGB":2.499,"color":"Black/Yellow","firstWordLatency":10.0,"CASLatency":16,"voltage":1.35,"timing":"16-18-18-36","ECC_Registered":"Non-ECC/Unbuffered","isHeatSpreader":true,"compatibleComponents":[["Motherboards","TUF GAMING X570-PLUS (Wi-Fi)","MAG B660 TOMAHAWK WIFI DDR4","Prime B450M-A II","MAG B550 TOMAHAWK"],[""],[""],[""],[""],[""],[""],[""],[""]],"partNumber":"CMK16GX4M2B3200C16","name":"Corsair Vengeance LPX 16 GB (2 x 8 GB) DDR4-3200 CL16 Memory","price":39.99,"manufacturer":"Corsair"},{"memorySpeed":"DDR4-3200","formFactor":"288-pin DIMM (DDR4)","modules":"2 x 8GB","pricePerGB":1.873,"color":"Black/Gray","firstWordLatency":10.0,"CASLatency":16,"voltage":1.35,"timing":"16-18-18-38","ECC_Registered":"Non-ECC/Unbuffered","isHeatSpreader":true,"compatibleComponents":[["Motherboards","TUF GAMING X570-PLUS (Wi-Fi)","MAG B660 TOMAHAWK WIFI DDR4","Prime B450M-A II","MAG B550 TOMAHAWK"],[""],[""],[""],[""],[""],[""],[""],[""]],"partNumber":"SP016GXLZU320BDAJ5","name":"Silicon Power GAMING 16 GB (2 x 8 GB) DDR4-3200 CL16 Memory","price":29.97,"manufacturer":"Silicon Power"},{"memorySpeed":"DDR4-3200","formFactor":"288-pin DIMM (DDR4)","modules":"2 x 8GB","pricePerGB":2.749,"color":"White","firstWordLatency":10.0,"CASLatency":16,"voltage":1.35,"timing":"16-20-20","ECC_Registered":"Non-ECC/Unbuffered","isHeatSpreader":true,"compatibleComponents":[["Motherboards","TUF GAMING X570-PLUS (Wi-Fi)","MAG B660 TOMAHAWK WIFI DDR4","Prime B450M-A II","MAG B550 TOMAHAWK"],[""],[""],[""],[""],[""],[""],[""],[""]],"partNumber":"AX4U32008G16A-DW50","name":"ADATA XPG SPECTRIX D50 16 GB (2 x 8 GB) DDR4-3200 CL16 Memory","price":43.99,"manufacturer":"ADATA"}],"Storages":[{"capacity":"1 TB","pricePerGB":0.07,"type":"SSD","cache":1024,"formFactor":"M.2-2280","interfaceType":"M.2 PCIe 3.0 x 4","isNVMe":true,"compatibleComponents":[["Cases","PC-O11DEW","CC-9011200-WW","CC-H51FB-01"],["Motherboards","Z790 AORUS ELITE AX","MAG B660 TOMAHAWK WIFI DDR4","ROG MAXIMUS Z790 HERO","B650 GAMING X AX","MAG X670E TOMAHAWK WIFI","ROG STRIX X670E-E GAMING WIFI","MAG B550 TOMAHAWK","TUF GAMING X570-PLUS (WI-FI)","Prime B450M-A II"],[""],[""],[""],[""],[""],[""]],"partNumber":"Samsung 970 Evo Plus 1 TB M.2-2280 PCIe 3.0 X4 NVME Solid State Drive","name":"MZ-V7S1T0B/AM","price":69.98,"manufacturer":"Samsung"},{"capacity":"2 TB","pricePerGB":0.065,"type":"SSD","cache":2048,"formFactor":"M.2-2280","interfaceType":"M.2 PCIe 4.0 x 4","isNVMe":true,"compatibleComponents":[["Cases","PC-O11DEW","CC-9011200-WW","CC-H51FB-01"],["Motherboards","Z790 AORUS ELITE AX","MAG B660 TOMAHAWK WIFI DDR4","ROG MAXIMUS Z790 HERO","B650 GAMING X AX","MAG X670E TOMAHAWK WIFI","ROG STRIX X670E-E GAMING WIFI","MAG B550 TOMAHAWK","TUF GAMING X570-PLUS (WI-FI)","Prime B450M-A II"],[""],[""],[""],[""],[""],[""]],"partNumber":"Samsung 980 Pro 2 TB M.2-2280 PCIe 4.0 X4 NVME Solid State Drive","name":"MZ-V8P2T0B/AM","price":129.99,"manufacturer":"Samsung"},{"capacity":"2 TB","pricePerGB":0.025,"type":"HDD - 7200 RPM","cache":256,"formFactor":"3.5\"","interfaceType":"SATA 6.0 Gb/s","isNVMe":false,"compatibleComponents":[["Cases","PC-O11DEW","CC-9011200-WW","CC-H51FB-01"],["Motherboards","Z790 AORUS ELITE AX","MAG B660 TOMAHAWK WIFI DDR4","ROG MAXIMUS Z790 HERO","B650 GAMING X AX","MAG X670E TOMAHAWK WIFI","ROG STRIX X670E-E GAMING WIFI","MAG B550 TOMAHAWK","TUF GAMING X570-PLUS (WI-FI)","Prime B450M-A II"],[""],[""],[""],[""],[""],[""]],"partNumber":"Seagate Barracuda Compute 2 TB 3.5\" 7200 RPM Internal Hard Drive","name":"ST2000DM008","price":49.99,"manufacturer":"Seagate"}]}
+{
+  "Cases": [
+    {
+      "type": "ATX Mid Tower",
+      "color": "White/Gray",
+      "includesPowerSupply": false,
+      "sidePanel": "Tempered Glass",
+      "includePowerSupplyShroud": true,
+      "frontPanelUSB": "USB 3.2 Gen 2 Type C, USB 3.2 Gen 1 Type A",
+      "motherboardFormFactor": [
+        "ATX",
+        "EATX",
+        "Micro ATX",
+        "Mini ITX"
+      ],
+      "maximumVideoCardLength_mm": 422,
+      "MaximumVideoCardLengthInches": 16.614,
+      "driveBays": [
+        "6 x internal 3.5\"",
+        "3 x Internal 2.5\""
+      ],
+      "expansionSlots": [
+        "8 x Full Height"
+      ],
+      "dimensions_mm": "446 x 272 x 445",
+      "dimensionsInches": "17.6 x 10.7 x 17.5",
+      "volumeL": 53.98,
+      "volumeFt3": 1.91,
+      "compatibleComponents": [
+        [
+          "Motherboards",
+          "Z790 AORUS ELITE AX",
+          "MAG B660 TOMAHAWK WIFI DDR4",
+          "ROG MAXIMUS Z790 HERO",
+          "B650 GAMING X AX",
+          "MAG X670E TOMAHAWK WIFI",
+          "ROG STRIX X670E-E GAMING WIFI",
+          "MAG B550 TOMAHAWK",
+          "TUF GAMING X570-PLUS (WI-FI)",
+          "Prime B450M-A II"
+        ],
+        [
+          "CPU Coolers",
+          "MLW-D24M-A18PC-R2",
+          "NH-D15 CHROMAX.BLACK",
+          "RL-KRZ73-01"
+        ],
+        [
+          "Power Supplies",
+          "CP-9020200-NA",
+          "CP-9020262-NA",
+          "CP-9020201-NA"
+        ],
+        [
+          "GPUs",
+          "RTX3060Ventus2X212GOC",
+          "TUF-RTX4070TI-12G-GAMING",
+          "GV-R66EAGLE-8GD"
+        ],
+        [
+          "Storages",
+          "MZ-V7S1T0B/AM",
+          "MZ-V8P2T0B/AM",
+          "ST2000DM008"
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "Lian Li",
+      "name": "PC-O11DEW",
+      "price": 157.99,
+      "manufacturer": "Lian Li O11 Dynamic EVO ATX Mid Tower Case"
+    },
+    {
+      "type": "ATX Mid Tower",
+      "color": "Black",
+      "includesPowerSupply": false,
+      "sidePanel": "Tinted Tempered Glass",
+      "includePowerSupplyShroud": true,
+      "frontPanelUSB": "USB 3.2 Gen 1 Type C, USB 3.2 Gen 1 Type A",
+      "motherboardFormFactor": [
+        "ATX",
+        "EATX",
+        "Micro ATX",
+        "Mini ITX"
+      ],
+      "maximumVideoCardLength_mm": 360,
+      "MaximumVideoCardLengthInches": 14.173,
+      "driveBays": [
+        "2 x internal 3.5\"",
+        "2 x Internal 2.5\""
+      ],
+      "expansionSlots": [
+        "7 x Full Height"
+      ],
+      "dimensions_mm": "453 x 230 x 466",
+      "dimensionsInches": "17.8 x 9.1 x 18.3",
+      "volumeL": 48.553,
+      "volumeFt3": 1.715,
+      "compatibleComponents": [
+        [
+          "Motherboards",
+          "Z790 AORUS ELITE AX",
+          "MAG B660 TOMAHAWK WIFI DDR4",
+          "ROG MAXIMUS Z790 HERO",
+          "B650 GAMING X AX",
+          "MAG X670E TOMAHAWK WIFI",
+          "ROG STRIX X670E-E GAMING WIFI",
+          "MAG B550 TOMAHAWK",
+          "TUF GAMING X570-PLUS (WI-FI)",
+          "Prime B450M-A II"
+        ],
+        [
+          "CPU Coolers",
+          "MLW-D24M-A18PC-R2",
+          "NH-D15 CHROMAX.BLACK",
+          "RL-KRZ73-01"
+        ],
+        [
+          "Power Supplies",
+          "CP-9020200-NA",
+          "CP-9020262-NA",
+          "CP-9020201-NA"
+        ],
+        [
+          "GPUs",
+          "RTX3060Ventus2X212GOC",
+          "TUF-RTX4070TI-12G-GAMING",
+          "GV-R66EAGLE-8GD"
+        ],
+        [
+          "Storages",
+          "MZ-V7S1T0B/AM",
+          "MZ-V8P2T0B/AM",
+          "ST2000DM008"
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "Corsair",
+      "name": "CC-9011200-WW",
+      "price": 94.99,
+      "manufacturer": "Corsair 4000D Airflow ATX Mid Tower Case"
+    },
+    {
+      "type": "ATX Mid Tower",
+      "color": "Black",
+      "includesPowerSupply": false,
+      "sidePanel": "Tempered Glass",
+      "includePowerSupplyShroud": true,
+      "frontPanelUSB": "USB 3.2 Gen 2 Type C, USB 3.2 Gen 1 Type A",
+      "motherboardFormFactor": [
+        "ATX",
+        "EATX",
+        "Micro ATX",
+        "Mini ITX"
+      ],
+      "maximumVideoCardLength_mm": 365,
+      "MaximumVideoCardLengthInches": 14.37,
+      "driveBays": [
+        "1 x internal 3.5\"",
+        "1 x Internal 2.5\""
+      ],
+      "expansionSlots": [
+        "7 x Full Height"
+      ],
+      "dimensions_mm": "446 x 227 x 464",
+      "dimensionsInches": "17.6 x 8.9 x 18.3",
+      "volumeL": 46.976,
+      "volumeFt3": 1.659,
+      "compatibleComponents": [
+        [
+          "Motherboards",
+          "Z790 AORUS ELITE AX",
+          "MAG B660 TOMAHAWK WIFI DDR4",
+          "ROG MAXIMUS Z790 HERO",
+          "B650 GAMING X AX",
+          "MAG X670E TOMAHAWK WIFI",
+          "ROG STRIX X670E-E GAMING WIFI",
+          "MAG B550 TOMAHAWK",
+          "TUF GAMING X570-PLUS (WI-FI)",
+          "Prime B450M-A II"
+        ],
+        [
+          "CPU Coolers",
+          "MLW-D24M-A18PC-R2",
+          "NH-D15 CHROMAX.BLACK",
+          "RL-KRZ73-01"
+        ],
+        [
+          "Power Supplies",
+          "CP-9020200-NA",
+          "CP-9020262-NA",
+          "CP-9020201-NA"
+        ],
+        [
+          "GPUs",
+          "RTX3060Ventus2X212GOC",
+          "TUF-RTX4070TI-12G-GAMING",
+          "GV-R66EAGLE-8GD"
+        ],
+        [
+          "Storages",
+          "MZ-V7S1T0B/AM",
+          "MZ-V8P2T0B/AM",
+          "ST2000DM008"
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "NZXT",
+      "name": "CC-H51FB-01",
+      "price": 94.99,
+      "manufacturer": "NZXT H5 Flow ATX Mid Tower Case"
+    }
+  ],
+  "CaseFans": [
+    {
+      "model": "iCUE SP120 RGB ELITE",
+      "size": 120,
+      "color": "Black/White",
+      "quantity": 3,
+      "RPM": "400 - 1500 RPM",
+      "airFlow": "---",
+      "noiseLevel": "---",
+      "isPWM": true,
+      "LED": "Addressable RGB",
+      "connector": "4-pin PWM + proprietary RGB",
+      "controller": "USB",
+      "staticPressure": "1.46 mmH2O",
+      "compatibleComponents": [],
+      "partNumber": "Corsair",
+      "name": "CO-9050109-WW",
+      "price": 71.98,
+      "manufacturer": "Corsair iCUE SP120 RGB ELITE 47.7 CFM 120 mm Fans 3-Pack"
+    },
+    {
+      "model": "UNI SL120",
+      "size": 120,
+      "color": "White",
+      "quantity": 3,
+      "RPM": "800 - 1900 RPM",
+      "airFlow": "58.54 CFM",
+      "noiseLevel": "17 - 31 dB",
+      "isPWM": true,
+      "LED": "Addressable RGB",
+      "connector": "4-pin PWM + proprietary RGB",
+      "controller": "USB",
+      "staticPressure": "2.54 mmH2O",
+      "compatibleComponents": [],
+      "partNumber": "Lian Li",
+      "name": "UF-SL120-3W",
+      "price": 96.95,
+      "manufacturer": "Lian Li UNI SL120 58.54 CFM 120 mm Fans 3-Pack"
+    },
+    {
+      "model": "A12x25 PWM",
+      "size": 120,
+      "color": "Brown",
+      "quantity": 1,
+      "RPM": "450 - 2000 RPM",
+      "airFlow": "49.73 - 60.1 CFM",
+      "noiseLevel": "18.8 - 22.6 dB",
+      "isPWM": true,
+      "LED": "None",
+      "connector": "4-pin PWM",
+      "controller": "None",
+      "staticPressure": "2.34 mmH2O",
+      "compatibleComponents": [],
+      "partNumber": "Noctua",
+      "name": "NF-A12x25 PWM",
+      "price": 32.95,
+      "manufacturer": "Noctua A12x25 PWM 60.1 CFM 120 mm Fan"
+    }
+  ],
+  "CPUs": [
+    {
+      "coreCount": 24,
+      "performanceCoreClock": 3,
+      "performanceBoostClock": 5.8,
+      "TDP": 125,
+      "series": "Intel Core i9",
+      "microarchitecture": "Raptor Lake",
+      "coreFamily": "Raptor Lake",
+      "socketType": "LGA1700",
+      "integratedGraphics": "Intel UHD Graphics 770",
+      "maxMemorySupported": 128,
+      "isECC": true,
+      "includesCooler": false,
+      "packaging": "Boxed",
+      "performanceL1Cache": "8 x 32 kB Instruction, 8 x 48 kB Data",
+      "efficiencyL1Cache": "16 x 32 kB Instruction, 16 x 64 kB Data",
+      "performanceL2Cache": "8 x 2 MB",
+      "efficiencyL2Cache": "4 x 4 MB",
+      "L3Cache": "1 x 36 MB",
+      "lithography": 10,
+      "includesCPUCooler": false,
+      "isSimultaneousMultiThreading": "Yes: Hyper-Threading",
+      "compatibleComponents": [
+        [
+          "CPU Coolers",
+          "MLW-D24M-A18PC-R2",
+          "NH-D15 CHROMAX.BLACK",
+          "RL-KRZ73-01"
+        ],
+        [
+          "Motherboards",
+          "Z790 AORUS ELITE AX",
+          "MAG B660 TOMAHAWK WIFI DDR4",
+          "ROG MAXIMUS Z790 HERO"
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "BX8071513900K",
+      "name": "Intel Core i9-13900K 3 GHz 24-Core Processor",
+      "price": 559.99,
+      "manufacturer": "Intel"
+    },
+    {
+      "coreCount": 16,
+      "performanceCoreClock": 3.4,
+      "performanceBoostClock": 5.4,
+      "TDP": 125,
+      "series": "Intel Core i7",
+      "microarchitecture": "Raptor Lake",
+      "coreFamily": "Raptor Lake",
+      "socketType": "LGA1700",
+      "integratedGraphics": "Intel UHD Graphics 770",
+      "maxMemorySupported": 128,
+      "isECC": true,
+      "includesCooler": false,
+      "packaging": "Boxed",
+      "performanceL1Cache": "8 x 32 kB Instruction, 8 x 48 kB Data",
+      "efficiencyL1Cache": "8 x 32 kB Instruction, 8 x 64 kB Data",
+      "performanceL2Cache": "8 x 2 MB",
+      "efficiencyL2Cache": "2 x 4 MB",
+      "L3Cache": "1 x 30 MB",
+      "lithography": 10,
+      "includesCPUCooler": false,
+      "isSimultaneousMultiThreading": "Yes: Hyper-Threading",
+      "compatibleComponents": [
+        [
+          "CPU Coolers",
+          "MLW-D24M-A18PC-R2",
+          "NH-D15 CHROMAX.BLACK",
+          "RL-KRZ73-01"
+        ],
+        [
+          "Motherboards",
+          "Z790 AORUS ELITE AX",
+          "MAG B660 TOMAHAWK WIFI DDR4",
+          "ROG MAXIMUS Z790 HERO"
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "BX8071513700K",
+      "name": "Intel Core i7-13700K 3.4 GHz 16-Core Processor",
+      "price": 419.99,
+      "manufacturer": "Intel"
+    },
+    {
+      "coreCount": 12,
+      "performanceCoreClock": 3.6,
+      "performanceBoostClock": 5,
+      "TDP": 125,
+      "series": "Intel Core i7",
+      "microarchitecture": "Alder Lake",
+      "coreFamily": "Alder Lake",
+      "socketType": "LGA1700",
+      "integratedGraphics": "None",
+      "maxMemorySupported": 128,
+      "isECC": false,
+      "includesCooler": false,
+      "packaging": "Boxed",
+      "performanceL1Cache": "8 x 32 kB Instruction, 8 x 48 kB Data",
+      "efficiencyL1Cache": "4 x 32 kB Instruction, 4 x 64 kB Data",
+      "performanceL2Cache": "8 x 1.25 MB",
+      "efficiencyL2Cache": "1 x 2 MB",
+      "L3Cache": "1 x 25 MB",
+      "lithography": 10,
+      "includesCPUCooler": false,
+      "isSimultaneousMultiThreading": "Yes: Hyper-Threading",
+      "compatibleComponents": [
+        [
+          "CPU Coolers",
+          "MLW-D24M-A18PC-R2",
+          "NH-D15 CHROMAX.BLACK",
+          "RL-KRZ73-01"
+        ],
+        [
+          "Motherboards",
+          "Z790 AORUS ELITE AX",
+          "MAG B660 TOMAHAWK WIFI DDR4",
+          "ROG MAXIMUS Z790 HERO"
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "BX8071512700KF",
+      "name": "Intel Core i7-12700KF 3.6 GHz 12-Core Processor",
+      "price": 294.99,
+      "manufacturer": "Intel"
+    },
+    {
+      "coreCount": 6,
+      "performanceCoreClock": 4.7,
+      "performanceBoostClock": 5.3,
+      "TDP": 105,
+      "series": "AMD Ryzen 5",
+      "microarchitecture": "Zen 4",
+      "coreFamily": "Raphael",
+      "socketType": "AM5",
+      "integratedGraphics": "Radeon",
+      "maxMemorySupported": 128,
+      "isECC": true,
+      "includesCooler": false,
+      "packaging": "Boxed",
+      "performanceL1Cache": "6 x 32 kB Instruction, 6 x 32 kB Data",
+      "efficiencyL1Cache": "None",
+      "performanceL2Cache": "6 x 1 MB",
+      "efficiencyL2Cache": "None",
+      "L3Cache": "1 x 32 MB",
+      "lithography": 5,
+      "includesCPUCooler": false,
+      "isSimultaneousMultiThreading": "Yes",
+      "compatibleComponents": [
+        [
+          "CPU Coolers",
+          "MLW-D24M-A18PC-R2",
+          "NH-D15 CHROMAX.BLACK",
+          "RL-KRZ73-01"
+        ],
+        [
+          "Motherboards",
+          "B650 GAMING X AX",
+          "MAG X670E TOMAHAWK WIFI",
+          "ROG STRIX X670E-E GAMING WIFI"
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "100-100000593WOF",
+      "name": "AMD Ryzen 5 7600X 4.7 GHz 6-Core Processor",
+      "price": 241.83,
+      "manufacturer": "AMD"
+    },
+    {
+      "coreCount": 6,
+      "performanceCoreClock": 3.8,
+      "performanceBoostClock": 5.1,
+      "TDP": 65,
+      "series": "AMD Ryzen 5",
+      "microarchitecture": "Zen 4",
+      "coreFamily": "Raphael",
+      "socketType": "AM5",
+      "integratedGraphics": "Radeon",
+      "maxMemorySupported": 128,
+      "isECC": true,
+      "includesCooler": true,
+      "packaging": "Boxed",
+      "performanceL1Cache": "6 x 32 kB Instruction, 6 x 32 kB Data",
+      "efficiencyL1Cache": "None",
+      "performanceL2Cache": "6 x 1 MB",
+      "efficiencyL2Cache": "None",
+      "L3Cache": "1 x 32 MB",
+      "lithography": 5,
+      "includesCPUCooler": true,
+      "isSimultaneousMultiThreading": "Yes",
+      "compatibleComponents": [
+        [
+          "CPU Coolers",
+          "MLW-D24M-A18PC-R2",
+          "NH-D15 CHROMAX.BLACK",
+          "RL-KRZ73-01"
+        ],
+        [
+          "Motherboards",
+          "B650 GAMING X AX",
+          "MAG X670E TOMAHAWK WIFI",
+          "ROG STRIX X670E-E GAMING WIFI"
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "100-100001015BOX",
+      "name": "AMD Ryzen 5 7600 3.8 GHz 6-Core Processor",
+      "price": 219.99,
+      "manufacturer": "AMD"
+    },
+    {
+      "coreCount": 8,
+      "performanceCoreClock": 4.2,
+      "performanceBoostClock": 5,
+      "TDP": 120,
+      "series": "AMD Ryzen 7",
+      "microarchitecture": "Zen 4",
+      "coreFamily": "Raphael",
+      "socketType": "AM5",
+      "integratedGraphics": "Radeon",
+      "maxMemorySupported": 128,
+      "isECC": true,
+      "includesCooler": false,
+      "packaging": "Boxed",
+      "performanceL1Cache": "8 x 32 kB Instruction, 8 x 32 kB Data",
+      "efficiencyL1Cache": "None",
+      "performanceL2Cache": "8 x 1 MB",
+      "efficiencyL2Cache": "None",
+      "L3Cache": "1 x 96 MB",
+      "lithography": 5,
+      "includesCPUCooler": false,
+      "isSimultaneousMultiThreading": "Yes",
+      "compatibleComponents": [
+        [
+          "CPU Coolers",
+          "MLW-D24M-A18PC-R2",
+          "NH-D15 CHROMAX.BLACK",
+          "RL-KRZ73-01"
+        ],
+        [
+          "Motherboards",
+          "B650 GAMING X AX",
+          "MAG X670E TOMAHAWK WIFI",
+          "ROG STRIX X670E-E GAMING WIFI"
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "100-100000910WOF",
+      "name": "AMD Ryzen 7 7800X3D 4.2 GHz 8-Core Processor",
+      "price": 449,
+      "manufacturer": "AMD"
+    },
+    {
+      "coreCount": 6,
+      "performanceCoreClock": 3.7,
+      "performanceBoostClock": 4.6,
+      "TDP": 65,
+      "series": "AMD Ryzen 5",
+      "microarchitecture": "Zen 3",
+      "coreFamily": "Vermeer",
+      "socketType": "AM4",
+      "integratedGraphics": "None",
+      "maxMemorySupported": 128,
+      "isECC": false,
+      "includesCooler": true,
+      "packaging": "Boxed",
+      "performanceL1Cache": "6 x 32 kB Instruction, 6 x 32 kB Data",
+      "efficiencyL1Cache": "None",
+      "performanceL2Cache": "6 x 512 kB",
+      "efficiencyL2Cache": "None",
+      "L3Cache": "1 x 32 MB",
+      "lithography": 7,
+      "includesCPUCooler": true,
+      "isSimultaneousMultiThreading": "Yes",
+      "compatibleComponents": [
+        [
+          "CPU Coolers",
+          "MLW-D24M-A18PC-R2",
+          "NH-D15 CHROMAX.BLACK",
+          "RL-KRZ73-01"
+        ],
+        [
+          "Motherboards",
+          "MAG B550 TOMAHAWK",
+          "TUF GAMING X570-PLUS (WI-FI)",
+          "Prime B450M-A II"
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "100-100000065BOX",
+      "name": "AMD Ryzen 5 5600X 3.7 GHz 6-Core Processor",
+      "price": 148.99,
+      "manufacturer": "AMD"
+    },
+    {
+      "coreCount": 8,
+      "performanceCoreClock": 3.8,
+      "performanceBoostClock": 4.7,
+      "TDP": 105,
+      "series": "AMD Ryzen 7",
+      "microarchitecture": "Zen 3",
+      "coreFamily": "Vermeer",
+      "socketType": "AM4",
+      "integratedGraphics": "None",
+      "maxMemorySupported": 128,
+      "isECC": false,
+      "includesCooler": false,
+      "packaging": "Boxed",
+      "performanceL1Cache": "8 x 32 kB Instruction, 8 x 32 kB Data",
+      "efficiencyL1Cache": "None",
+      "performanceL2Cache": "8 x 512 kB",
+      "efficiencyL2Cache": "None",
+      "L3Cache": "1 x 32 MB",
+      "lithography": 7,
+      "includesCPUCooler": false,
+      "isSimultaneousMultiThreading": "Yes",
+      "compatibleComponents": [
+        [
+          "CPU Coolers",
+          "MLW-D24M-A18PC-R2",
+          "NH-D15 CHROMAX.BLACK",
+          "RL-KRZ73-01"
+        ],
+        [
+          "Motherboards",
+          "MAG B550 TOMAHAWK",
+          "TUF GAMING X570-PLUS (WI-FI)",
+          "Prime B450M-A II"
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "100-100000063WOF",
+      "name": "AMD Ryzen 7 5800X 3.8 GHz 8-Core Processor",
+      "price": 229,
+      "manufacturer": "AMD"
+    },
+    {
+      "coreCount": 16,
+      "performanceCoreClock": 3.4,
+      "performanceBoostClock": 4.9,
+      "TDP": 105,
+      "series": "AMD Ryzen 9",
+      "microarchitecture": "Zen 3",
+      "coreFamily": "Vermeer",
+      "socketType": "AM4",
+      "integratedGraphics": "None",
+      "maxMemorySupported": 128,
+      "isECC": false,
+      "includesCooler": false,
+      "packaging": "Boxed",
+      "performanceL1Cache": "16 x 32 kB Instruction, 16 x 32 kB Data",
+      "efficiencyL1Cache": "None",
+      "performanceL2Cache": "16 x 512 kB",
+      "efficiencyL2Cache": "None",
+      "L3Cache": "2 x 32 MB",
+      "lithography": 7,
+      "includesCPUCooler": false,
+      "isSimultaneousMultiThreading": "Yes",
+      "compatibleComponents": [
+        [
+          "CPU Coolers",
+          "MLW-D24M-A18PC-R2",
+          "NH-D15 CHROMAX.BLACK",
+          "RL-KRZ73-01"
+        ],
+        [
+          "Motherboards",
+          "MAG B550 TOMAHAWK",
+          "TUF GAMING X570-PLUS (WI-FI)",
+          "Prime B450M-A II"
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "100-100000059WOF",
+      "name": "AMD Ryzen 9 5950X 3.4 GHz 16-Core Processor",
+      "price": 459,
+      "manufacturer": "AMD"
+    }
+  ],
+  "CPUCoolers": [
+    {
+      "model": "MASTERLIQUID ML240L RGB V2",
+      "fanRPM": "650 - 1800",
+      "noiseLevel": "6-27 dB",
+      "color": "Black",
+      "CPUSocket": [
+        "AM2",
+        "AM2+",
+        "AM3",
+        "AM3+",
+        "AM4",
+        "AM5",
+        "FM1",
+        "FM2",
+        "FM2+",
+        "LGA1150",
+        "LGA 1151",
+        "LGA 1155",
+        "LGA 1156",
+        "LGA 1200",
+        "LGA 1366",
+        "LGA 1700",
+        "LGA 2011",
+        "LGA 2011-3",
+        "LGA 2066"
+      ],
+      "waterCooled": "Yes - 240mm",
+      "fanless": "No",
+      "compatibleComponents": [
+        [
+          "CPUs",
+          "BX8071513900K",
+          "BX8071513700K",
+          "BX8071512700KF",
+          "100-100000593WOF",
+          "100-100001015BOX",
+          "100-100000910WOF",
+          "100-100000065BOX",
+          "100-100000063WOF",
+          "100-100000059WOF"
+        ],
+        [
+          "Cases",
+          "CC-9011200-WW",
+          "CC-H51FB-01",
+          "PC-O11DEW"
+        ],
+        [
+          "Motherboards",
+          "Z790 AORUS ELITE AX",
+          "MAG B660 TOMAHAWK WIFI DDR4",
+          "ROG MAXIMUS Z790 HERO",
+          "B650 GAMING X AX",
+          "MAG X670E TOMAHAWK WIFI",
+          "ROG STRIX X670E-E GAMING WIFI",
+          "MAG B550 TOMAHAWK",
+          "TUF GAMING X570-PLUS (WI-FI)",
+          "Prime B450M-A II"
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "MLW-D24M-A18PC-R2",
+      "name": "Cooler Master MASTERLIQUID ML240L RGB V2 65.59 CFM Liquid CPU Cooler",
+      "price": 89.99,
+      "manufacturer": "Cooler Master"
+    },
+    {
+      "model": "NH-D15 chromax.black",
+      "fanRPM": "300 - 1500",
+      "noiseLevel": "19.2 - 24.6 dB",
+      "color": "Black",
+      "CPUSocket": [
+        "AM2",
+        "AM2+",
+        "AM3",
+        "AM3+",
+        "AM4",
+        "AM5",
+        "FM1",
+        "FM2",
+        "FM2+",
+        "LGA1150",
+        "LGA 1151",
+        "LGA 1155",
+        "LGA 1156",
+        "LGA 1200",
+        "LGA 1700",
+        "LGA 2011",
+        "LGA 2011-3",
+        "LGA 2066"
+      ],
+      "waterCooled": "Yes - 140mm",
+      "fanless": "No",
+      "compatibleComponents": [
+        [
+          "CPUs",
+          "BX8071513900K",
+          "BX8071513700K",
+          "BX8071512700KF",
+          "100-100000593WOF",
+          "100-100001015BOX",
+          "100-100000910WOF",
+          "100-100000065BOX",
+          "100-100000063WOF",
+          "100-100000059WOF"
+        ],
+        [
+          "Cases",
+          "CC-9011200-WW",
+          "CC-H51FB-01",
+          "PC-O11DEW"
+        ],
+        [
+          "Motherboards",
+          "Z790 AORUS ELITE AX",
+          "MAG B660 TOMAHAWK WIFI DDR4",
+          "ROG MAXIMUS Z790 HERO",
+          "B650 GAMING X AX",
+          "MAG X670E TOMAHAWK WIFI",
+          "ROG STRIX X670E-E GAMING WIFI",
+          "MAG B550 TOMAHAWK",
+          "TUF GAMING X570-PLUS (WI-FI)",
+          "Prime B450M-A II"
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "NH-D15 CHROMAX.BLACK",
+      "name": "Noctua NH-D15 chromax.black 82.52 CFM CPU Cooler",
+      "price": 119.95,
+      "manufacturer": "Noctua"
+    },
+    {
+      "model": "Kraken Z73",
+      "fanRPM": "500 - 1800",
+      "noiseLevel": "21 - 36 dB",
+      "color": "Black",
+      "CPUSocket": [
+        "AM4",
+        "AM5",
+        "sTR4",
+        "sTRX4",
+        "LGA1150",
+        "LGA 1151",
+        "LGA 1155",
+        "LGA 1156",
+        "LGA 1200",
+        "LGA 1366",
+        "LGA 1700",
+        "LGA 2011",
+        "LGA 2011-3",
+        "LGA 2066"
+      ],
+      "waterCooled": "Yes - 360mm",
+      "fanless": "No",
+      "compatibleComponents": [
+        [
+          "CPUs",
+          "BX8071513900K",
+          "BX8071513700K",
+          "BX8071512700KF",
+          "100-100000593WOF",
+          "100-100001015BOX",
+          "100-100000910WOF",
+          "100-100000065BOX",
+          "100-100000063WOF",
+          "100-100000059WOF"
+        ],
+        [
+          "Cases",
+          "CC-9011200-WW",
+          "CC-H51FB-01",
+          "PC-O11DEW"
+        ],
+        [
+          "Motherboards",
+          "Z790 AORUS ELITE AX",
+          "MAG B660 TOMAHAWK WIFI DDR4",
+          "ROG MAXIMUS Z790 HERO",
+          "B650 GAMING X AX",
+          "MAG X670E TOMAHAWK WIFI",
+          "ROG STRIX X670E-E GAMING WIFI",
+          "MAG B550 TOMAHAWK",
+          "TUF GAMING X570-PLUS (WI-FI)",
+          "Prime B450M-A II"
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "RL-KRZ73-01",
+      "name": "NZXT Kraken Z73 73.11 CFM Liquid CPU Cooler",
+      "price": 279.99,
+      "manufacturer": "NZXT"
+    }
+  ],
+  "GPUs": [
+    {
+      "chipSet": "GeForce RTX 3060 12GB",
+      "vMemory": 12,
+      "vMemoryType": "GDDR6",
+      "coreClock": 1320,
+      "boostClock": 1777,
+      "effectiveMemoryClock": 15000,
+      "GPUInterface": "PCIe x 16",
+      "color": "Black",
+      "frameSync": "G-Sync",
+      "length": 235,
+      "TDP": 170,
+      "caseExpansionSlotWidth": 2,
+      "totalSlotWidth": 2,
+      "cooling": "2 Fans",
+      "externalPower": "1 PCIe 8-pin",
+      "HDMIOutputs": "1 HDMI Outputs",
+      "displayPortOutputs": "3 DisplayPort Outputs",
+      "compatibleComponents": [
+        [
+          "Cases",
+          "PC-O11DEW",
+          "CC-9011200-WW",
+          "CC-H51FB-01"
+        ],
+        [
+          "Motherboards",
+          "Z790 AORUS ELITE AX",
+          "MAG B660 TOMAHAWK WIFI DDR4",
+          "ROG MAXIMUS Z790 HERO",
+          "B650 GAMING X AX",
+          "MAG X670E TOMAHAWK WIFI",
+          "ROG STRIX X670E-E GAMING WIFI",
+          "MAG B550 TOMAHAWK",
+          "TUF GAMING X570-PLUS (WI-FI)",
+          "Prime B450M-A II"
+        ],
+        [
+          "Power Supplies",
+          "CP-9020200-NA",
+          "CP-9020262-NA",
+          "CP-9020201-NA"
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "RTX3060Ventus2X12GOC",
+      "name": "MSI GeForce RTX 3060 Ventus 2X 12G GeForce RTX 3060 12GB 12 GB Video Card",
+      "price": 289.99,
+      "manufacturer": "MSI"
+    },
+    {
+      "chipSet": "GeForce RTX 4070 Ti",
+      "vMemory": 12,
+      "vMemoryType": "GDDR6X",
+      "coreClock": 2310,
+      "boostClock": 2640,
+      "effectiveMemoryClock": 21000,
+      "GPUInterface": "PCIe x 16",
+      "color": "Black",
+      "frameSync": "G-Sync",
+      "length": 305,
+      "TDP": 285,
+      "caseExpansionSlotWidth": 2,
+      "totalSlotWidth": 4,
+      "cooling": "3 Fans",
+      "externalPower": "1 PCIe 16-pin",
+      "HDMIOutputs": "2 HDMI 2.1a Outputs",
+      "displayPortOutputs": "3 DisplayPort 1.4a Outputs",
+      "compatibleComponents": [
+        [
+          "Cases",
+          "PC-O11DEW",
+          "CC-9011200-WW",
+          "CC-H51FB-01"
+        ],
+        [
+          "Motherboards",
+          "Z790 AORUS ELITE AX",
+          "MAG B660 TOMAHAWK WIFI DDR4",
+          "ROG MAXIMUS Z790 HERO",
+          "B650 GAMING X AX",
+          "MAG X670E TOMAHAWK WIFI",
+          "ROG STRIX X670E-E GAMING WIFI",
+          "MAG B550 TOMAHAWK",
+          "TUF GAMING X570-PLUS (WI-FI)",
+          "Prime B450M-A II"
+        ],
+        [
+          "Power Supplies",
+          "CP-9020200-NA",
+          "CP-9020262-NA",
+          "CP-9020201-NA"
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "TUF-RTX4070TI-12G-GAMING",
+      "name": "Asus TUF GAMING GeForce RTX 4070 Ti 12 GB Video Card",
+      "price": 799.99,
+      "manufacturer": "Asus"
+    },
+    {
+      "chipSet": "Radeon RX 6600",
+      "vMemory": 8,
+      "vMemoryType": "GDDR6",
+      "coreClock": 1626,
+      "boostClock": 2491,
+      "effectiveMemoryClock": 14000,
+      "GPUInterface": "PCIe x 16",
+      "color": "Black/Silver",
+      "frameSync": "FreeSync",
+      "length": 282,
+      "TDP": 132,
+      "caseExpansionSlotWidth": 2,
+      "totalSlotWidth": 2,
+      "cooling": "3 Fans",
+      "externalPower": "1 PCIe 8-pin",
+      "HDMIOutputs": "2 HDMI Outputs",
+      "displayPortOutputs": "2 DisplayPort Outputs",
+      "compatibleComponents": [
+        [
+          "Cases",
+          "PC-O11DEW",
+          "CC-9011200-WW",
+          "CC-H51FB-01"
+        ],
+        [
+          "Motherboards",
+          "Z790 AORUS ELITE AX",
+          "MAG B660 TOMAHAWK WIFI DDR4",
+          "ROG MAXIMUS Z790 HERO",
+          "B650 GAMING X AX",
+          "MAG X670E TOMAHAWK WIFI",
+          "ROG STRIX X670E-E GAMING WIFI",
+          "MAG B550 TOMAHAWK",
+          "TUF GAMING X570-PLUS (WI-FI)",
+          "Prime B450M-A II"
+        ],
+        [
+          "Power Supplies",
+          "CP-9020200-NA",
+          "CP-9020262-NA",
+          "CP-9020201-NA"
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "GV-R66EAGLE-8GD",
+      "name": "Gigabyte EAGLE Radeon RX 6600 8 GB Video Card",
+      "price": 199.99,
+      "manufacturer": "Gigabyte"
+    }
+  ],
+  "Motherboards": [
+    {
+      "socketType": "LGA1700",
+      "chipSet": "Intel Z790",
+      "formFactor": "ATX",
+      "memorySlots": 4,
+      "memoryType": "DDR5",
+      "memoryMax": 128,
+      "maxMemorySpeed": 7600,
+      "PCIe_x16_Slots": 3,
+      "PCIe_x8_Slots": 0,
+      "PCIe_x4_Slots": 0,
+      "PCIe_x1_Slots": 0,
+      "PCI_Slots": 0,
+      "color": "Black",
+      "isSLIOrCrossFire": true,
+      "SATAConnectors": 6,
+      "M2_Slots": 4,
+      "miniPCIeSlots": 0,
+      "halfMiniPCIeSlots": 0,
+      "mSATASlots": 0,
+      "onboardEthernet": "1 x 2.5 Gb/s (Realtek)",
+      "USB_2_Headers": 2,
+      "USB_2_Headers_Single_Port": 0,
+      "USB_32_1_Headers": 1,
+      "USB_32_2_Headers": 1,
+      "USB_32_2x2_Headers": 0,
+      "isECC": false,
+      "wirelessNetworking": "Wi-Fi 6E",
+      "RAIDSupport": true,
+      "compatibleComponents": [
+        [
+          "CPUs",
+          "BX8071513900K",
+          "BX8071513700K",
+          "BX8071512700KF"
+        ],
+        [
+          "CPU Coolers",
+          "MLW-D24M-A18PC-R2",
+          "NH-D15 CHROMAX.BLACK",
+          "RL-KRZ73-01"
+        ],
+        [
+          "Memory Kits",
+          "CMK32GX5M2B5600C36",
+          "F5-6000J3636F16GX2-TZ5RK",
+          "F5-6400J3239G32GX2-TZ5RK"
+        ],
+        [
+          "GPUs",
+          "RTX3060Ventus2X212GOC",
+          "TUF-RTX4070TI-12G-GAMING",
+          "GV-R66EAGLE-8GD"
+        ],
+        [
+          "Power Supplies",
+          "CP-9020200-NA",
+          "CP-9020262-NA",
+          "CP-9020201-NA"
+        ],
+        [
+          "Cases",
+          "CC-9011200-WW",
+          "CC-H51FB-01",
+          "PC-O11DEW"
+        ],
+        [
+          "Storages",
+          "MZ-V7S1T0B/AM",
+          "MZ-V8P2T0B/AM",
+          "ST2000DM008"
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "Z790 AORUS ELITE AX",
+      "name": "Gigabyte Z790 AORUS ELITE AX ATX LGA1700 Motherboard",
+      "price": 254.99,
+      "manufacturer": "Gigabyte"
+    },
+    {
+      "socketType": "AM5",
+      "chipSet": "AMD B650",
+      "formFactor": "ATX",
+      "memorySlots": 4,
+      "memoryType": "DDR5",
+      "memoryMax": 128,
+      "maxMemorySpeed": 6400,
+      "PCIe_x16_Slots": 3,
+      "PCIe_x8_Slots": 0,
+      "PCIe_x4_Slots": 0,
+      "PCIe_x1_Slots": 0,
+      "PCI_Slots": 0,
+      "color": "Black/Gray",
+      "isSLIOrCrossFire": false,
+      "SATAConnectors": 4,
+      "M2_Slots": 3,
+      "miniPCIeSlots": 0,
+      "halfMiniPCIeSlots": 0,
+      "mSATASlots": 0,
+      "onboardEthernet": "1 x 2.5 Gb/s (Realtek)",
+      "USB_2_Headers": 2,
+      "USB_2_Headers_Single_Port": 0,
+      "USB_32_1_Headers": 1,
+      "USB_32_2_Headers": 0,
+      "USB_32_2x2_Headers": 1,
+      "isECC": false,
+      "wirelessNetworking": "Wi-Fi 6E",
+      "RAIDSupport": true,
+      "compatibleComponents": [
+        [
+          "CPUs",
+          "100-100000065BOX",
+          "100-100000063WOF",
+          "100-100000059WOF"
+        ],
+        [
+          "CPU Coolers",
+          "MLW-D24M-A18PC-R2",
+          "NH-D15 CHROMAX.BLACK",
+          "RL-KRZ73-01"
+        ],
+        [
+          "Memory Kits",
+          "CMK32GX5M2B5600C36",
+          "F5-6000J3636F16GX2-TZ5RK",
+          "F5-6400J3239G32GX2-TZ5RK"
+        ],
+        [
+          "GPUs",
+          "RTX3060Ventus2X212GOC",
+          "TUF-RTX4070TI-12G-GAMING",
+          "GV-R66EAGLE-8GD"
+        ],
+        [
+          "Power Supplies",
+          "CP-9020200-NA",
+          "CP-9020262-NA",
+          "CP-9020201-NA"
+        ],
+        [
+          "Cases",
+          "CC-9011200-WW",
+          "CC-H51FB-01",
+          "PC-O11DEW"
+        ],
+        [
+          "Storages",
+          "MZ-V7S1T0B/AM",
+          "MZ-V8P2T0B/AM",
+          "ST2000DM008"
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "B650 GAMING X AX",
+      "name": "Gigabyte B650 GAMING X AX ATX AM5 Motherboard",
+      "price": 179.99,
+      "manufacturer": "Gigabyte"
+    },
+    {
+      "socketType": "AM4",
+      "chipSet": "AMD X570",
+      "formFactor": "ATX",
+      "memorySlots": 4,
+      "memoryType": "DDR4",
+      "memoryMax": 128,
+      "maxMemorySpeed": 4400,
+      "PCIe_x16_Slots": 2,
+      "PCIe_x8_Slots": 0,
+      "PCIe_x4_Slots": 0,
+      "PCIe_x1_Slots": 2,
+      "PCI_Slots": 0,
+      "color": "Black/Gold",
+      "isSLIOrCrossFire": true,
+      "SATAConnectors": 8,
+      "M2_Slots": 2,
+      "miniPCIeSlots": 0,
+      "halfMiniPCIeSlots": 0,
+      "mSATASlots": 0,
+      "onboardEthernet": "1 x 1Gb/s (Realtek L8200A)",
+      "USB_2_Headers": 2,
+      "USB_2_Headers_Single_Port": 0,
+      "USB_32_1_Headers": 1,
+      "USB_32_2_Headers": 0,
+      "USB_32_2x2_Headers": 0,
+      "isECC": false,
+      "wirelessNetworking": "Wi-Fi 5",
+      "RAIDSupport": true,
+      "compatibleComponents": [
+        [
+          "CPUs",
+          "100-100000065BOX",
+          "100-100000063WOF",
+          "100-100000059WOF"
+        ],
+        [
+          "CPU Coolers",
+          "MLW-D24M-A18PC-R2",
+          "NH-D15 CHROMAX.BLACK",
+          "RL-KRZ73-01"
+        ],
+        [
+          "Memory Kits",
+          "CMK32GX5M2B5600C36",
+          "F5-6000J3636F16GX2-TZ5RK",
+          "F5-6400J3239G32GX2-TZ5RK"
+        ],
+        [
+          "GPUs",
+          "RTX3060Ventus2X212GOC",
+          "TUF-RTX4070TI-12G-GAMING",
+          "GV-R66EAGLE-8GD"
+        ],
+        [
+          "Power Supplies",
+          "CP-9020200-NA",
+          "CP-9020262-NA",
+          "CP-9020201-NA"
+        ],
+        [
+          "Cases",
+          "CC-9011200-WW",
+          "CC-H51FB-01",
+          "PC-O11DEW"
+        ],
+        [
+          "Storages",
+          "MZ-V7S1T0B/AM",
+          "MZ-V8P2T0B/AM",
+          "ST2000DM008"
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "TUF GAMING X570-PLUS (Wi-Fi)",
+      "name": "Asus TUF GAMING X570-PLUS (Wi-Fi) ATX AM4 Motherboard",
+      "price": 209.99,
+      "manufacturer": "Asus"
+    },
+    {
+      "socketType": "LGA1700",
+      "chipSet": "Intel B660",
+      "formFactor": "ATX",
+      "memorySlots": 4,
+      "memoryType": "DDR4",
+      "memoryMax": 128,
+      "maxMemorySpeed": 4800,
+      "PCIe_x16_Slots": 2,
+      "PCIe_x8_Slots": 0,
+      "PCIe_x4_Slots": 0,
+      "PCIe_x1_Slots": 1,
+      "PCI_Slots": 0,
+      "color": "Black/Silver",
+      "isSLIOrCrossFire": true,
+      "SATAConnectors": 6,
+      "M2_Slots": 4,
+      "miniPCIeSlots": 0,
+      "halfMiniPCIeSlots": 0,
+      "mSATASlots": 0,
+      "onboardEthernet": "1 x 2.5 Gb/s (Realtek RTL8125B-CG)",
+      "USB_2_Headers": 2,
+      "USB_2_Headers_Single_Port": 0,
+      "USB_32_1_Headers": 1,
+      "USB_32_2_Headers": 1,
+      "USB_32_2x2_Headers": 0,
+      "isECC": false,
+      "wirelessNetworking": "Wi-Fi 6",
+      "RAIDSupport": true,
+      "compatibleComponents": [
+        [
+          "CPUs",
+          "100-100000065BOX",
+          "100-100000063WOF",
+          "100-100000059WOF"
+        ],
+        [
+          "CPU Coolers",
+          "MLW-D24M-A18PC-R2",
+          "NH-D15 CHROMAX.BLACK",
+          "RL-KRZ73-01"
+        ],
+        [
+          "Memory Kits",
+          "CMK16GX4M2B3200C16",
+          "SP016GXLZU320BDAJ5",
+          "AX4U32008G16A-DW50"
+        ],
+        [
+          "GPUs",
+          "RTX3060Ventus2X212GOC",
+          "TUF-RTX4070TI-12G-GAMING",
+          "GV-R66EAGLE-8GD"
+        ],
+        [
+          "Power Supplies",
+          "CP-9020200-NA",
+          "CP-9020262-NA",
+          "CP-9020201-NA"
+        ],
+        [
+          "Cases",
+          "CC-9011200-WW",
+          "CC-H51FB-01",
+          "PC-O11DEW"
+        ],
+        [
+          "Storages",
+          "MZ-V7S1T0B/AM",
+          "MZ-V8P2T0B/AM",
+          "ST2000DM008"
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "MAG B660 TOMAHAWK WIFI DDR4",
+      "name": "MSI MAG B660 TOMAHAWK WIFI DDR4 ATX LGA1700 Motherboard",
+      "price": 189.99,
+      "manufacturer": "MSI"
+    },
+    {
+      "socketType": "LGA1700",
+      "chipSet": "Intel Z790",
+      "formFactor": "ATX",
+      "memorySlots": 4,
+      "memoryType": "DDR5",
+      "memoryMax": 128,
+      "maxMemorySpeed": 7800,
+      "PCIe_x16_Slots": 3,
+      "PCIe_x8_Slots": 0,
+      "PCIe_x4_Slots": 0,
+      "PCIe_x1_Slots": 0,
+      "PCI_Slots": 0,
+      "color": "Black",
+      "isSLIOrCrossFire": true,
+      "SATAConnectors": 6,
+      "M2_Slots": 3,
+      "miniPCIeSlots": 0,
+      "halfMiniPCIeSlots": 0,
+      "mSATASlots": 0,
+      "onboardEthernet": "1 x 2.5 Gb/s (Intel)",
+      "USB_2_Headers": 2,
+      "USB_2_Headers_Single_Port": 0,
+      "USB_32_1_Headers": 2,
+      "USB_32_2_Headers": 0,
+      "USB_32_2x2_Headers": 1,
+      "isECC": false,
+      "wirelessNetworking": "Wi-Fi 6E",
+      "RAIDSupport": true,
+      "compatibleComponents": [
+        [
+          "CPUs",
+          "BX8071513900K",
+          "BX8071513700K",
+          "BX8071512700KF"
+        ],
+        [
+          "CPU Coolers",
+          "MLW-D24M-A18PC-R2",
+          "NH-D15 CHROMAX.BLACK",
+          "RL-KRZ73-01"
+        ],
+        [
+          "Memory Kits",
+          "CMK32GX5M2B5600C36",
+          "F5-6000J3636F16GX2-TZ5RK",
+          "F5-6400J3239G32GX2-TZ5RK"
+        ],
+        [
+          "GPUs",
+          "RTX3060Ventus2X212GOC",
+          "TUF-RTX4070TI-12G-GAMING",
+          "GV-R66EAGLE-8GD"
+        ],
+        [
+          "Power Supplies",
+          "CP-9020200-NA",
+          "CP-9020262-NA",
+          "CP-9020201-NA"
+        ],
+        [
+          "Cases",
+          "CC-9011200-WW",
+          "CC-H51FB-01",
+          "PC-O11DEW"
+        ],
+        [
+          "Storages",
+          "MZ-V7S1T0B/AM",
+          "MZ-V8P2T0B/AM",
+          "ST2000DM008"
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "ROG MAXIMUS Z790 HERO",
+      "name": "Asus ROG MAXIMUS Z790 HERO ATX LGA1700 Motherboard",
+      "price": 559.99,
+      "manufacturer": "Asus"
+    },
+    {
+      "socketType": "AM5",
+      "chipSet": "AMD X670E",
+      "formFactor": "ATX",
+      "memorySlots": 4,
+      "memoryType": "DDR5",
+      "memoryMax": 192,
+      "maxMemorySpeed": 6600,
+      "PCIe_x16_Slots": 3,
+      "PCIe_x8_Slots": 0,
+      "PCIe_x4_Slots": 0,
+      "PCIe_x1_Slots": 1,
+      "PCI_Slots": 0,
+      "color": "Black",
+      "isSLIOrCrossFire": false,
+      "SATAConnectors": 4,
+      "M2_Slots": 4,
+      "miniPCIeSlots": 0,
+      "halfMiniPCIeSlots": 0,
+      "mSATASlots": 0,
+      "onboardEthernet": "1 x 2.5 Gb/s (Realtek RTL8125BG)",
+      "USB_2_Headers": 2,
+      "USB_2_Headers_Single_Port": 0,
+      "USB_32_1_Headers": 2,
+      "USB_32_2_Headers": 1,
+      "USB_32_2x2_Headers": 0,
+      "isECC": false,
+      "wirelessNetworking": "Wi-Fi 6E",
+      "RAIDSupport": true,
+      "compatibleComponents": [
+        [
+          "CPUs",
+          "100-100000593WOF",
+          "100-100001015BOX",
+          "100-100000910WOF"
+        ],
+        [
+          "CPU Coolers",
+          "MLW-D24M-A18PC-R2",
+          "NH-D15 CHROMAX.BLACK",
+          "RL-KRZ73-01"
+        ],
+        [
+          "Memory Kits",
+          "CMK16GX4M2B3200C16",
+          "SP016GXLZU320BDAJ5",
+          "AX4U32008G16A-DW50"
+        ],
+        [
+          "GPUs",
+          "RTX3060Ventus2X212GOC",
+          "TUF-RTX4070TI-12G-GAMING",
+          "GV-R66EAGLE-8GD"
+        ],
+        [
+          "Power Supplies",
+          "CP-9020200-NA",
+          "CP-9020262-NA",
+          "CP-9020201-NA"
+        ],
+        [
+          "Cases",
+          "CC-9011200-WW",
+          "CC-H51FB-01",
+          "PC-O11DEW"
+        ],
+        [
+          "Storages",
+          "MZ-V7S1T0B/AM",
+          "MZ-V8P2T0B/AM",
+          "ST2000DM008"
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "MAG X670E TOMAHAWK WIFI",
+      "name": "MSI MAG X670E TOMAHAWK WIFI ATX AM5 Motherboard",
+      "price": 309.99,
+      "manufacturer": "MSI"
+    },
+    {
+      "socketType": "AM5",
+      "chipSet": "AMD X670E",
+      "formFactor": "ATX",
+      "memorySlots": 4,
+      "memoryType": "DDR5",
+      "memoryMax": 128,
+      "maxMemorySpeed": 6400,
+      "PCIe_x16_Slots": 3,
+      "PCIe_x8_Slots": 0,
+      "PCIe_x4_Slots": 0,
+      "PCIe_x1_Slots": 0,
+      "PCI_Slots": 0,
+      "color": "Black/Silver",
+      "isSLIOrCrossFire": false,
+      "SATAConnectors": 4,
+      "M2_Slots": 4,
+      "miniPCIeSlots": 0,
+      "halfMiniPCIeSlots": 0,
+      "mSATASlots": 0,
+      "onboardEthernet": "1 x 2.5 Gb/s (Intel)",
+      "USB_2_Headers": 3,
+      "USB_2_Headers_Single_Port": 0,
+      "USB_32_1_Headers": 1,
+      "USB_32_2_Headers": 0,
+      "USB_32_2x2_Headers": 1,
+      "isECC": false,
+      "wirelessNetworking": "Wi-Fi 6E",
+      "RAIDSupport": true,
+      "compatibleComponents": [
+        [
+          "CPUs",
+          "100-100000593WOF",
+          "100-100001015BOX",
+          "100-100000910WOF"
+        ],
+        [
+          "CPU Coolers",
+          "MLW-D24M-A18PC-R2",
+          "NH-D15 CHROMAX.BLACK",
+          "RL-KRZ73-01"
+        ],
+        [
+          "Memory Kits",
+          "CMK16GX4M2B3200C16",
+          "SP016GXLZU320BDAJ5",
+          "AX4U32008G16A-DW50"
+        ],
+        [
+          "GPUs",
+          "RTX3060Ventus2X212GOC",
+          "TUF-RTX4070TI-12G-GAMING",
+          "GV-R66EAGLE-8GD"
+        ],
+        [
+          "Power Supplies",
+          "CP-9020200-NA",
+          "CP-9020262-NA",
+          "CP-9020201-NA"
+        ],
+        [
+          "Cases",
+          "CC-9011200-WW",
+          "CC-H51FB-01",
+          "PC-O11DEW"
+        ],
+        [
+          "Storages",
+          "MZ-V7S1T0B/AM",
+          "MZ-V8P2T0B/AM",
+          "ST2000DM008"
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "ROG STRIX X670E-E GAMING WIFI",
+      "name": "Asus ROG STRIX X670E-E GAMING WIFI ATX AM5 Motherboard",
+      "price": 482.99,
+      "manufacturer": "Asus"
+    },
+    {
+      "socketType": "AM4",
+      "chipSet": "AMD B550",
+      "formFactor": "ATX",
+      "memorySlots": 4,
+      "memoryType": "DDR4",
+      "memoryMax": 128,
+      "maxMemorySpeed": 4866,
+      "PCIe_x16_Slots": 2,
+      "PCIe_x8_Slots": 0,
+      "PCIe_x4_Slots": 0,
+      "PCIe_x1_Slots": 2,
+      "PCI_Slots": 0,
+      "color": "Black/Silver",
+      "isSLIOrCrossFire": true,
+      "SATAConnectors": 6,
+      "M2_Slots": 4,
+      "miniPCIeSlots": 0,
+      "halfMiniPCIeSlots": 0,
+      "mSATASlots": 0,
+      "onboardEthernet": "1 x 1 Gb/s\n1 x 2.5 Gb/s",
+      "USB_2_Headers": 2,
+      "USB_2_Headers_Single_Port": 0,
+      "USB_32_1_Headers": 1,
+      "USB_32_2_Headers": 1,
+      "USB_32_2x2_Headers": 0,
+      "isECC": false,
+      "wirelessNetworking": "None",
+      "RAIDSupport": true,
+      "compatibleComponents": [
+        [
+          "CPUs",
+          "100-100000593WOF",
+          "100-100001015BOX",
+          "100-100000910WOF"
+        ],
+        [
+          "CPU Coolers",
+          "MLW-D24M-A18PC-R2",
+          "NH-D15 CHROMAX.BLACK",
+          "RL-KRZ73-01"
+        ],
+        [
+          "Memory Kits",
+          "CMK16GX4M2B3200C16",
+          "SP016GXLZU320BDAJ5",
+          "AX4U32008G16A-DW50"
+        ],
+        [
+          "GPUs",
+          "RTX3060Ventus2X212GOC",
+          "TUF-RTX4070TI-12G-GAMING",
+          "GV-R66EAGLE-8GD"
+        ],
+        [
+          "Power Supplies",
+          "CP-9020200-NA",
+          "CP-9020262-NA",
+          "CP-9020201-NA"
+        ],
+        [
+          "Cases",
+          "CC-9011200-WW",
+          "CC-H51FB-01",
+          "PC-O11DEW"
+        ],
+        [
+          "Storages",
+          "MZ-V7S1T0B/AM",
+          "MZ-V8P2T0B/AM",
+          "ST2000DM008"
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "MAG B550 TOMAHAWK",
+      "name": "MSI MAG B550 TOMAHAWK ATX AM4 Motherboard",
+      "price": 169.99,
+      "manufacturer": "MSI"
+    },
+    {
+      "socketType": "AM4",
+      "chipSet": "AMD B450",
+      "formFactor": "Micro ATX",
+      "memorySlots": 4,
+      "memoryType": "DDR4",
+      "memoryMax": 128,
+      "maxMemorySpeed": 4400,
+      "PCIe_x16_Slots": 1,
+      "PCIe_x8_Slots": 0,
+      "PCIe_x4_Slots": 0,
+      "PCIe_x1_Slots": 2,
+      "PCI_Slots": 0,
+      "color": "Black/White",
+      "isSLIOrCrossFire": false,
+      "SATAConnectors": 6,
+      "M2_Slots": 1,
+      "miniPCIeSlots": 0,
+      "halfMiniPCIeSlots": 0,
+      "mSATASlots": 0,
+      "onboardEthernet": "1 x 1 Gb/s",
+      "USB_2_Headers": 2,
+      "USB_2_Headers_Single_Port": 0,
+      "USB_32_1_Headers": 1,
+      "USB_32_2_Headers": 0,
+      "USB_32_2x2_Headers": 0,
+      "isECC": false,
+      "wirelessNetworking": "None",
+      "RAIDSupport": true,
+      "compatibleComponents": [
+        [
+          "CPUs",
+          "100-100000065BOX",
+          "100-100000063WOF",
+          "100-100000059WOF"
+        ],
+        [
+          "CPU Coolers",
+          "MLW-D24M-A18PC-R2",
+          "NH-D15 CHROMAX.BLACK",
+          "RL-KRZ73-01"
+        ],
+        [
+          "Memory Kits",
+          "CMK32GX5M2B5600C36",
+          "F5-6000J3636F16GX2-TZ5RK",
+          "F5-6400J3239G32GX2-TZ5RK"
+        ],
+        [
+          "GPUs",
+          "RTX3060Ventus2X212GOC",
+          "TUF-RTX4070TI-12G-GAMING",
+          "GV-R66EAGLE-8GD"
+        ],
+        [
+          "Power Supplies",
+          "CP-9020200-NA",
+          "CP-9020262-NA",
+          "CP-9020201-NA"
+        ],
+        [
+          "Cases",
+          "CC-9011200-WW",
+          "CC-H51FB-01",
+          "PC-O11DEW"
+        ],
+        [
+          "Storages",
+          "MZ-V7S1T0B/AM",
+          "MZ-V8P2T0B/AM",
+          "ST2000DM008"
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "Prime B450M-A II",
+      "name": "Asus Prime B450M-A II Micro ATX AM4 Motherboard",
+      "price": 79.98,
+      "manufacturer": "Asus"
+    }
+  ],
+  "PowerSupplies": [
+    {
+      "type": "ATX",
+      "efficiencyRating": "80+ Gold",
+      "wattage": 850,
+      "length": 160,
+      "modularity": "Full",
+      "color": "Black",
+      "fanless": false,
+      "ATX4PinConnectors": 0,
+      "EPS8PinConnectors": 3,
+      "PCIe_12_4_Pin12VHPWRConnectors": 0,
+      "PCIe12PinConnectors": 0,
+      "PCIe8PinConnectors": 0,
+      "PCIe_6_2_PinConnectors": 4,
+      "PCIe6PinConnectors": 0,
+      "SATAConnectors": 14,
+      "molex4PinConnectors": 4,
+      "compatibleComponents": [
+        [
+          "Cases",
+          "PC-O11DEW",
+          "CC-9011200-WW",
+          "CC-H51FB-01"
+        ],
+        [
+          "Motherboards",
+          "Z790 AORUS ELITE AX",
+          "MAG B660 TOMAHAWK WIFI DDR4",
+          "ROG MAXIMUS Z790 HERO",
+          "B650 GAMING X AX",
+          "MAG X670E TOMAHAWK WIFI",
+          "ROG STRIX X670E-E GAMING WIFI",
+          "MAG B550 TOMAHAWK",
+          "TUF GAMING X570-PLUS (WI-FI)",
+          "Prime B450M-A II"
+        ],
+        [
+          "GPUs",
+          "RTX3060Ventus2X12GOC",
+          "TUF-RTX4070TI-12G-GAMING",
+          "GV-R66EAGLE-8GD"
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "CP-9020200-NA",
+      "name": "Corsair RM850x (2021) 850 W 80+ Gold Certified Fully Modular ATX Power Supply",
+      "price": 149.99,
+      "manufacturer": "Corsair"
+    },
+    {
+      "type": "ATX",
+      "efficiencyRating": "80+ Gold",
+      "wattage": 750,
+      "length": 140,
+      "modularity": "Full",
+      "color": "Black",
+      "fanless": false,
+      "ATX4PinConnectors": 0,
+      "EPS8PinConnectors": 2,
+      "PCIe_12_4_Pin12VHPWRConnectors": 1,
+      "PCIe12PinConnectors": 0,
+      "PCIe8PinConnectors": 0,
+      "PCIe_6_2_PinConnectors": 3,
+      "PCIe6PinConnectors": 0,
+      "SATAConnectors": 7,
+      "molex4PinConnectors": 4,
+      "compatibleComponents": [
+        [
+          "Cases",
+          "PC-O11DEW",
+          "CC-9011200-WW",
+          "CC-H51FB-01"
+        ],
+        [
+          "Motherboards",
+          "Z790 AORUS ELITE AX",
+          "MAG B660 TOMAHAWK WIFI DDR4",
+          "ROG MAXIMUS Z790 HERO",
+          "B650 GAMING X AX",
+          "MAG X670E TOMAHAWK WIFI",
+          "ROG STRIX X670E-E GAMING WIFI",
+          "MAG B550 TOMAHAWK",
+          "TUF GAMING X570-PLUS (WI-FI)",
+          "Prime B450M-A II"
+        ],
+        [
+          "GPUs",
+          "RTX3060Ventus2X12GOC",
+          "TUF-RTX4070TI-12G-GAMING",
+          "GV-R66EAGLE-8GD"
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "CP-9020262-NA",
+      "name": "Corsair RM750e (2023) 750 W 80+ Gold Certified Fully Modular ATX Power Supply",
+      "price": 99.99,
+      "manufacturer": "Corsair"
+    },
+    {
+      "type": "ATX",
+      "efficiencyRating": "80+ Gold",
+      "wattage": 1000,
+      "length": 180,
+      "modularity": "Full",
+      "color": "Black",
+      "fanless": false,
+      "ATX4PinConnectors": 0,
+      "EPS8PinConnectors": 3,
+      "PCIe_12_4_Pin12VHPWRConnectors": 0,
+      "PCIe12PinConnectors": 0,
+      "PCIe8PinConnectors": 0,
+      "PCIe_6_2_PinConnectors": 4,
+      "PCIe6PinConnectors": 0,
+      "SATAConnectors": 14,
+      "molex4PinConnectors": 8,
+      "compatibleComponents": [
+        [
+          "Cases",
+          "PC-O11DEW",
+          "CC-9011200-WW",
+          "CC-H51FB-01"
+        ],
+        [
+          "Motherboards",
+          "Z790 AORUS ELITE AX",
+          "MAG B660 TOMAHAWK WIFI DDR4",
+          "ROG MAXIMUS Z790 HERO",
+          "B650 GAMING X AX",
+          "MAG X670E TOMAHAWK WIFI",
+          "ROG STRIX X670E-E GAMING WIFI",
+          "MAG B550 TOMAHAWK",
+          "TUF GAMING X570-PLUS (WI-FI)",
+          "Prime B450M-A II"
+        ],
+        [
+          "GPUs",
+          "RTX3060Ventus2X12GOC",
+          "TUF-RTX4070TI-12G-GAMING",
+          "GV-R66EAGLE-8GD"
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "CP-9020201-NA",
+      "name": "Corsair RM1000x (2021) 1000 W 80+ Gold Certified Fully Modular ATX Power Supply",
+      "price": 174.99,
+      "manufacturer": "Corsair"
+    }
+  ],
+  "MemoryKits": [
+    {
+      "memorySpeed": "DDR5-5600",
+      "formFactor": "288-pin DIMM (DDR5)",
+      "modules": "2 x 16GB",
+      "pricePerGB": 2.906,
+      "color": "Black",
+      "firstWordLatency": 12.857,
+      "CASLatency": 36,
+      "voltage": 1.25,
+      "timing": "36-36-36-76",
+      "ECC_Registered": "Non-ECC/Unbuffered",
+      "isHeatSpreader": true,
+      "compatibleComponents": [
+        [
+          "Motherboards",
+          "Z790 AORUS ELITE AX",
+          "MAG B660 TOMAHAWK WIFI DDR4",
+          "ROG MAXIMUS Z790 HERO",
+          "B650 GAMING X AX",
+          "MAG X670E TOMAHAWK WIFI",
+          "ROG STRIX X670E-E GAMING WIFI",
+          "MAG B550 TOMAHAWK"
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "CMK32GX5M2B5600C36",
+      "name": "Corsair Vengeance 32 GB (2 x 16 GB) DDR5-5600 CL36 Memory",
+      "price": 94.99,
+      "manufacturer": "Corsair"
+    },
+    {
+      "memorySpeed": "DDR5-6000",
+      "formFactor": "288-pin DIMM (DDR5)",
+      "modules": "2 x 16GB",
+      "pricePerGB": 3.437,
+      "color": "Black",
+      "firstWordLatency": 12,
+      "CASLatency": 36,
+      "voltage": 1.35,
+      "timing": "36-36-36-96",
+      "ECC_Registered": "Non-ECC/Unbuffered",
+      "isHeatSpreader": true,
+      "compatibleComponents": [
+        [
+          "Motherboards",
+          "Z790 AORUS ELITE AX",
+          "MAG B660 TOMAHAWK WIFI DDR4",
+          "ROG MAXIMUS Z790 HERO",
+          "B650 GAMING X AX",
+          "MAG X670E TOMAHAWK WIFI",
+          "ROG STRIX X670E-E GAMING WIFI",
+          "MAG B550 TOMAHAWK"
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "F5-6000J3636F16GX2-TZ5RK",
+      "name": "G.Skill Trident Z5 RGB 32 GB (2 x 16 GB) DDR5-6000 CL36 Memory",
+      "price": 109.99,
+      "manufacturer": "G.Skill"
+    },
+    {
+      "memorySpeed": "DDR5-6400",
+      "formFactor": "288-pin DIMM (DDR5)",
+      "modules": "2 x 32GB",
+      "pricePerGB": 3.719,
+      "color": "Black/Silver",
+      "firstWordLatency": 10,
+      "CASLatency": 32,
+      "voltage": 1.4,
+      "timing": "32-39-39-102",
+      "ECC_Registered": "Non-ECC/Unbuffered",
+      "isHeatSpreader": true,
+      "compatibleComponents": [
+        [
+          "Motherboards",
+          "Z790 AORUS ELITE AX",
+          "MAG B660 TOMAHAWK WIFI DDR4",
+          "ROG MAXIMUS Z790 HERO",
+          "B650 GAMING X AX",
+          "MAG X670E TOMAHAWK WIFI",
+          "ROG STRIX X670E-E GAMING WIFI",
+          "MAG B550 TOMAHAWK"
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "F5-6400J3239G32GX2-TZ5RK",
+      "name": "G.Skill Trident Z5 RGB 64 GB (2 x 32 GB) DDR5-6400 CL32 Memory",
+      "price": 237.99,
+      "manufacturer": "G.Skill"
+    },
+    {
+      "memorySpeed": "DDR4-3200",
+      "formFactor": "288-pin DIMM (DDR4)",
+      "modules": "2 x 8GB",
+      "pricePerGB": 2.499,
+      "color": "Black/Yellow",
+      "firstWordLatency": 10,
+      "CASLatency": 16,
+      "voltage": 1.35,
+      "timing": "16-18-18-36",
+      "ECC_Registered": "Non-ECC/Unbuffered",
+      "isHeatSpreader": true,
+      "compatibleComponents": [
+        [
+          "Motherboards",
+          "TUF GAMING X570-PLUS (Wi-Fi)",
+          "MAG B660 TOMAHAWK WIFI DDR4",
+          "Prime B450M-A II",
+          "MAG B550 TOMAHAWK"
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "CMK16GX4M2B3200C16",
+      "name": "Corsair Vengeance LPX 16 GB (2 x 8 GB) DDR4-3200 CL16 Memory",
+      "price": 39.99,
+      "manufacturer": "Corsair"
+    },
+    {
+      "memorySpeed": "DDR4-3200",
+      "formFactor": "288-pin DIMM (DDR4)",
+      "modules": "2 x 8GB",
+      "pricePerGB": 1.873,
+      "color": "Black/Gray",
+      "firstWordLatency": 10,
+      "CASLatency": 16,
+      "voltage": 1.35,
+      "timing": "16-18-18-38",
+      "ECC_Registered": "Non-ECC/Unbuffered",
+      "isHeatSpreader": true,
+      "compatibleComponents": [
+        [
+          "Motherboards",
+          "TUF GAMING X570-PLUS (Wi-Fi)",
+          "MAG B660 TOMAHAWK WIFI DDR4",
+          "Prime B450M-A II",
+          "MAG B550 TOMAHAWK"
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "SP016GXLZU320BDAJ5",
+      "name": "Silicon Power GAMING 16 GB (2 x 8 GB) DDR4-3200 CL16 Memory",
+      "price": 29.97,
+      "manufacturer": "Silicon Power"
+    },
+    {
+      "memorySpeed": "DDR4-3200",
+      "formFactor": "288-pin DIMM (DDR4)",
+      "modules": "2 x 8GB",
+      "pricePerGB": 2.749,
+      "color": "White",
+      "firstWordLatency": 10,
+      "CASLatency": 16,
+      "voltage": 1.35,
+      "timing": "16-20-20",
+      "ECC_Registered": "Non-ECC/Unbuffered",
+      "isHeatSpreader": true,
+      "compatibleComponents": [
+        [
+          "Motherboards",
+          "TUF GAMING X570-PLUS (Wi-Fi)",
+          "MAG B660 TOMAHAWK WIFI DDR4",
+          "Prime B450M-A II",
+          "MAG B550 TOMAHAWK"
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "AX4U32008G16A-DW50",
+      "name": "ADATA XPG SPECTRIX D50 16 GB (2 x 8 GB) DDR4-3200 CL16 Memory",
+      "price": 43.99,
+      "manufacturer": "ADATA"
+    }
+  ],
+  "Storages": [
+    {
+      "capacity": "1 TB",
+      "pricePerGB": 0.07,
+      "type": "SSD",
+      "cache": 1024,
+      "formFactor": "M.2-2280",
+      "interfaceType": "M.2 PCIe 3.0 x 4",
+      "isNVMe": true,
+      "compatibleComponents": [
+        [
+          "Cases",
+          "PC-O11DEW",
+          "CC-9011200-WW",
+          "CC-H51FB-01"
+        ],
+        [
+          "Motherboards",
+          "Z790 AORUS ELITE AX",
+          "MAG B660 TOMAHAWK WIFI DDR4",
+          "ROG MAXIMUS Z790 HERO",
+          "B650 GAMING X AX",
+          "MAG X670E TOMAHAWK WIFI",
+          "ROG STRIX X670E-E GAMING WIFI",
+          "MAG B550 TOMAHAWK",
+          "TUF GAMING X570-PLUS (WI-FI)",
+          "Prime B450M-A II"
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "Samsung 970 Evo Plus 1 TB M.2-2280 PCIe 3.0 X4 NVME Solid State Drive",
+      "name": "MZ-V7S1T0B/AM",
+      "price": 69.98,
+      "manufacturer": "Samsung"
+    },
+    {
+      "capacity": "2 TB",
+      "pricePerGB": 0.065,
+      "type": "SSD",
+      "cache": 2048,
+      "formFactor": "M.2-2280",
+      "interfaceType": "M.2 PCIe 4.0 x 4",
+      "isNVMe": true,
+      "compatibleComponents": [
+        [
+          "Cases",
+          "PC-O11DEW",
+          "CC-9011200-WW",
+          "CC-H51FB-01"
+        ],
+        [
+          "Motherboards",
+          "Z790 AORUS ELITE AX",
+          "MAG B660 TOMAHAWK WIFI DDR4",
+          "ROG MAXIMUS Z790 HERO",
+          "B650 GAMING X AX",
+          "MAG X670E TOMAHAWK WIFI",
+          "ROG STRIX X670E-E GAMING WIFI",
+          "MAG B550 TOMAHAWK",
+          "TUF GAMING X570-PLUS (WI-FI)",
+          "Prime B450M-A II"
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "Samsung 980 Pro 2 TB M.2-2280 PCIe 4.0 X4 NVME Solid State Drive",
+      "name": "MZ-V8P2T0B/AM",
+      "price": 129.99,
+      "manufacturer": "Samsung"
+    },
+    {
+      "capacity": "2 TB",
+      "pricePerGB": 0.025,
+      "type": "HDD - 7200 RPM",
+      "cache": 256,
+      "formFactor": "3.5\"",
+      "interfaceType": "SATA 6.0 Gb/s",
+      "isNVMe": false,
+      "compatibleComponents": [
+        [
+          "Cases",
+          "PC-O11DEW",
+          "CC-9011200-WW",
+          "CC-H51FB-01"
+        ],
+        [
+          "Motherboards",
+          "Z790 AORUS ELITE AX",
+          "MAG B660 TOMAHAWK WIFI DDR4",
+          "ROG MAXIMUS Z790 HERO",
+          "B650 GAMING X AX",
+          "MAG X670E TOMAHAWK WIFI",
+          "ROG STRIX X670E-E GAMING WIFI",
+          "MAG B550 TOMAHAWK",
+          "TUF GAMING X570-PLUS (WI-FI)",
+          "Prime B450M-A II"
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "Seagate Barracuda Compute 2 TB 3.5\" 7200 RPM Internal Hard Drive",
+      "name": "ST2000DM008",
+      "price": 49.99,
+      "manufacturer": "Seagate"
+    }
+  ]
+}

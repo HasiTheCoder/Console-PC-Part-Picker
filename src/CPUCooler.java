@@ -1,3 +1,9 @@
+/**
+ * CPUCooler class that extends from the PCCoponent class
+ * This class contains all the information about the CPU cooler
+ *
+ * @author Hasnain Heryani
+ */
 public class CPUCooler extends PCComponent{
     //The model of the CPU cooler
     private String model;
@@ -75,7 +81,6 @@ public class CPUCooler extends PCComponent{
      */
     public String toString() {
         return super.toString() + String.format("""
-                
                 Model: %s
                 Fan RPM: %s
                 Noise Level: %s

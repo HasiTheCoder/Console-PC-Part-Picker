@@ -1,16 +1,18 @@
-public class LinkedList {
+import java.util.Scanner;
+
+public class TutorialLinkedList {
     private Node head;
-    public LinkedList(){
+    public TutorialLinkedList(){
         head = null;
     }
     private class Node {
-        private String data;
+        private Menu data;
         private Node next;
         private Node previous;
-        private Node(String dataN) {
-            data = dataN;
+        private Node(Menu paramData) {
+            data = paramData;
         }
-        private String getData() {
+        private Menu getData() {
             return data;
         }
         private Node getNext() {
@@ -23,7 +25,7 @@ public class LinkedList {
             next = n;
         }
     }
-    public void addToBack(String data) {
+    public void addToBack(Menu data) {
         if (head == null) {
             head = new Node(data);
         }
@@ -36,7 +38,7 @@ public class LinkedList {
             temp.setNext(newNode);
         }
     }
-    public void addToFront(String data) {
+    public void addToFront(Menu data) {
         if (head == null) {
             head = new Node(data);
         }
@@ -48,29 +50,6 @@ public class LinkedList {
     }
     public boolean isEmpty() {
         return head == null;
-    }
-    public void remove(String data) {
-        if (head == null) {
-            return; // List is empty, nothing to remove
-        }
-
-        if (data.equals(head.getData())) {
-            head = head.getNext();
-            return; // Found and removed the node from the head
-        }
-
-        Node previous = head;
-        Node current = head.getNext();
-
-        while (current != null) {
-            if (data.equals(current.getData())) {
-                previous.setNext(current.getNext());
-                return; // Found and removed the node
-            }
-
-            previous = current;
-            current = current.getNext();
-        }
     }
     public int size() {
         Node temp = head;
@@ -88,13 +67,15 @@ public class LinkedList {
      * See all node data
      * @return
      */
-    public String toString() {
+    public void printTutorial() {
+        Scanner input = new Scanner(System.in);
         Node temp = head;
         String list = "";
         while (temp != null) {
-            list += temp.getData() + " ";
+            System.out.println(temp.getData() + "\n");
             temp = temp.getNext();
+            System.out.println("Press enter to continue...");
+            input.nextLine();
         }
-        return list;
     }
 }

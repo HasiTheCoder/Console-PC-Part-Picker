@@ -1,3 +1,8 @@
+/**
+ * CaseFans class that extends the PCComponent class
+ * This class contains all the information related to the case fans
+ * @author Hasnain Heryani
+ */
 public class CaseFans extends PCComponent{
     //The model of the case fan
     private String model;
@@ -97,8 +102,7 @@ public class CaseFans extends PCComponent{
      * String with the info of the CaseFans object
      */
     public String toString() {
-        return super.toString() + String.format("""
-                        
+        return super.toString() + String.format("""    
                         Model: %s
                         Size: %s
                         Color: %s

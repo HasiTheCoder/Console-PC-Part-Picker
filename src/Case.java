@@ -1,3 +1,9 @@
+/**
+ * The Case class is a subclass of the PCComponent class
+ * Contains all the relavent info regarding a case
+ * Contains a default constructor, an overloaded constructor and a toString method
+ * @author Hasnain Heryani
+ */
 public class Case extends PCComponent{
     //What is the form factor of the case
     private String type;
@@ -122,7 +128,6 @@ public class Case extends PCComponent{
      */
     public String toString() {
         return super.toString() + String.format("""                
-                        
                         Type: %s
                         Color: %s
                         Includes Power Supply: %s

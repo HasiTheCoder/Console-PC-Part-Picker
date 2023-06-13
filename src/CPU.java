@@ -1,3 +1,9 @@
+/**
+ * CPU Class that extends from PCComponent class
+ * Contains all the information that is related to a CPU
+ *
+ * @author Hasnain Heryani
+ */
 public class CPU extends PCComponent{
 
     //Amount of cores in the CPU
@@ -159,7 +165,6 @@ public class CPU extends PCComponent{
      */
     public String toString() {
         return super.toString() + String.format("""
-                        
                         Core Count: %s
                         Performance Core Clock(GHz): %s
                         Performance Boost Clock(GHz): %s
