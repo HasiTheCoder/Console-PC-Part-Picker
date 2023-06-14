@@ -1,7 +1,7 @@
 import java.text.NumberFormat;
 
 public abstract class PCComponent {
-
+    //The compatible components of the component
     private String[][] compatibleComponents;
     //The part number of the component
     String partNumber;
@@ -37,13 +37,27 @@ public abstract class PCComponent {
         price = priceN;
         compatibleComponents = compatibleComponentsN;
     }
+
+    /**
+     * The getter for the price of the PCComponent object
+     * @return
+     */
     public double getPrice() {
         return price;
     }
+
+    /**
+     * The getter for the name of the PCComponent object
+     * @return
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     * The getter for the partNumber of the PCComponent object
+     * @return
+     */
     public String getPartNumber() {
         return partNumber;
     }
@@ -66,6 +80,10 @@ public abstract class PCComponent {
                 price);
     }
 
+    /**
+     * Gets the type of the pccomponent
+     * @return the type of the pccomponent
+     */
     public String getType() {
         if (this instanceof Motherboard) {
             return "Motherboard";
@@ -99,6 +117,10 @@ public abstract class PCComponent {
         }
     }
 
+    /**
+     * gets the compatible components
+     * @return the compatible components
+     */
     public String[][] getCompatibleComponents() {
         return compatibleComponents;
     }

@@ -5,18 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cfc34737-a13a-4be9-a16e-737092c26daf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/StringArrayStack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code for reference data back up in console pc part picker.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Code for reference data back up in console pc part picker.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Receipt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Receipt.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/referenceData.json" beforeDir="false" afterPath="$PROJECT_DIR$/referenceData.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Computer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MenuOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MenuOption.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PCComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PCComponent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PCComponentLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PCComponentLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReferenceData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReferenceData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StringLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringArrayLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StringArrayLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringArrayLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StringArrayStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringArrayStack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TutorialLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TutorialLinkedList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,6 +58,17 @@
       <updated>1686441024028</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

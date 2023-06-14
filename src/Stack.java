@@ -1,8 +1,22 @@
+/**
+ * The Stack created based on the PCComponentLinkedList
+ * @see PCComponentLinkedList
+ * @author Hasnain Heryani
+ */
 public class Stack {
+    //The PCComponentLinkedList that the stack is based on
     private PCComponentLinkedList list;
+    /**
+     * The default constructor of the Stack object
+     */
     public Stack() {
         list = new PCComponentLinkedList();
     }
+    /**
+     * Checks if the stack is empty
+     * @return
+     * True if the stack is empty, false otherwise
+     */
     public boolean isEmpty() {
         return list.isEmpty();
     }
@@ -10,13 +24,10 @@ public class Stack {
     public void push(PCComponent n) {
         list.addToBack(n);
     }
-    //look at the top item
-    public PCComponent top() {
-        if (isEmpty()) {
-            return null;
-        }
-        return list.getHeadData();
-    }
+    /**
+     * Gets the tail of the stack
+     * @return the tail of the stack
+     */
     public PCComponent tail() {
         if (isEmpty()) {
             return null;
@@ -27,16 +38,9 @@ public class Stack {
     public void pop() {
         list.removeLastItem();
     }
-    //number of items in stack
-    public int size() {
-        return list.size();
-    }
     //Display all the items in stack
     public String toString() {
         return list.toString();
-    }
-    public void makeEmpty() {
-        list.makeEmpty();
     }
 
 }

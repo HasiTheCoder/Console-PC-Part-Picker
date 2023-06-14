@@ -1,21 +1,31 @@
-import com.google.gson.Gson;
-
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-
+/**
+ * This class is used to store all the reference data for the program.
+ * @author Hasnain Heryani
+ */
 public class ReferenceData {
+    //The array of all the cases
     private Case[] Cases;
+    //The array of all the case fans
     private CaseFans[] CaseFans;
+    //The array of all the CPUs
     private CPU[] CPUs;
+    //The array of all the CPU coolers
     private CPUCooler[] CPUCoolers;
+    //The array of all the GPUs
     private GPU[] GPUs;
+    //The array of all the motherboards
     private Motherboard[] Motherboards;
+    //The array of all the power supplies
     private PowerSupply[] PowerSupplies;
+    //The array of all the memory kits
     private MemoryKits[] MemoryKits;
+    //The array of all the storages
     private Storage[] Storages;
 
-
+    /**
+     * toString to display all the reference data
+     * @return String of all the reference data
+     */
     public String toString() {
         return String.format("""
                 Cases:
@@ -48,6 +58,10 @@ public class ReferenceData {
                 convertArrayToString(Storages)
                 );
     }
+
+    /**
+     * Sorts the pccomponent array using merge sort
+     */
     public void sortReferenceData() {
         sort(Cases, 0, Cases.length - 1);
         sort(CaseFans, 0, CaseFans.length - 1);
@@ -60,6 +74,13 @@ public class ReferenceData {
         sort(Storages, 0, Storages.length - 1);
     }
 
+    /**
+     * The merging function for merge sort
+     * @param arr the array to be sorted
+     * @param l the left index
+     * @param m the middle index
+     * @param r the right index
+     */
     public void merge(PCComponent arr[], int l, int m, int r)
     {
         // Find sizes of two subarrays to be merged
@@ -109,9 +130,12 @@ public class ReferenceData {
             k++;
         }
     }
-
-    // Main function that sorts arr[l..r] using
-    // merge()
+    /**
+     * actually sorts the arrays using the merge algorithm above
+     * @param arr the array to be sorted
+     * @param l the left index
+     * @param r the right index
+     */
     public void sort(PCComponent arr[], int l, int r)
     {
         if (l < r) {
@@ -128,60 +152,83 @@ public class ReferenceData {
         }
     }
 
-    public void setMotherboards(Motherboard[] motherboardsN) {
-        Motherboards = motherboardsN;
-    }
-    public void setCPUs(CPU[] CPUsN) {
-        CPUs = CPUsN;
-    }
-    public void setGPUs(GPU[] GPUsN) {
-        GPUs = GPUsN;
-    }
-    public void setMemoryKits(MemoryKits[] memoryKitsN) {
-        MemoryKits = memoryKitsN;
-    }
-    public void setStorages(Storage[] storagesN) {
-        Storages = storagesN;
-    }
-    public void setCases(Case[] casesN) {
-        Cases = casesN;
-    }
-    public void setCaseFans(CaseFans[] caseFansN) {
-        CaseFans = caseFansN;
-    }
-    public void setCPUCoolers(CPUCooler[] CPUCoolersN) {
-        CPUCoolers = CPUCoolersN;
-    }
-    public void setPowerSupplies(PowerSupply[] powerSuppliesN) {
-        PowerSupplies = powerSuppliesN;
-    }
+    /**
+     * Getter for the motherboards array
+     * @return the motherboards array
+     */
     public Motherboard[] getMotherboards() {
         return Motherboards;
     }
+
+    /**
+     * Getter for the CPUs array
+     * @return the CPUs array
+     */
     public CPU[] getCPUs() {
         return CPUs;
     }
+
+    /**
+     * Getter for the GPUs array
+     * @return the GPUs array
+     */
     public GPU[] getGPUs() {
         return GPUs;
     }
+
+    /**
+     * Getter for the memory kits array
+     * @return the memory kits array
+     */
     public MemoryKits[] getMemoryKits() {
         return MemoryKits;
     }
+
+    /**
+     * Getter for the storages array
+     * @return the storages array
+     */
     public Storage[] getStorages() {
         return Storages;
     }
+
+    /**
+     * Getter for the cases array
+     * @return the cases array
+     */
     public Case[] getCases() {
         return Cases;
     }
+
+    /**
+     * Getter for the case fans array
+     * @return the case fans array
+     */
     public CaseFans[] getCaseFans() {
         return CaseFans;
     }
+
+    /**
+     * Getter for the cpu coolers array
+     * @return the cpu coolers array
+     */
     public CPUCooler[] getCPUCoolers() {
         return CPUCoolers;
     }
+
+    /**
+     * Getter for the power supplies array
+     * @return the power supplies array
+     */
     public PowerSupply[] getPowerSupplies() {
         return PowerSupplies;
     }
+
+    /**
+     * Converts an array to a string
+     * @param array the array to be converted
+     * @return the string representation of the array
+     */
     private String convertArrayToString(PCComponent[] array) {
         String result = "";
         for (int i = 0; i < array.length; i++) {
@@ -190,6 +237,12 @@ public class ReferenceData {
         }
         return result;
     }
+
+    /**
+     * gets the pc component from the arrays that has the matching part number
+     * @param keyIdentifier the part number of the pc component
+     * @return the pc component with the matching part number
+     */
     public PCComponent getPCComponent(String keyIdentifier) {
         for (int i = 0; i < Motherboards.length; i++) {
             if (Motherboards[i].getPartNumber().equals(keyIdentifier)) {
@@ -238,6 +291,4 @@ public class ReferenceData {
         }
         return null;
     }
-    //TODO:
-    //Create one method to read one json file with all the reference data split into sections by type
 }
