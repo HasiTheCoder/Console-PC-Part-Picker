@@ -76,10 +76,10 @@
           ""
         ]
       ],
-      "partNumber": "Lian Li",
-      "name": "PC-O11DEW",
+      "partNumber": "PC-O11DEW",
+      "name": "Lian Li O11 Dynamic EVO ATX Mid Tower Case",
       "price": 157.99,
-      "manufacturer": "Lian Li O11 Dynamic EVO ATX Mid Tower Case"
+      "manufacturer": "Lian Li"
     },
     {
       "type": "ATX Mid Tower",
@@ -157,10 +157,10 @@
           ""
         ]
       ],
-      "partNumber": "Corsair",
-      "name": "CC-9011200-WW",
+      "partNumber": "CC-9011200-WW",
+      "name": "Corsair 4000D Airflow ATX Mid Tower Case",
       "price": 94.99,
-      "manufacturer": "Corsair 4000D Airflow ATX Mid Tower Case"
+      "manufacturer": "Corsair"
     },
     {
       "type": "ATX Mid Tower",
@@ -238,10 +238,10 @@
           ""
         ]
       ],
-      "partNumber": "NZXT",
-      "name": "CC-H51FB-01",
+      "partNumber": "CC-H51FB-01",
+      "name": "NZXT H5 Flow ATX Mid Tower Case",
       "price": 94.99,
-      "manufacturer": "NZXT H5 Flow ATX Mid Tower Case"
+      "manufacturer": "NZXT"
     }
   ],
   "CaseFans": [
@@ -258,11 +258,39 @@
       "connector": "4-pin PWM + proprietary RGB",
       "controller": "USB",
       "staticPressure": "1.46 mmH2O",
-      "compatibleComponents": [],
-      "partNumber": "Corsair",
-      "name": "CO-9050109-WW",
+      "compatibleComponents": [
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "CO-9050109-WW",
+      "name": "Corsair iCUE SP120 RGB ELITE 47.7 CFM 120 mm Fans 3-Pack",
       "price": 71.98,
-      "manufacturer": "Corsair iCUE SP120 RGB ELITE 47.7 CFM 120 mm Fans 3-Pack"
+      "manufacturer": "Corsair"
     },
     {
       "model": "UNI SL120",
@@ -277,11 +305,39 @@
       "connector": "4-pin PWM + proprietary RGB",
       "controller": "USB",
       "staticPressure": "2.54 mmH2O",
-      "compatibleComponents": [],
-      "partNumber": "Lian Li",
-      "name": "UF-SL120-3W",
+      "compatibleComponents": [
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "UF-SL120-3W",
+      "name": "Lian Li UNI SL120 58.54 CFM 120 mm Fans 3-Pack",
       "price": 96.95,
-      "manufacturer": "Lian Li UNI SL120 58.54 CFM 120 mm Fans 3-Pack"
+      "manufacturer": "Lian Li"
     },
     {
       "model": "A12x25 PWM",
@@ -296,11 +352,39 @@
       "connector": "4-pin PWM",
       "controller": "None",
       "staticPressure": "2.34 mmH2O",
-      "compatibleComponents": [],
-      "partNumber": "Noctua",
-      "name": "NF-A12x25 PWM",
+      "compatibleComponents": [
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      "partNumber": "NF-A12x25 PWM",
+      "name": "Noctua A12x25 PWM 60.1 CFM 120 mm Fan",
       "price": 32.95,
-      "manufacturer": "Noctua A12x25 PWM 60.1 CFM 120 mm Fan"
+      "manufacturer": "Noctua"
     }
   ],
   "CPUs": [
@@ -1437,9 +1521,9 @@
       "compatibleComponents": [
         [
           "CPUs",
-          "100-100000065BOX",
-          "100-100000063WOF",
-          "100-100000059WOF"
+          "100-100000593WOF",
+          "100-100001015BOX",
+          "100-100000910WOF"
         ],
         [
           "CPU Coolers",
@@ -1533,9 +1617,9 @@
         ],
         [
           "Memory Kits",
-          "CMK32GX5M2B5600C36",
-          "F5-6000J3636F16GX2-TZ5RK",
-          "F5-6400J3239G32GX2-TZ5RK"
+          "CMK16GX4M2B3200C16",
+          "SP016GXLZU320BDAJ5",
+          "AX4U32008G16A-DW50"
         ],
         [
           "GPUs",
@@ -1605,9 +1689,9 @@
       "compatibleComponents": [
         [
           "CPUs",
-          "100-100000065BOX",
-          "100-100000063WOF",
-          "100-100000059WOF"
+          "BX8071513900K",
+          "BX8071513700K",
+          "BX8071512700KF"
         ],
         [
           "CPU Coolers",
@@ -1785,9 +1869,9 @@
         ],
         [
           "Memory Kits",
-          "CMK16GX4M2B3200C16",
-          "SP016GXLZU320BDAJ5",
-          "AX4U32008G16A-DW50"
+          "CMK32GX5M2B5600C36",
+          "F5-6000J3636F16GX2-TZ5RK",
+          "F5-6400J3239G32GX2-TZ5RK"
         ],
         [
           "GPUs",
@@ -1869,9 +1953,9 @@
         ],
         [
           "Memory Kits",
-          "CMK16GX4M2B3200C16",
-          "SP016GXLZU320BDAJ5",
-          "AX4U32008G16A-DW50"
+          "CMK32GX5M2B5600C36",
+          "F5-6000J3636F16GX2-TZ5RK",
+          "F5-6400J3239G32GX2-TZ5RK"
         ],
         [
           "GPUs",
@@ -1941,9 +2025,9 @@
       "compatibleComponents": [
         [
           "CPUs",
-          "100-100000593WOF",
-          "100-100001015BOX",
-          "100-100000910WOF"
+          "100-100000065BOX",
+          "100-100000063WOF",
+          "100-100000059WOF"
         ],
         [
           "CPU Coolers",
@@ -2037,9 +2121,9 @@
         ],
         [
           "Memory Kits",
-          "CMK32GX5M2B5600C36",
-          "F5-6000J3636F16GX2-TZ5RK",
-          "F5-6400J3239G32GX2-TZ5RK"
+          "CMK16GX4M2B3200C16",
+          "SP016GXLZU320BDAJ5",
+          "AX4U32008G16A-DW50"
         ],
         [
           "GPUs",
@@ -2295,12 +2379,10 @@
         [
           "Motherboards",
           "Z790 AORUS ELITE AX",
-          "MAG B660 TOMAHAWK WIFI DDR4",
           "ROG MAXIMUS Z790 HERO",
           "B650 GAMING X AX",
           "MAG X670E TOMAHAWK WIFI",
-          "ROG STRIX X670E-E GAMING WIFI",
-          "MAG B550 TOMAHAWK"
+          "ROG STRIX X670E-E GAMING WIFI"
         ],
         [
           ""
@@ -2348,12 +2430,10 @@
         [
           "Motherboards",
           "Z790 AORUS ELITE AX",
-          "MAG B660 TOMAHAWK WIFI DDR4",
           "ROG MAXIMUS Z790 HERO",
           "B650 GAMING X AX",
           "MAG X670E TOMAHAWK WIFI",
-          "ROG STRIX X670E-E GAMING WIFI",
-          "MAG B550 TOMAHAWK"
+          "ROG STRIX X670E-E GAMING WIFI"
         ],
         [
           ""
@@ -2401,12 +2481,10 @@
         [
           "Motherboards",
           "Z790 AORUS ELITE AX",
-          "MAG B660 TOMAHAWK WIFI DDR4",
           "ROG MAXIMUS Z790 HERO",
           "B650 GAMING X AX",
           "MAG X670E TOMAHAWK WIFI",
-          "ROG STRIX X670E-E GAMING WIFI",
-          "MAG B550 TOMAHAWK"
+          "ROG STRIX X670E-E GAMING WIFI"
         ],
         [
           ""
@@ -2636,8 +2714,8 @@
           ""
         ]
       ],
-      "partNumber": "Samsung 970 Evo Plus 1 TB M.2-2280 PCIe 3.0 X4 NVME Solid State Drive",
-      "name": "MZ-V7S1T0B/AM",
+      "partNumber": "MZ-V7S1T0B/AM",
+      "name": "Samsung 970 Evo Plus 1 TB M.2-2280 PCIe 3.0 X4 NVME Solid State Drive",
       "price": 69.98,
       "manufacturer": "Samsung"
     },
@@ -2687,8 +2765,8 @@
           ""
         ]
       ],
-      "partNumber": "Samsung 980 Pro 2 TB M.2-2280 PCIe 4.0 X4 NVME Solid State Drive",
-      "name": "MZ-V8P2T0B/AM",
+      "partNumber": "MZ-V8P2T0B/AM",
+      "name": "Samsung 980 Pro 2 TB M.2-2280 PCIe 4.0 X4 NVME Solid State Drive",
       "price": 129.99,
       "manufacturer": "Samsung"
     },
@@ -2738,8 +2816,8 @@
           ""
         ]
       ],
-      "partNumber": "Seagate Barracuda Compute 2 TB 3.5\" 7200 RPM Internal Hard Drive",
-      "name": "ST2000DM008",
+      "partNumber": "ST2000DM008",
+      "name": "Seagate Barracuda Compute 2 TB 3.5\" 7200 RPM Internal Hard Drive",
       "price": 49.99,
       "manufacturer": "Seagate"
     }

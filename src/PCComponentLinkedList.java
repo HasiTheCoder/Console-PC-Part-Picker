@@ -3,7 +3,16 @@ public class PCComponentLinkedList {
         public PCComponentLinkedList() {
             head = null;
         }
-        private class Node {
+
+    public PCComponent getTailData() {
+            Node temp = head;
+            while (temp.getNext() != null) {
+                temp = temp.getNext();
+            }
+            return temp.getData();
+    }
+
+    private class Node {
             private PCComponent data;
             private Node next;
             private Node(PCComponent paramData) {
@@ -35,8 +44,8 @@ public class PCComponentLinkedList {
                 return tempPCComponent;
             }
         }
-/*
-        public void removeLastTime() {
+
+        public void removeLastItem() {
             if (isEmpty()) {
                 return;
             }
@@ -52,7 +61,7 @@ public class PCComponentLinkedList {
             }
             beforeCurrent.setNext(null);
         }
-*/
+
         public void addToBack(PCComponent data) {
             if (head == null) {
                 head = new Node(data);

@@ -18,9 +18,6 @@ public class TutorialLinkedList {
         private Node getNext() {
             return next;
         }
-        private Node getPrevious() {
-            return previous;
-        }
         private void setNext(Node n) {
             next = n;
         }
@@ -47,21 +44,6 @@ public class TutorialLinkedList {
             newNode.setNext(head);
             head = newNode;
         }
-    }
-    public boolean isEmpty() {
-        return head == null;
-    }
-    public int size() {
-        Node temp = head;
-        int size = 0;
-        while (temp != null) {
-            temp = temp.getNext();
-            size++;
-        }
-        return size;
-    }
-    public void makeEmpty() {
-        head = null;
     }
     /**
      * See all node data

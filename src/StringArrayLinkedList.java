@@ -1,17 +1,17 @@
-public class StringLinkedList {
+public class StringArrayLinkedList {
     private Node head;
-    public StringLinkedList(){
+    public StringArrayLinkedList(){
         head = null;
     }
     private class Node {
-        private String data;
+        private String[][] data;
         private Node[] subData;
         private Node next;
         private Node previous;
-        private Node(String dataN) {
+        private Node(String[][] dataN) {
             data = dataN;
         }
-        private String getData() {
+        private String[][] getData() {
             return data;
         }
         private Node getNext() {
@@ -27,19 +27,10 @@ public class StringLinkedList {
             previous = n;
         }
     }
-    public void setSubData(String[] subDataN) {
-        head.subData = new Node[subDataN.length];
-        for (int i = 0; i < subDataN.length; i++) {
-            head.subData[i] = new Node(subDataN[i]);
-        }
+    public String[][] getHeadData() {
+        return head.getData();
     }
-    public String getSubData(int index) {
-        return head.subData[index].getData();
-    }
-    public Node getHead() {
-        return head;
-    }
-    public void addToBack(String data) {
+    public void addToBack(String[][] data) {
         if (head == null) {
             head = new Node(data);
         }
@@ -52,7 +43,15 @@ public class StringLinkedList {
             temp.next = newNode;
         }
     }
-    public void addToFront(String data) {
+    public void removeHeadData(){
+        if (isEmpty()) {
+            return;
+        }
+        Node tempNode = head;
+        head = head.getNext();
+        tempNode.setNext(null);
+    }
+    public void addToFront(String[][] data) {
         if (head == null) {
             head = new Node(data);
         }
@@ -64,28 +63,5 @@ public class StringLinkedList {
     }
     public boolean isEmpty() {
         return head == null;
-    }
-    public int size() {
-        Node temp = head;
-        int size = 0;
-        while (temp != null) {
-            temp = temp.getNext();
-            size++;
-        }
-        return size;
-    }
-
-    /**
-     * See all linked list data
-     * @return
-     */
-    public String toString() {
-        Node temp = head;
-        String list = "";
-        while (temp != null) {
-            list += temp.getData() + " ";
-            temp = temp.getNext();
-        }
-        return list;
     }
 }

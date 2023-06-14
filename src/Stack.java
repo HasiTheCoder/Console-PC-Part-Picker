@@ -17,9 +17,15 @@ public class Stack {
         }
         return list.getHeadData();
     }
+    public PCComponent tail() {
+        if (isEmpty()) {
+            return null;
+        }
+        return list.getTailData();
+    }
     //removing items from the stack
-    public PCComponent pop() {
-        return list.removeHeadData();
+    public void pop() {
+        list.removeLastItem();
     }
     //number of items in stack
     public int size() {

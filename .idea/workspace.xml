@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cfc34737-a13a-4be9-a16e-737092c26daf" name="Changes" comment="" />
+    <list default="true" id="cfc34737-a13a-4be9-a16e-737092c26daf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/StringArrayStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code for reference data back up in console pc part picker.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Code for reference data back up in console pc part picker.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Receipt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Receipt.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/referenceData.json" beforeDir="false" afterPath="$PROJECT_DIR$/referenceData.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Computer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PCComponentLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PCComponentLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StringLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringArrayLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TutorialLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TutorialLinkedList.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,6 +44,11 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -42,15 +61,6 @@
     <servers />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>87</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="Computer" memberName="components" />
@@ -65,6 +75,7 @@
         <watch expression="intersectionResult[0]" />
         <watch expression="intersectionResult" />
         <watch expression="intersectionResult" />
+        <watch expression="currentComputer" />
       </configuration>
     </watches-manager>
   </component>

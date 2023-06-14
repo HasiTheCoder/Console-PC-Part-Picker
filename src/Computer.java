@@ -8,6 +8,7 @@ public class Computer {
 
     private String name;
     private Stack components;
+    private StringArrayStack compatibleMatricies;
     private double currentPrice;
     /**
      * Default constructor that initializes the Computer object with default values
@@ -15,6 +16,7 @@ public class Computer {
     public Computer() {
         name = "My New Computer";
         components = new Stack();
+        compatibleMatricies = new StringArrayStack();
         currentPrice = 0;
     }
     public double getCurrentPrice() {
@@ -24,7 +26,21 @@ public class Computer {
         NumberFormat money = NumberFormat.getCurrencyInstance();
         return components.toString() + "\nTotal Price: " + money.format(currentPrice);
     }
-
+    public void addCompatibleMatrix(String[][] matrix) {
+        compatibleMatricies.push(matrix);
+    }
+    public void removeCompatibleMatrix() {
+        compatibleMatricies.pop();
+    }
+    public StringArrayStack getCompatibleMatrix() {
+        return compatibleMatricies;
+    }
+    public void removeLastComponent() {
+        if (!components.isEmpty()) {
+            currentPrice -= components.tail().getPrice();
+            components.pop();
+        }
+    }
     public String getName() {
         return name;
     }

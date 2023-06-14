@@ -5,6 +5,7 @@ public class Menu {
     public static final String VIEW_COMPUTER_IDENTIFIER = "##ViewComputer##";
     public static final String BUILD_COMPUTER_REPORT = "##BuildComputerReport##";
     public static final String TUTORIAL = "##Tutorial##";
+    public static final String REMOVE_LAST_COMPONENT = "##RemoveLastComponent##";
     private String menuTitle;
     private Menu mainMenu;
     private Menu previousMenu;
@@ -51,10 +52,9 @@ public class Menu {
     public void display(Computer currentComputer)
     {
         System.out.println(currentComputer.getName());
-        System.out.println("1.\n" + currentComputer + "\n");
+        System.out.println("1." + currentComputer + "\n");
         if (previousMenu != null) {
             System.out.println("2. Return to Previous Menu.");
-            System.out.println();
         }
         if (mainMenu != null) {
             System.out.println("3. Return to Main Menu.");
