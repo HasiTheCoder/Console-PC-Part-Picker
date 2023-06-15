@@ -10,28 +10,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cfc34737-a13a-4be9-a16e-737092c26daf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Console_PC_Part_Picker_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Launcher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Computer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Computer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/MenuOption.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/MenuOption.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/PCComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/PCComponent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/PCComponentLinkedList$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/PCComponentLinkedList$Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/PCComponentLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/PCComponentLinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/ReferenceData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/ReferenceData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Stack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Stack.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/StringArrayLinkedList$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/StringArrayLinkedList$Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/StringArrayLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/StringArrayLinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/StringArrayStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/StringArrayStack.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/TutorialLinkedList$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/TutorialLinkedList$Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/TutorialLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/TutorialLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />

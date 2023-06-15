@@ -9,7 +9,6 @@
  */
 
 import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -23,7 +22,7 @@ public class Main {
         input.nextLine();
         System.out.println();
         // Load the reference data from the JSON file
-        ReferenceData referenceData = LoadReferenceData("referenceData.json");
+        ReferenceData referenceData = LoadReferenceData("C:\\Users\\" + System.getProperty("user.name") + "\\Downloads\\PC Part Picker\\referenceData.json");
         // Sort the reference data
         referenceData.sortReferenceData();
         // Load the menu structure from method below with the hard coded menu structure
@@ -326,7 +325,7 @@ public class Main {
      */
     private static void printReceipt(Computer currentComputer) {
         try {
-            BufferedWriter writer = new BufferedWriter(new FileWriter("Receipt.txt"));
+            BufferedWriter writer = new BufferedWriter(new FileWriter("C:\\Users\\" + System.getProperty("user.name") + "\\Downloads\\PC Part Picker\\Receipt.txt"));
             writer.write("Computer Report\n");
             writer.write(currentComputer.toString());
             writer.close();
