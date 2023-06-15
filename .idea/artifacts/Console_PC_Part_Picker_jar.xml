@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact name="Console-PC-Part-Picker:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Console_PC_Part_Picker_jar</output-path>
+    <root id="root">
+      <element id="archive" name="Console-PC-Part-Picker.jar">
+        <element id="module-output" name="Console-PC-Part-Picker" />
+      </element>
+      <element id="library" level="project" name="google.code.gson" />
+    </root>
+  </artifact>
+</component>

@@ -1,11 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Console-PC-Part-Picker:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cfc34737-a13a-4be9-a16e-737092c26daf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Console_PC_Part_Picker_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Computer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Computer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/MenuOption.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/MenuOption.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/PCComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/PCComponent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/PCComponentLinkedList$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/PCComponentLinkedList$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/PCComponentLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/PCComponentLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/ReferenceData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/ReferenceData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Stack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/Stack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/StringArrayLinkedList$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/StringArrayLinkedList$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/StringArrayLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/StringArrayLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/StringArrayStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/StringArrayStack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/TutorialLinkedList$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/TutorialLinkedList$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/TutorialLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Console-PC-Part-Picker/TutorialLinkedList.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,15 +44,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
